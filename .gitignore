@@ -143,3 +143,4 @@ dmypy.json
 /ztmp
 /data/input/adfraud/train
 /data/input/adfraud/test
+data
