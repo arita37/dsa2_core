@@ -1,0 +1,846 @@
+(base) C:\Users\momoe\folder\dsa2>python  titanic_classifier.py  run_all
+os.getcwd C:\Users\momoe\folder\dsa2
+C:\Users\momoe\folder\dsa2
+C:/Users/momoe/folder/dsa2/
+C:/Users/momoe/folder/dsa2/data/
+C:/Users/momoe/folder/dsa2/
+os.getcwd C:\Users\momoe\folder\dsa2
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier/',)
+
+  ('#### load input column family  ###################################################',)
+
+  ({'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': ['Name', 'Ticket'], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']},)
+
+  ('#### Model parameters Dynamic loading  ############################################',)
+
+  ('C:\\Users\\momoe\\folder',)
+C:\Users\momoe\folder\dsa2
+C:/Users/momoe/folder/dsa2/
+C:/Users/momoe/folder/dsa2/data/
+
+  ('#### Preprocess  #################################################################',)
+
+  ({'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': ['Name', 'Ticket'], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']},)
+
+  (['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex', 'Embarked', 'Name', 'Ticket'],)
+
+  ('loading', 'PassengerId', 'C:/Users/momoe/folder/dsa2/data/input/titanic/train//features*')
+['C:/Users/momoe/folder/dsa2/data/input/titanic/train\\features.zip']
+
+  ('y_norm_fun preprocess_pars',)
+
+  (Pclass      float32
+Age         float32
+SibSp       float32
+Parch       float32
+Fare        float32
+Sex          object
+Embarked     object
+Name         object
+Ticket       object
+dtype: object,)
+
+  ('### Map numerics to Category bin  ###########################################',)
+Pclass
+           Pclass
+             mean size  min  max
+Pclass_bin
+0             1.0  216  1.0  1.0
+4             2.0  184  2.0  2.0
+9             3.0  491  3.0  3.0
+Age
+               Age
+              mean size    min        max
+Age_bin
+0         3.355000   54   0.42   8.000000
+1        13.467391   46   9.00  16.000000
+2        20.778238  193  17.00  24.000000
+3        30.183939  330  24.50  32.200001
+4        36.177967  118  32.50  40.000000
+5        44.400002   70  40.50  48.000000
+6        51.944443   45  49.00  56.000000
+7        60.291668   24  57.00  64.000000
+8        68.166664    9  65.00  71.000000
+9        77.000000    2  74.00  80.000000
+SibSp
+          SibSp
+           mean size  min  max
+SibSp_bin
+0           0.0  608  0.0  0.0
+1           1.0  209  1.0  1.0
+2           2.0   28  2.0  2.0
+3           3.0   16  3.0  3.0
+4           4.0   18  4.0  4.0
+6           5.0    5  5.0  5.0
+9           8.0    7  8.0  8.0
+Parch
+          Parch
+           mean size  min  max
+Parch_bin
+0           0.0  678  0.0  0.0
+1           1.0  118  1.0  1.0
+3           2.0   80  2.0  2.0
+4           3.0    5  3.0  3.0
+6           4.0    4  4.0  4.0
+8           5.0    5  5.0  5.0
+9           6.0    1  6.0  6.0
+Fare
+                Fare
+                mean size         min         max
+Fare_bin
+0          15.595536  732    0.000000   50.495800
+1          69.483727  106   51.479198   93.500000
+2         128.930237   31  106.425003  153.462494
+3         164.866699    2  164.866699  164.866699
+4         224.766663   11  211.337494  247.520798
+5         262.791656    6  262.375000  263.000000
+9         512.329224    3  512.329224  512.329224
+
+  (OrderedDict([('Pclass', [0.9999, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4000000000000004, 2.6, 2.8, 3.0]), ('Age', [0.41989998688697816, 8.378000169992447, 16.336000353097916, 24.294000536203384, 32.25200071930885, 40.21000090241432, 48.16800108551979, 56.12600126862526, 64.08400145173073, 72.0420016348362, 80.00000181794167]), ('SibSp', [-0.0001, 0.8, 1.6, 2.4000000000000004, 3.2, 4.0, 4.800000000000001, 5.6000000000000005, 6.4, 7.2, 8.0]), ('Parch', [-0.0001, 0.6, 1.2, 1.7999999999999998, 2.4, 3.0, 3.5999999999999996, 4.2, 4.8, 5.3999999999999995, 6.0]), ('Fare', [-0.0001, 51.23292236328125, 102.4658447265625, 153.69876708984373, 204.931689453125, 256.16461181640625, 307.39753417968745, 358.6304565429687, 409.86337890625, 461.09630126953124, 512.3292236328125])]),)
+
+  (['Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin'],)
+
+  ('### colnum bin to One Hot',)
+Pclass_bin 3 (891, 5)
+Age_bin 10 (891, 7)
+SibSp_bin 7 (891, 16)
+Parch_bin 7 (891, 22)
+Fare_bin 7 (891, 28)
+
+  (['Pclass_bin_0', 'Pclass_bin_4', 'Pclass_bin_9', 'Age_bin_0', 'Age_bin_1', 'Age_bin_2', 'Age_bin_3', 'Age_bin_4', 'Age_bin_5', 'Age_bin_6', 'Age_bin_7', 'Age_bin_8', 'Age_bin_9', 'SibSp_bin_0', 'SibSp_bin_1', 'SibSp_bin_2', 'SibSp_bin_3', 'SibSp_bin_4', 'SibSp_bin_6', 'SibSp_bin_9', 'Parch_bin_0', 'Parch_bin_1', 'Parch_bin_3', 'Parch_bin_4', 'Parch_bin_6', 'Parch_bin_8', 'Parch_bin_9', 'Fare_bin_0', 'Fare_bin_1', 'Fare_bin_2', 'Fare_bin_3', 'Fare_bin_4', 'Fare_bin_5', 'Fare_bin_9'],)
+
+  (Sex         object
+Embarked    object
+dtype: object, {'cat_map': {'Sex': {'female': 0, 'male': 1}, 'Embarked': {'C': 0, 'Q': 1, 'S': 2}}, 'cat_map_inverse': {'Sex': {0: 'female', 1: 'male'}, 'Embarked': {0: 'C', 1: 'Q', 2: 'S'}}})
+
+  ('#### colcat to onehot',)
+Sex 2 (891, 2)
+Embarked 3 (891, 2)
+
+  (             Embarked_C  Embarked_Q  Embarked_S
+PassengerId
+1                     0           0           1
+2                     1           0           0
+3                     0           0           1
+4                     0           0           1
+5                     0           0           1,)
+
+  (PassengerId              1  2
+Embarked_C-Pclass_bin_0  0  1
+Embarked_C-Pclass_bin_9  0  0
+Embarked_C-Age_bin_2     0  0
+Embarked_C-Age_bin_3     0  0
+Embarked_C-Age_bin_4     0  1
+Embarked_C-SibSp_bin_0   0  0
+Embarked_C-SibSp_bin_1   0  1
+Embarked_C-Parch_bin_0   0  1
+Embarked_C-Parch_bin_1   0  0
+Embarked_C-Fare_bin_0    0  0
+Embarked_C-Fare_bin_1    0  1
+Embarked_Q-Pclass_bin_9  0  0
+Embarked_Q-Age_bin_3     0  0
+Embarked_Q-SibSp_bin_0   0  0
+Embarked_Q-Parch_bin_0   0  0
+Embarked_Q-Fare_bin_0    0  0
+Embarked_S-Pclass_bin_0  0  0
+Embarked_S-Pclass_bin_4  0  0
+Embarked_S-Pclass_bin_9  1  0
+Embarked_S-Age_bin_0     0  0
+Embarked_S-Age_bin_1     0  0
+Embarked_S-Age_bin_2     1  0
+Embarked_S-Age_bin_3     0  0
+Embarked_S-Age_bin_4     0  0
+Embarked_S-Age_bin_5     0  0
+Embarked_S-Age_bin_6     0  0
+Embarked_S-Age_bin_7     0  0
+Embarked_S-SibSp_bin_0   0  0
+Embarked_S-SibSp_bin_1   1  0
+Embarked_S-SibSp_bin_2   0  0
+...                     .. ..
+Age_bin_4-SibSp_bin_0    0  0
+Age_bin_4-SibSp_bin_1    0  1
+Age_bin_4-Parch_bin_0    0  1
+Age_bin_4-Fare_bin_0     0  0
+Age_bin_5-SibSp_bin_0    0  0
+Age_bin_5-SibSp_bin_1    0  0
+Age_bin_5-Parch_bin_0    0  0
+Age_bin_5-Fare_bin_0     0  0
+Age_bin_6-SibSp_bin_0    0  0
+Age_bin_6-Parch_bin_0    0  0
+Age_bin_6-Fare_bin_0     0  0
+Age_bin_7-SibSp_bin_0    0  0
+Age_bin_7-Parch_bin_0    0  0
+SibSp_bin_0-Parch_bin_0  0  0
+SibSp_bin_0-Parch_bin_1  0  0
+SibSp_bin_0-Parch_bin_3  0  0
+SibSp_bin_0-Fare_bin_0   0  0
+SibSp_bin_0-Fare_bin_1   0  0
+SibSp_bin_1-Parch_bin_0  1  1
+SibSp_bin_1-Parch_bin_1  0  0
+SibSp_bin_1-Parch_bin_3  0  0
+SibSp_bin_1-Fare_bin_0   1  0
+SibSp_bin_1-Fare_bin_1   0  1
+SibSp_bin_2-Fare_bin_0   0  0
+SibSp_bin_4-Fare_bin_0   0  0
+Parch_bin_0-Fare_bin_0   1  0
+Parch_bin_0-Fare_bin_1   0  1
+Parch_bin_1-Fare_bin_0   0  0
+Parch_bin_1-Fare_bin_1   0  0
+Parch_bin_3-Fare_bin_0   0  0
+
+[117 rows x 2 columns],)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline/',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colid.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colid.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_binmap.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_binmap.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin_map.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin_map.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_single_onehot_select.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_single_onehot_select.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coldate.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coldate.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coltext.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coltext.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coly.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coly.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//y_norm_fun.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colsX.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//cols_family.pkl',)
+
+  (['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex_int', 'Embarked_int'], 'Survived')
+
+  ('######### finish #################################',)
+C:/Users/momoe/folder/dsa2/
+C:/Users/momoe/folder/dsa2/
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier/',)
+  ('#### Model Params Dynamic loading  ###############################################',)
+
+  ('C:\\Users\\momoe\\folder',)
+  ('#### load input column family  ###################################################',)
+  ({'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': ['Name', 'Ticket'], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']},)
+  ('#### Preprocess  #################################################################',)
+
+  ({'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': ['Name', 'Ticket'], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']},)
+
+  (['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex', 'Embarked', 'Name', 'Ticket'],)
+
+  ('loading', 'PassengerId', 'C:/Users/momoe/folder/dsa2/data/input/titanic/train//features.zip')
+['C:/Users/momoe/folder/dsa2/data/input/titanic/train//features.zip']
+
+  ('y_norm_fun preprocess_pars',)
+
+  (Pclass      float32
+Age         float32
+SibSp       float32
+Parch       float32
+Fare        float32
+Sex          object
+Embarked     object
+Name         object
+Ticket       object
+dtype: object,)
+
+  ('### Map numerics to Category bin  ###########################################',)
+Pclass
+           Pclass
+             mean size  min  max
+Pclass_bin
+0             1.0  216  1.0  1.0
+4             2.0  184  2.0  2.0
+9             3.0  491  3.0  3.0
+Age
+               Age
+              mean size    min        max
+Age_bin
+0         3.355000   54   0.42   8.000000
+1        13.467391   46   9.00  16.000000
+2        20.778238  193  17.00  24.000000
+3        30.183939  330  24.50  32.200001
+4        36.177967  118  32.50  40.000000
+5        44.400002   70  40.50  48.000000
+6        51.944443   45  49.00  56.000000
+7        60.291668   24  57.00  64.000000
+8        68.166664    9  65.00  71.000000
+9        77.000000    2  74.00  80.000000
+SibSp
+          SibSp
+           mean size  min  max
+SibSp_bin
+0           0.0  608  0.0  0.0
+1           1.0  209  1.0  1.0
+2           2.0   28  2.0  2.0
+3           3.0   16  3.0  3.0
+4           4.0   18  4.0  4.0
+6           5.0    5  5.0  5.0
+9           8.0    7  8.0  8.0
+Parch
+          Parch
+           mean size  min  max
+Parch_bin
+0           0.0  678  0.0  0.0
+1           1.0  118  1.0  1.0
+3           2.0   80  2.0  2.0
+4           3.0    5  3.0  3.0
+6           4.0    4  4.0  4.0
+8           5.0    5  5.0  5.0
+9           6.0    1  6.0  6.0
+Fare
+                Fare
+                mean size         min         max
+Fare_bin
+0          15.595536  732    0.000000   50.495800
+1          69.483727  106   51.479198   93.500000
+2         128.930237   31  106.425003  153.462494
+3         164.866699    2  164.866699  164.866699
+4         224.766663   11  211.337494  247.520798
+5         262.791656    6  262.375000  263.000000
+9         512.329224    3  512.329224  512.329224
+
+  (OrderedDict([('Pclass', [0.9999, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4000000000000004, 2.6, 2.8, 3.0]), ('Age', [0.41989998688697816, 8.378000169992447, 16.336000353097916, 24.294000536203384, 32.25200071930885, 40.21000090241432, 48.16800108551979, 56.12600126862526, 64.08400145173073, 72.0420016348362, 80.00000181794167]), ('SibSp', [-0.0001, 0.8, 1.6, 2.4000000000000004, 3.2, 4.0, 4.800000000000001, 5.6000000000000005, 6.4, 7.2, 8.0]), ('Parch', [-0.0001, 0.6, 1.2, 1.7999999999999998, 2.4, 3.0, 3.5999999999999996, 4.2, 4.8, 5.3999999999999995, 6.0]), ('Fare', [-0.0001, 51.23292236328125, 102.4658447265625, 153.69876708984373, 204.931689453125, 256.16461181640625, 307.39753417968745, 358.6304565429687, 409.86337890625, 461.09630126953124, 512.3292236328125])]),)
+
+  (['Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin'],)
+
+  ('### colnum bin to One Hot',)
+Pclass_bin 3 (891, 5)
+Age_bin 10 (891, 7)
+SibSp_bin 7 (891, 16)
+Parch_bin 7 (891, 22)
+Fare_bin 7 (891, 28)
+
+  (['Pclass_bin_0', 'Pclass_bin_4', 'Pclass_bin_9', 'Age_bin_0', 'Age_bin_1', 'Age_bin_2', 'Age_bin_3', 'Age_bin_4', 'Age_bin_5', 'Age_bin_6', 'Age_bin_7', 'Age_bin_8', 'Age_bin_9', 'SibSp_bin_0', 'SibSp_bin_1', 'SibSp_bin_2', 'SibSp_bin_3', 'SibSp_bin_4', 'SibSp_bin_6', 'SibSp_bin_9', 'Parch_bin_0', 'Parch_bin_1', 'Parch_bin_3', 'Parch_bin_4', 'Parch_bin_6', 'Parch_bin_8', 'Parch_bin_9', 'Fare_bin_0', 'Fare_bin_1', 'Fare_bin_2', 'Fare_bin_3', 'Fare_bin_4', 'Fare_bin_5', 'Fare_bin_9'],)
+
+  (Sex         object
+Embarked    object
+dtype: object, {'cat_map': {'Sex': {'female': 0, 'male': 1}, 'Embarked': {'C': 0, 'Q': 1, 'S': 2}}, 'cat_map_inverse': {'Sex': {0: 'female', 1: 'male'}, 'Embarked': {0: 'C', 1: 'Q', 2: 'S'}}})
+
+  ('#### colcat to onehot',)
+Sex 2 (891, 2)
+Embarked 3 (891, 2)
+
+  (             Embarked_C  Embarked_Q  Embarked_S
+PassengerId
+1                     0           0           1
+2                     1           0           0
+3                     0           0           1
+4                     0           0           1
+5                     0           0           1,)
+
+  (PassengerId              1  2
+Embarked_C-Pclass_bin_0  0  1
+Embarked_C-Pclass_bin_9  0  0
+Embarked_C-Age_bin_2     0  0
+Embarked_C-Age_bin_3     0  0
+Embarked_C-Age_bin_4     0  1
+Embarked_C-SibSp_bin_0   0  0
+Embarked_C-SibSp_bin_1   0  1
+Embarked_C-Parch_bin_0   0  1
+Embarked_C-Parch_bin_1   0  0
+Embarked_C-Fare_bin_0    0  0
+Embarked_C-Fare_bin_1    0  1
+Embarked_Q-Pclass_bin_9  0  0
+Embarked_Q-Age_bin_3     0  0
+Embarked_Q-SibSp_bin_0   0  0
+Embarked_Q-Parch_bin_0   0  0
+Embarked_Q-Fare_bin_0    0  0
+Embarked_S-Pclass_bin_0  0  0
+Embarked_S-Pclass_bin_4  0  0
+Embarked_S-Pclass_bin_9  1  0
+Embarked_S-Age_bin_0     0  0
+Embarked_S-Age_bin_1     0  0
+Embarked_S-Age_bin_2     1  0
+Embarked_S-Age_bin_3     0  0
+Embarked_S-Age_bin_4     0  0
+Embarked_S-Age_bin_5     0  0
+Embarked_S-Age_bin_6     0  0
+Embarked_S-Age_bin_7     0  0
+Embarked_S-SibSp_bin_0   0  0
+Embarked_S-SibSp_bin_1   1  0
+Embarked_S-SibSp_bin_2   0  0
+...                     .. ..
+Age_bin_4-SibSp_bin_0    0  0
+Age_bin_4-SibSp_bin_1    0  1
+Age_bin_4-Parch_bin_0    0  1
+Age_bin_4-Fare_bin_0     0  0
+Age_bin_5-SibSp_bin_0    0  0
+Age_bin_5-SibSp_bin_1    0  0
+Age_bin_5-Parch_bin_0    0  0
+Age_bin_5-Fare_bin_0     0  0
+Age_bin_6-SibSp_bin_0    0  0
+Age_bin_6-Parch_bin_0    0  0
+Age_bin_6-Fare_bin_0     0  0
+Age_bin_7-SibSp_bin_0    0  0
+Age_bin_7-Parch_bin_0    0  0
+SibSp_bin_0-Parch_bin_0  0  0
+SibSp_bin_0-Parch_bin_1  0  0
+SibSp_bin_0-Parch_bin_3  0  0
+SibSp_bin_0-Fare_bin_0   0  0
+SibSp_bin_0-Fare_bin_1   0  0
+SibSp_bin_1-Parch_bin_0  1  1
+SibSp_bin_1-Parch_bin_1  0  0
+SibSp_bin_1-Parch_bin_3  0  0
+SibSp_bin_1-Fare_bin_0   1  0
+SibSp_bin_1-Fare_bin_1   0  1
+SibSp_bin_2-Fare_bin_0   0  0
+SibSp_bin_4-Fare_bin_0   0  0
+Parch_bin_0-Fare_bin_0   1  0
+Parch_bin_0-Fare_bin_1   0  1
+Parch_bin_1-Fare_bin_0   0  0
+Parch_bin_1-Fare_bin_1   0  0
+Parch_bin_3-Fare_bin_0   0  0
+
+[117 rows x 2 columns],)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline/',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colid.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colid.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_binmap.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colnum_binmap.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin_map.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcat_bin_map.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_single_onehot_select.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_single_onehot_select.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair_onehot.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colcross_pair.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coldate.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coldate.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coltext.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coltext.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coly.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//coly.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//y_norm_fun.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//colsX.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//pipeline//cols_family.pkl',)
+  (['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex_int', 'Embarked_int'], 'Survived')
+  ('######### Train model: ###########################################################',)
+  ("{'model_pars': {'model_path': 'C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//model/', 'config_model_name': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'learning_rate': 0.03, 'boosting_type': 'gbdt'}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x0000023966592E18>, 'pre_process_pars': {'y_norm_fun': None, 'pipe_list': ['filter', 'label', 'dfnum_bin', 'dfnum_hot', 'dfcat_bin', 'dfcat_hot', 'dfcross_hot']}}, 'compute_pars': {'metric_list': ['accuracy_score', 'average_precision_score']}, 'data_pars': {'cols_input_type': {'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': ['Name', 'Ticket'], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']}, 'cols_model_group': ['colnum', 'colcat_bin'], 'cols_model': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex_int', 'Embarked_int'], 'coly",)
+  ('#### Data preparation #############################################################',)
+  ((891, 169),)
+  ('#### Model Instance ##########################################################',)
+  (<module 'models.model_sklearn' from 'C:\\Users\\momoe\\folder\\dsa2\\source\\models\\model_sklearn.py'>,)
+[1]     valid_0's binary_logloss: 0.658058
+[2]     valid_0's binary_logloss: 0.646527
+[3]     valid_0's binary_logloss: 0.635639
+[4]     valid_0's binary_logloss: 0.625641
+[5]     valid_0's binary_logloss: 0.616149
+[6]     valid_0's binary_logloss: 0.607429
+[7]     valid_0's binary_logloss: 0.599135
+[8]     valid_0's binary_logloss: 0.591315
+[9]     valid_0's binary_logloss: 0.584051
+[10]    valid_0's binary_logloss: 0.57736
+[11]    valid_0's binary_logloss: 0.571035
+[12]    valid_0's binary_logloss: 0.564823
+[13]    valid_0's binary_logloss: 0.558985
+[14]    valid_0's binary_logloss: 0.553668
+[15]    valid_0's binary_logloss: 0.548596
+[16]    valid_0's binary_logloss: 0.544073
+[17]    valid_0's binary_logloss: 0.539577
+[18]    valid_0's binary_logloss: 0.535589
+[19]    valid_0's binary_logloss: 0.531271
+[20]    valid_0's binary_logloss: 0.527383
+[21]    valid_0's binary_logloss: 0.523485
+[22]    valid_0's binary_logloss: 0.52027
+[23]    valid_0's binary_logloss: 0.517129
+[24]    valid_0's binary_logloss: 0.513855
+[25]    valid_0's binary_logloss: 0.511155
+[26]    valid_0's binary_logloss: 0.508532
+[27]    valid_0's binary_logloss: 0.505813
+[28]    valid_0's binary_logloss: 0.503121
+[29]    valid_0's binary_logloss: 0.500632
+[30]    valid_0's binary_logloss: 0.49824
+[31]    valid_0's binary_logloss: 0.495798
+[32]    valid_0's binary_logloss: 0.493441
+[33]    valid_0's binary_logloss: 0.491262
+[34]    valid_0's binary_logloss: 0.488926
+[35]    valid_0's binary_logloss: 0.486636
+[36]    valid_0's binary_logloss: 0.483876
+[37]    valid_0's binary_logloss: 0.481192
+[38]    valid_0's binary_logloss: 0.478735
+[39]    valid_0's binary_logloss: 0.476863
+[40]    valid_0's binary_logloss: 0.474728
+[41]    valid_0's binary_logloss: 0.472525
+[42]    valid_0's binary_logloss: 0.470611
+[43]    valid_0's binary_logloss: 0.469079
+[44]    valid_0's binary_logloss: 0.467497
+[45]    valid_0's binary_logloss: 0.465739
+[46]    valid_0's binary_logloss: 0.464714
+[47]    valid_0's binary_logloss: 0.463316
+[48]    valid_0's binary_logloss: 0.462123
+[49]    valid_0's binary_logloss: 0.4614
+[50]    valid_0's binary_logloss: 0.460103
+[51]    valid_0's binary_logloss: 0.459073
+[52]    valid_0's binary_logloss: 0.458568
+[53]    valid_0's binary_logloss: 0.457883
+[54]    valid_0's binary_logloss: 0.456731
+[55]    valid_0's binary_logloss: 0.456306
+[56]    valid_0's binary_logloss: 0.455839
+[57]    valid_0's binary_logloss: 0.455406
+[58]    valid_0's binary_logloss: 0.454409
+[59]    valid_0's binary_logloss: 0.453996
+[60]    valid_0's binary_logloss: 0.454088
+[61]    valid_0's binary_logloss: 0.452612
+[62]    valid_0's binary_logloss: 0.451919
+[63]    valid_0's binary_logloss: 0.452542
+[64]    valid_0's binary_logloss: 0.451248
+[65]    valid_0's binary_logloss: 0.451044
+[66]    valid_0's binary_logloss: 0.451422
+[67]    valid_0's binary_logloss: 0.450657
+[68]    valid_0's binary_logloss: 0.449517
+[69]    valid_0's binary_logloss: 0.449131
+[70]    valid_0's binary_logloss: 0.448213
+[71]    valid_0's binary_logloss: 0.447476
+[72]    valid_0's binary_logloss: 0.446878
+[73]    valid_0's binary_logloss: 0.445874
+[74]    valid_0's binary_logloss: 0.445364
+[75]    valid_0's binary_logloss: 0.444896
+[76]    valid_0's binary_logloss: 0.444235
+[77]    valid_0's binary_logloss: 0.443567
+[78]    valid_0's binary_logloss: 0.443183
+[79]    valid_0's binary_logloss: 0.442665
+[80]    valid_0's binary_logloss: 0.442813
+[81]    valid_0's binary_logloss: 0.442513
+[82]    valid_0's binary_logloss: 0.442256
+[83]    valid_0's binary_logloss: 0.441571
+[84]    valid_0's binary_logloss: 0.440951
+[85]    valid_0's binary_logloss: 0.44003
+[86]    valid_0's binary_logloss: 0.439174
+[87]    valid_0's binary_logloss: 0.438707
+[88]    valid_0's binary_logloss: 0.43795
+[89]    valid_0's binary_logloss: 0.437251
+[90]    valid_0's binary_logloss: 0.436917
+[91]    valid_0's binary_logloss: 0.436302
+[92]    valid_0's binary_logloss: 0.436444
+[93]    valid_0's binary_logloss: 0.436149
+[94]    valid_0's binary_logloss: 0.435822
+[95]    valid_0's binary_logloss: 0.435687
+[96]    valid_0's binary_logloss: 0.435169
+[97]    valid_0's binary_logloss: 0.434687
+[98]    valid_0's binary_logloss: 0.434386
+[99]    valid_0's binary_logloss: 0.434235
+[100]   valid_0's binary_logloss: 0.433672
+  ('#### Metrics #################################################################',)
+  ({'metrics_test':                metric_name  metric_val  n_sample
+0           accuracy_score    0.810056       179
+1  average_precision_score    0.672580       179},)
+  ('saving model, dfX, columns', 'C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//model/')
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//model//colsX.pkl',)
+
+  ('C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//model//coly.pkl',)
+  ({'model_path': 'C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//model/', 'config_model_name': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'learning_rate': 0.03, 'boosting_type': 'gbdt'}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x0000023966592E18>, 'pre_process_pars': {'y_norm_fun': None, 'pipe_list': ['filter', 'label', 'dfnum_bin', 'dfnum_hot', 'dfcat_bin', 'dfcat_hot', 'dfcross_hot']}}, {'metric_list': ['accuracy_score', 'average_precision_score']})
+  ('check re-loaded', {'model_path': 'C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier//model/', 'config_model_name': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'learning_rate': 0.03, 'boosting_type': 'gbdt'}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x0000023967F6E9D8>, 'pre_process_pars': {'y_norm_fun': None, 'pipe_list': ['filter', 'label', 'dfnum_bin', 'dfnum_hot', 'dfcat_bin', 'dfcat_hot', 'dfcross_hot']}})
+  ('######### export #################################',)
+  ('######### finish #################################',)
+{'metrics_test':                metric_name  metric_val  n_sample
+0           accuracy_score    0.810056       179
+1  average_precision_score    0.672580       179}
+LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.03, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective='binary',
+               random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+C:/Users/momoe/folder/dsa2/
+
+  ('C:/Users/momoe/folder/dsa2/data/input/titanic/test//features.zip', 'C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier/', 'C:/Users/momoe/folder/dsa2//data/output/titanic/pred_a01_titanic_lightgbm/')
+
+  ('loading', 'PassengerId', 'C:/Users/momoe/folder/dsa2/data/input/titanic/test//features.zip')
+['C:/Users/momoe/folder/dsa2/data/input/titanic/test//features.zip']
+
+  ('########### Load column by column type ##################################',)
+
+  ('###### Colcat to onehot ###############################################',)
+Sex 2 (418, 2)
+Embarked 3 (418, 2)
+
+  (             Embarked_C  Embarked_Q  Embarked_S
+PassengerId
+892                   0           1           0
+893                   0           0           1
+894                   0           1           0
+895                   0           0           1
+896                   0           0           1,)
+
+  ('###### Colcat as integer encoded  ####################################',)
+Sex Sex_int
+Embarked Embarked_int
+
+  ('###### Colnum Preprocess   ###########################################',)
+Pclass
+           Pclass
+             mean size  min  max
+Pclass_bin
+0             1.0  107  1.0  1.0
+4             2.0   93  2.0  2.0
+9             3.0  218  3.0  3.0
+Age
+               Age
+              mean size    min    max
+Age_bin
+-1        0.250000   88   0.17   0.33
+ 0        3.656250   16   0.75   8.00
+ 1       12.625000   16   9.00  16.00
+ 2       21.000000   97  17.00  24.00
+ 3       28.148148   81  25.00  32.00
+ 4       36.383720   43  32.50  40.00
+ 5       44.460526   38  40.50  48.00
+ 6       52.250000   20  49.00  55.00
+ 7       60.617645   17  57.00  64.00
+ 8       67.000000    1  67.00  67.00
+ 9       76.000000    1  76.00  76.00
+SibSp
+          SibSp
+           mean size  min  max
+SibSp_bin
+0           0.0  283  0.0  0.0
+1           1.0  110  1.0  1.0
+2           2.0   14  2.0  2.0
+3           3.0    4  3.0  3.0
+4           4.0    4  4.0  4.0
+6           5.0    1  5.0  5.0
+9           8.0    2  8.0  8.0
+Parch
+          Parch
+           mean size  min  max
+Parch_bin
+-1          9.0    2  9.0  9.0
+ 0          0.0  324  0.0  0.0
+ 1          1.0   52  1.0  1.0
+ 3          2.0   33  2.0  2.0
+ 4          3.0    3  3.0  3.0
+ 6          4.0    2  4.0  4.0
+ 8          5.0    1  5.0  5.0
+ 9          6.0    1  6.0  6.0
+Fare
+                Fare
+                mean size         min         max
+Fare_bin
+-1               NaN    1         NaN         NaN
+ 0         15.439312  338    0.000000   50.495800
+ 1         68.390717   48   51.479198   93.500000
+ 2        134.330688   11  106.425003  151.550003
+ 3        164.866699    2  164.866699  164.866699
+ 4        219.772095   10  211.337494  247.520798
+ 5        262.553558    7  262.375000  263.000000
+ 9        512.329224    1  512.329224  512.329224
+
+  (OrderedDict([('Pclass', [0.9999, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4000000000000004, 2.6, 2.8, 3.0]), ('Age', [0.41989998688697816, 8.378000169992447, 16.336000353097916, 24.294000536203384, 32.25200071930885, 40.21000090241432, 48.16800108551979, 56.12600126862526, 64.08400145173073, 72.0420016348362, 80.00000181794167]), ('SibSp', [-0.0001, 0.8, 1.6, 2.4000000000000004, 3.2, 4.0, 4.800000000000001, 5.6000000000000005, 6.4, 7.2, 8.0]), ('Parch', [-0.0001, 0.6, 1.2, 1.7999999999999998, 2.4, 3.0, 3.5999999999999996, 4.2, 4.8, 5.3999999999999995, 6.0]), ('Fare', [-0.0001, 51.23292236328125, 102.4658447265625, 153.69876708984373, 204.931689453125, 256.16461181640625, 307.39753417968745, 358.6304565429687, 409.86337890625, 461.09630126953124, 512.3292236328125])]),)
+
+  (             Pclass_bin  Age_bin  SibSp_bin  Parch_bin  Fare_bin
+PassengerId
+892                   9        4          0          0         0
+893                   9        5          1          0         0
+894                   4        7          0          0         0
+895                   9        3          0          0         0
+896                   9        2          1          1         0,)
+Pclass_bin 3 (418, 5)
+Age_bin 11 (418, 7)
+SibSp_bin 7 (418, 17)
+Parch_bin 8 (418, 23)
+Fare_bin 8 (418, 30)
+
+  (             Pclass_bin_0  Pclass_bin_4  Pclass_bin_9  Age_bin_0  Age_bin_1  Age_bin_2  ...  Fare_bin_1  Fare_bin_2  Fare_bin_3  Fare_bin_4  Fare_bin_5  Fare_bin_9
+PassengerId                                                                             ...
+892                     0             0             1          0          0          0  ...           0           0           0           0           0           0
+893                     0             0             1          0          0          0  ...           0           0           0           0           0           0
+894                     0             1             0          0          0          0  ...           0           0           0           0           0           0
+895                     0             0             1          0          0          0  ...           0           0           0           0           0           0
+896                     0             0             1          0          0          1  ...           0           0           0           0           0           0
+
+[5 rows x 34 columns],)
+
+  ('####### colcross cross features   ###################################################',)
+
+  (PassengerId              892  893
+Embarked_C-Pclass_bin_0    0    0
+Embarked_C-Pclass_bin_4    0    0
+Embarked_C-Pclass_bin_9    0    0
+Embarked_C-Age_bin_2       0    0
+Embarked_C-Age_bin_3       0    0
+Embarked_C-Age_bin_4       0    0
+Embarked_C-Age_bin_5       0    0
+Embarked_C-SibSp_bin_0     0    0
+Embarked_C-SibSp_bin_1     0    0
+Embarked_C-Parch_bin_0     0    0
+Embarked_C-Parch_bin_1     0    0
+Embarked_C-Fare_bin_0      0    0
+Embarked_C-Fare_bin_1      0    0
+Embarked_C-Fare_bin_2      0    0
+Embarked_Q-Pclass_bin_9    1    0
+Embarked_Q-Age_bin_2       0    0
+Embarked_Q-SibSp_bin_0     1    0
+Embarked_Q-Parch_bin_0     1    0
+Embarked_Q-Fare_bin_0      1    0
+Embarked_S-Pclass_bin_0    0    0
+Embarked_S-Pclass_bin_4    0    0
+Embarked_S-Pclass_bin_9    0    1
+Embarked_S-Age_bin_0       0    0
+Embarked_S-Age_bin_1       0    0
+Embarked_S-Age_bin_2       0    0
+Embarked_S-Age_bin_3       0    0
+Embarked_S-Age_bin_4       0    0
+Embarked_S-Age_bin_5       0    1
+Embarked_S-Age_bin_6       0    0
+Embarked_S-Age_bin_7       0    0
+...                      ...  ...
+Age_bin_4-Parch_bin_0      1    0
+Age_bin_4-Fare_bin_0       1    0
+Age_bin_5-SibSp_bin_0      0    0
+Age_bin_5-SibSp_bin_1      0    1
+Age_bin_5-Parch_bin_0      0    1
+Age_bin_5-Fare_bin_0       0    1
+Age_bin_5-Fare_bin_1       0    0
+Age_bin_6-SibSp_bin_0      0    0
+Age_bin_6-SibSp_bin_1      0    0
+Age_bin_6-Parch_bin_0      0    0
+Age_bin_6-Fare_bin_0       0    0
+Age_bin_7-SibSp_bin_1      0    0
+Age_bin_7-Parch_bin_0      0    0
+SibSp_bin_0-Parch_bin_0    1    0
+SibSp_bin_0-Parch_bin_1    0    0
+SibSp_bin_0-Parch_bin_3    0    0
+SibSp_bin_0-Fare_bin_0     1    0
+SibSp_bin_0-Fare_bin_1     0    0
+SibSp_bin_1-Parch_bin_0    0    1
+SibSp_bin_1-Parch_bin_1    0    0
+SibSp_bin_1-Parch_bin_3    0    0
+SibSp_bin_1-Fare_bin_0     0    1
+SibSp_bin_1-Fare_bin_1     0    0
+SibSp_bin_2-Parch_bin_0    0    0
+SibSp_bin_2-Fare_bin_0     0    0
+Parch_bin_0-Fare_bin_0     1    1
+Parch_bin_0-Fare_bin_1     0    0
+Parch_bin_1-Fare_bin_0     0    0
+Parch_bin_1-Fare_bin_1     0    0
+Parch_bin_3-Fare_bin_0     0    0
+
+[118 rows x 2 columns],)
+
+  ('##### Merge data type together  :   #######################3############################ ',)
+
+  ('###### Export columns group   ##########################################################',)
+
+  (<module 'models.model_sklearn' from 'C:\\Users\\momoe\\folder\\dsa2\\source\\models\\model_sklearn.py'>, 'C:/Users/momoe/folder/dsa2/data/output/titanic/a01_LGBMClassifier/')
+
+  (LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.03, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective='binary',
+               random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0),)
+
+  ('Saving prediction', (418,), 'C:/Users/momoe/folder/dsa2//data/output/titanic/pred_a01_titanic_lightgbm/')
+
+  (             Pclass                                          Name     Sex   Age  SibSp  Parch  ... Pclass_bin  Age_bin SibSp_bin  Parch_bin  Fare_bin  Survived_pred
+PassengerId                                                                                    ...
+892             3.0                              Kelly, Mr. James    male  34.5    0.0    0.0  ...          9        4         0          0         0              0
+893             3.0              Wilkes, Mrs. James (Ellen Needs)  female  47.0    1.0    0.0  ...          9        5         1          0         0              0
+894             2.0                     Myles, Mr. Thomas Francis    male  62.0    0.0    0.0  ...          4        7         0          0         0              0
+895             3.0                              Wirz, Mr. Albert    male  27.0    0.0    0.0  ...          9        3         0          0         0              0
+896             3.0  Hirvonen, Mrs. Alexander (Helga E Lindqvist)  female  22.0    1.0    1.0  ...          9        2         1          1         0              0
+897             3.0                    Svensson, Mr. Johan Cervin    male  14.0    0.0    0.0  ...          9        1         0          0         0              0
+898             3.0                          Connolly, Miss. Kate  female  30.0    0.0    0.0  ...          9        3         0          0         0              1
+899             2.0                  Caldwell, Mr. Albert Francis    male  26.0    1.0    1.0  ...          4        3         1          1         0              0
+
+[8 rows x 15 columns],)
+
+(base) C:\Users\momoe\folder\dsa2>
+

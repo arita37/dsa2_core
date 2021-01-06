@@ -1,0 +1,292 @@
+D:/_devs/Python01/gitdev/dsa2/
+os.getcwd D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+D:/_devs/Python01/gitdev/dsa2/
+
+  #### Model Params Dynamic loading  ############################################### 
+
+  ('D:\\_devs\\Python01\\gitdev',) 
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+
+  {'model_pars': {'model_path': '', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'multiclass', 'num_class': 4, 'metric': 'multi_logloss', 'learning_rate': 0.03, 'boosting_type': 'gbdt'}, 'post_process_fun': <function multi_lightgbm.<locals>.post_process_fun at 0x00000220F5073158>, 'pre_process_pars': {'y_norm_fun': <function multi_lightgbm.<locals>.pre_process_fun_multi at 0x00000220F5073EA0>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}, 'compute_pars': {'metric_list': ['roc_auc_score', 'accuracy_score'], 'probability': True}, 'data_pars': {'n_sample': 6000, 'cols_input_type': {'coly': 'pet_category', 'colid': 'pet_id', 'colcat': ['color_type', 'condition'], 'colnum': ['length(m)', 'height(cm)', 'X1', 'X2'], 'coltext': [], 'coldate': [], 'colcross': ['condition', 'color_type', 'length(m)', 'height(cm)', 'X1', 'X2']}, 'cols_model_group': ['colnum_bin', 'colcat_bin'], 'filter_pars': {'ymax': 5, 'ymin': -1}}, 'global_pars': {'config_path': 'D:/_devs/Python01/gitdev/dsa2//multi_classifier.py', 'config_name': 'multi_lightgbm', 'path_data_preprocess': 'D:/_devs/Python01/gitdev/dsa2//data/input/multiclass/train/', 'path_data_train': 'D:/_devs/Python01/gitdev/dsa2//data/input/multiclass/train/', 'path_data_test': 'D:/_devs/Python01/gitdev/dsa2//data/input/multiclass/test/', 'path_train_output': 'D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/multi_lightgbm/', 'path_train_model': 'D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/multi_lightgbm/model/', 'path_features_store': 'D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/multi_lightgbm/features_store/', 'path_pipeline': 'D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/multi_lightgbm/pipeline/', 'path_pred_data': 'D:/_devs/Python01/gitdev/dsa2//data/input/multiclass/test/', 'path_pred_pipeline': 'D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/multi_lightgbm/pipeline/', 'path_pred_model': 'D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/multi_lightgbm/model/', 'path_pred_output': 'D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/pred_multi_lightgbm/', 'n_sample': 6000}} 
+
+  D:/_devs/Python01/gitdev/dsa2//data/input/multiclass/test/ D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/multi_lightgbm/model/ D:/_devs/Python01/gitdev/dsa2//data/output/multiclass/pred_multi_lightgbm/ 
+
+  ('loading', 'pet_id', 'D:/_devs/Python01/gitdev/dsa2//data/input/multiclass/test/') 
+['D:/_devs/Python01/gitdev/dsa2//data/input/multiclass/test\\features.zip']
+
+  ('dfX_raw',                              0  ...              8071
+pet_id              ANSL_75005  ...        ANSL_69436
+issue_date    17-08-2005 00:00  ...  02-02-2016 00:00
+listing_date  07-09-2017 15:35  ...  28-02-2017 16:47
+condition                    0  ...                 0
+
+[4 rows x 8072 columns]) 
+
+  ('dfy not loaded', None, TypeError('expected str, bytes or os.PathLike object, not NoneType',)) 
+
+  ('########### Load column by column type ##################################',) 
+
+  ({'coly': 'pet_category', 'colid': 'pet_id', 'colcat': ['color_type', 'condition'], 'colnum': ['length(m)', 'height(cm)', 'X1', 'X2'], 'coltext': [], 'coldate': [], 'colcross': ['condition', 'color_type', 'length(m)', 'height(cm)', 'X1', 'X2']},) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, '#######################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+D:/_devs/Python01/gitdev/dsa2/
+                  issue_date      listing_date  condition  ... height(cm)  X1  X2
+pet_id                                                     ...                   
+ANSL_75005  17-08-2005 00:00  07-09-2017 15:35        0.0  ...      42.73   0   7
+ANSL_76663  15-11-2018 00:00  08-05-2019 17:24        1.0  ...       6.71   0   1
+ANSL_58259  11-10-2012 00:00  02-04-2018 16:51        1.0  ...      41.21   0   7
+ANSL_67171  13-02-2015 00:00  06-04-2018 07:25        1.0  ...       8.46   7   1
+ANSL_72871  18-01-2017 00:00  26-04-2018 13:42        1.0  ...      30.92   0   7
+...                      ...               ...        ...  ...        ...  ..  ..
+ANSL_66809  10-02-2016 00:00  10-03-2017 14:56        2.0  ...      36.08  13   9
+ANSL_59041  07-12-2015 00:00  12-02-2018 00:00        0.0  ...      27.54  13   9
+ANSL_60034  08-12-2015 00:00  04-01-2017 17:19        0.0  ...      37.19   0   7
+ANSL_58066  28-06-2016 00:00  20-07-2017 18:19        NaN  ...      23.83   0   2
+ANSL_69436  02-02-2016 00:00  28-02-2017 16:47        0.0  ...      24.51   0   1
+
+[8072 rows x 8 columns] ['length(m)', 'height(cm)', 'X1', 'X2']
+
+  (OrderedDict([('length(m)', [-0.0001, 0.1, 0.2, 0.30000000000000004, 0.4, 0.5, 0.6000000000000001, 0.7000000000000001, 0.8, 0.9, 1.0]), ('height(cm)', [5.009900228881836, 9.508000564575195, 14.006000900268555, 18.504001235961915, 23.002001571655274, 27.500001907348633, 31.998002243041995, 36.49600257873536, 40.99400291442871, 45.492003250122075, 49.99000358581543]), ('X1', [-0.0001, 1.9, 3.8, 5.699999999999999, 7.6, 9.5, 11.399999999999999, 13.299999999999999, 15.2, 17.099999999999998, 19.0]), ('X2', [-0.0001, 0.9, 1.8, 2.7, 3.6, 4.5, 5.4, 6.3, 7.2, 8.1, 9.0])]),) 
+
+  ('### colnum Map numerics to Category bin  ###########################################',) 
+length(m)
+              length(m)                     
+                    min size   max      mean
+length(m)_bin                               
+0                  0.00  736  0.09  0.047337
+1                  0.10  800  0.19  0.145688
+2                  0.20  783  0.29  0.245083
+3                  0.30  791  0.39  0.345284
+4                  0.40  904  0.50  0.450243
+5                  0.51  698  0.59  0.550845
+6                  0.60  894  0.70  0.649620
+7                  0.71  752  0.79  0.749973
+8                  0.80  893  0.90  0.849530
+9                  0.91  821  1.00  0.954141
+height(cm)
+               height(cm)                           
+                      min size        max       mean
+height(cm)_bin                                      
+0                    5.01  762   9.500000   7.248766
+1                    9.52  839  13.990000  11.743838
+2                   14.02  823  18.490000  16.250814
+3                   18.51  844  23.000000  20.763531
+4                   23.01  785  27.500000  25.342777
+5                   27.51  830  31.980000  29.729589
+6                   32.00  800  36.480000  34.262051
+7                   36.50  787  40.990002  38.692238
+8                   41.00  788  45.490002  43.163376
+9                   45.50  814  49.990002  47.748772
+X1
+          X1                       
+         min  size   max       mean
+X1_bin                             
+0        0.0  4677   1.0   0.006842
+1        2.0     8   2.0   2.000000
+2        4.0     5   5.0   4.400000
+3        6.0   655   7.0   6.993893
+4        8.0    57   9.0   8.666667
+5       10.0    33  11.0  10.909091
+6       12.0  1847  13.0  12.978885
+7       14.0   222  15.0  14.995496
+8       16.0   362  17.0  16.295580
+9       18.0   206  18.0  18.000000
+X2
+         X2                
+        min  size  max mean
+X2_bin                     
+0       0.0     2  0.0  0.0
+1       1.0  3739  1.0  1.0
+2       2.0    74  2.0  2.0
+3       3.0    37  3.0  3.0
+4       4.0   508  4.0  4.0
+5       5.0     5  5.0  5.0
+6       6.0     1  6.0  6.0
+7       7.0  1512  7.0  7.0
+8       8.0    24  8.0  8.0
+9       9.0  2170  9.0  9.0
+
+  (OrderedDict([('length(m)', [-0.0001, 0.1, 0.2, 0.30000000000000004, 0.4, 0.5, 0.6000000000000001, 0.7000000000000001, 0.8, 0.9, 1.0]), ('height(cm)', [5.009900228881836, 9.508000564575195, 14.006000900268555, 18.504001235961915, 23.002001571655274, 27.500001907348633, 31.998002243041995, 36.49600257873536, 40.99400291442871, 45.492003250122075, 49.99000358581543]), ('X1', [-0.0001, 1.9, 3.8, 5.699999999999999, 7.6, 9.5, 11.399999999999999, 13.299999999999999, 15.2, 17.099999999999998, 19.0]), ('X2', [-0.0001, 0.9, 1.8, 2.7, 3.6, 4.5, 5.4, 6.3, 7.2, 8.1, 9.0])]),) 
+
+  (['length(m)_bin', 'height(cm)_bin', 'X1_bin', 'X2_bin'],) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, '#######################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+                  issue_date      listing_date  condition  ... height(cm)  X1  X2
+pet_id                                                     ...                   
+ANSL_75005  17-08-2005 00:00  07-09-2017 15:35        0.0  ...      42.73   0   7
+ANSL_76663  15-11-2018 00:00  08-05-2019 17:24        1.0  ...       6.71   0   1
+ANSL_58259  11-10-2012 00:00  02-04-2018 16:51        1.0  ...      41.21   0   7
+ANSL_67171  13-02-2015 00:00  06-04-2018 07:25        1.0  ...       8.46   7   1
+ANSL_72871  18-01-2017 00:00  26-04-2018 13:42        1.0  ...      30.92   0   7
+...                      ...               ...        ...  ...        ...  ..  ..
+ANSL_66809  10-02-2016 00:00  10-03-2017 14:56        2.0  ...      36.08  13   9
+ANSL_59041  07-12-2015 00:00  12-02-2018 00:00        0.0  ...      27.54  13   9
+ANSL_60034  08-12-2015 00:00  04-01-2017 17:19        0.0  ...      37.19   0   7
+ANSL_58066  28-06-2016 00:00  20-07-2017 18:19        NaN  ...      23.83   0   2
+ANSL_69436  02-02-2016 00:00  28-02-2017 16:47        0.0  ...      24.51   0   1
+
+[8072 rows x 8 columns] ['length(m)_bin', 'height(cm)_bin', 'X1_bin', 'X2_bin']
+
+  ('###### colnum bin to One Hot  #################################################',) 
+length(m)_bin 10 (8072, 4)
+height(cm)_bin 10 (8072, 13)
+X1_bin 10 (8072, 22)
+X2_bin 10 (8072, 31)
+
+  (['length(m)_bin_0', 'length(m)_bin_1', 'length(m)_bin_2', 'length(m)_bin_3', 'length(m)_bin_4', 'length(m)_bin_5', 'length(m)_bin_6', 'length(m)_bin_7', 'length(m)_bin_8', 'length(m)_bin_9', 'height(cm)_bin_0', 'height(cm)_bin_1', 'height(cm)_bin_2', 'height(cm)_bin_3', 'height(cm)_bin_4', 'height(cm)_bin_5', 'height(cm)_bin_6', 'height(cm)_bin_7', 'height(cm)_bin_8', 'height(cm)_bin_9', 'X1_bin_0', 'X1_bin_1', 'X1_bin_2', 'X1_bin_3', 'X1_bin_4', 'X1_bin_5', 'X1_bin_6', 'X1_bin_7', 'X1_bin_8', 'X1_bin_9', 'X2_bin_0', 'X2_bin_1', 'X2_bin_2', 'X2_bin_3', 'X2_bin_4', 'X2_bin_5', 'X2_bin_6', 'X2_bin_7', 'X2_bin_8', 'X2_bin_9'],) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, '#######################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+                  issue_date      listing_date  condition  ... height(cm)  X1  X2
+pet_id                                                     ...                   
+ANSL_75005  17-08-2005 00:00  07-09-2017 15:35        0.0  ...      42.73   0   7
+ANSL_76663  15-11-2018 00:00  08-05-2019 17:24        1.0  ...       6.71   0   1
+ANSL_58259  11-10-2012 00:00  02-04-2018 16:51        1.0  ...      41.21   0   7
+ANSL_67171  13-02-2015 00:00  06-04-2018 07:25        1.0  ...       8.46   7   1
+ANSL_72871  18-01-2017 00:00  26-04-2018 13:42        1.0  ...      30.92   0   7
+...                      ...               ...        ...  ...        ...  ..  ..
+ANSL_66809  10-02-2016 00:00  10-03-2017 14:56        2.0  ...      36.08  13   9
+ANSL_59041  07-12-2015 00:00  12-02-2018 00:00        0.0  ...      27.54  13   9
+ANSL_60034  08-12-2015 00:00  04-01-2017 17:19        0.0  ...      37.19   0   7
+ANSL_58066  28-06-2016 00:00  20-07-2017 18:19        NaN  ...      23.83   0   2
+ANSL_69436  02-02-2016 00:00  28-02-2017 16:47        0.0  ...      24.51   0   1
+
+[8072 rows x 8 columns] ['color_type', 'condition']
+
+  ('#### Colcat to integer encoding ',) 
+color_type color_type_int
+condition condition_int
+
+  (color_type     object
+condition     float64
+dtype: object, {'cat_map': {'color_type': {'Agouti': 0, 'Apricot': 1, 'Black': 2, 'Black Brindle': 3, 'Black Smoke': 4, 'Black Tabby': 5, 'Blue': 6, 'Blue Cream': 7, 'Blue Merle': 8, 'Blue Point': 9, 'Blue Smoke': 10, 'Blue Tabby': 11, 'Blue Tick': 12, 'Blue Tiger': 13, 'Brown': 14, 'Brown Brindle': 15, 'Brown Merle': 16, 'Brown Tabby': 17, 'Buff': 18, 'Calico': 19, 'Calico Point': 20, 'Chocolate': 21, 'Chocolate Point': 22, 'Cream': 23, 'Cream Tabby': 24, 'Fawn': 25, 'Flame Point': 26, 'Gold': 27, 'Gray': 28, 'Gray Tabby': 29, 'Green': 30, 'Lilac Point': 31, 'Liver': 32, 'Liver Tick': 33, 'Lynx Point': 34, 'Orange': 35, 'Orange Tabby': 36, 'Pink': 37, 'Red': 38, 'Red Merle': 39, 'Red Tick': 40, 'Sable': 41, 'Seal Point': 42, 'Silver': 43, 'Silver Lynx Point': 44, 'Silver Tabby': 45, 'Tan': 46, 'Torbie': 47, 'Tortie': 48, 'Tortie Point': 49, 'Tricolor': 50, 'White': 51, 'Yellow': 52, 'Yellow Brindle': 53}, 'condition': {0.0: 0, 1.0: 1, 2.0: 2}}, 'cat_map_inverse': {'color_type': {0: 'Agouti', 1: 'Apricot', 2: 'Black', 3: 'Black Brindle', 4: 'Black Smoke', 5: 'Black Tabby', 6: 'Blue', 7: 'Blue Cream', 8: 'Blue Merle', 9: 'Blue Point', 10: 'Blue Smoke', 11: 'Blue Tabby', 12: 'Blue Tick', 13: 'Blue Tiger', 14: 'Brown', 15: 'Brown Brindle', 16: 'Brown Merle', 17: 'Brown Tabby', 18: 'Buff', 19: 'Calico', 20: 'Calico Point', 21: 'Chocolate', 22: 'Chocolate Point', 23: 'Cream', 24: 'Cream Tabby', 25: 'Fawn', 26: 'Flame Point', 27: 'Gold', 28: 'Gray', 29: 'Gray Tabby', 30: 'Green', 31: 'Lilac Point', 32: 'Liver', 33: 'Liver Tick', 34: 'Lynx Point', 35: 'Orange', 36: 'Orange Tabby', 37: 'Pink', 38: 'Red', 39: 'Red Merle', 40: 'Red Tick', 41: 'Sable', 42: 'Seal Point', 43: 'Silver', 44: 'Silver Lynx Point', 45: 'Silver Tabby', 46: 'Tan', 47: 'Torbie', 48: 'Tortie', 49: 'Tortie Point', 50: 'Tricolor', 51: 'White', 52: 'Yellow', 53: 'Yellow Brindle'}, 'condition': {0: 0.0, 1: 1.0, 2: 2.0}}}) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, '#######################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+                  issue_date      listing_date  condition  ... height(cm)  X1  X2
+pet_id                                                     ...                   
+ANSL_75005  17-08-2005 00:00  07-09-2017 15:35        0.0  ...      42.73   0   7
+ANSL_76663  15-11-2018 00:00  08-05-2019 17:24        1.0  ...       6.71   0   1
+ANSL_58259  11-10-2012 00:00  02-04-2018 16:51        1.0  ...      41.21   0   7
+ANSL_67171  13-02-2015 00:00  06-04-2018 07:25        1.0  ...       8.46   7   1
+ANSL_72871  18-01-2017 00:00  26-04-2018 13:42        1.0  ...      30.92   0   7
+...                      ...               ...        ...  ...        ...  ..  ..
+ANSL_66809  10-02-2016 00:00  10-03-2017 14:56        2.0  ...      36.08  13   9
+ANSL_59041  07-12-2015 00:00  12-02-2018 00:00        0.0  ...      27.54  13   9
+ANSL_60034  08-12-2015 00:00  04-01-2017 17:19        0.0  ...      37.19   0   7
+ANSL_58066  28-06-2016 00:00  20-07-2017 18:19        NaN  ...      23.83   0   2
+ANSL_69436  02-02-2016 00:00  28-02-2017 16:47        0.0  ...      24.51   0   1
+
+[8072 rows x 8 columns] ['color_type_int', 'condition_int']
+
+  ('#### colcat to onehot',) 
+color_type_int 54 (8072, 2)
+condition_int 4 (8072, 55)
+color_type_int_48 added
+color_type_int_54 added
+condition_int_-1 added
+condition_int_0 added
+condition_int_1 added
+condition_int_2 added
+
+  (            color_type_int_0  ...  condition_int_2
+pet_id                        ...                 
+ANSL_75005                 0  ...                0
+ANSL_76663                 0  ...                0
+ANSL_58259                 0  ...                0
+ANSL_67171                 0  ...                0
+ANSL_72871                 0  ...                0
+
+[5 rows x 60 columns],) 
+ok ------------
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}, '#######################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+                  issue_date      listing_date  condition  ... height(cm)  X1  X2
+pet_id                                                     ...                   
+ANSL_75005  17-08-2005 00:00  07-09-2017 15:35        0.0  ...      42.73   0   7
+ANSL_76663  15-11-2018 00:00  08-05-2019 17:24        1.0  ...       6.71   0   1
+ANSL_58259  11-10-2012 00:00  02-04-2018 16:51        1.0  ...      41.21   0   7
+ANSL_67171  13-02-2015 00:00  06-04-2018 07:25        1.0  ...       8.46   7   1
+ANSL_72871  18-01-2017 00:00  26-04-2018 13:42        1.0  ...      30.92   0   7
+...                      ...               ...        ...  ...        ...  ..  ..
+ANSL_66809  10-02-2016 00:00  10-03-2017 14:56        2.0  ...      36.08  13   9
+ANSL_59041  07-12-2015 00:00  12-02-2018 00:00        0.0  ...      27.54  13   9
+ANSL_60034  08-12-2015 00:00  04-01-2017 17:19        0.0  ...      37.19   0   7
+ANSL_58066  28-06-2016 00:00  20-07-2017 18:19        NaN  ...      23.83   0   2
+ANSL_69436  02-02-2016 00:00  28-02-2017 16:47        0.0  ...      24.51   0   1
+
+[8072 rows x 8 columns] ['condition', 'color_type', 'length(m)', 'height(cm)', 'X1', 'X2']
+
+  ('#####  Cross Features From OneHot Features   ######################################',) 
+Traceback (most recent call last):
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'color_type_int_18-color_type_int_18'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\internals\managers.py", line 1069, in set
+    loc = self.items.get_loc(item)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'color_type_int_18-color_type_int_18'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "multi_classifier.py", line 265, in <module>
+    fire.Fire()
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\fire\core.py", line 138, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\fire\core.py", line 468, in _Fire
+    target=component.__name__)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\fire\core.py", line 672, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "multi_classifier.py", line 238, in predict
+    model_dict  = None
+  File "D:\_devs\Python01\gitdev\dsa2\source\run_inference.py", line 116, in run_predict
+    dfX, cols_family = preprocess(df, path_pipeline, preprocess_pars=pars)
+  File "D:\_devs\Python01\gitdev\dsa2\source\run_preprocess.py", line 277, in preprocess_inference
+    dfi, col_pars             = pipe_fun(df_, cols_list, pars= pars)
+  File "D:\_devs\Python01\gitdev\dsa2\source\preprocessors.py", line 454, in pd_colcross
+    pct_threshold=0.02,  m_combination=2)
+  File "D:\_devs\Python01\gitdev\dsa2\source\util_feature.py", line 462, in pd_feature_generate_cross
+    dfX_cross[coli + "-" + colj] = dfX[coli] * dfX[colj]
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\frame.py", line 3487, in __setitem__
+    self._set_item(key, value)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\frame.py", line 3565, in _set_item
+    NDFrame._set_item(self, key, value)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\generic.py", line 3381, in _set_item
+    self._data.set(key, value)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\internals\managers.py", line 1072, in set
+    self.insert(len(self.items), item, value)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\internals\managers.py", line 1181, in insert
+    block = make_block(values=value, ndim=self.ndim, placement=slice(loc, loc + 1))
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\internals\blocks.py", line 3284, in make_block
+    return klass(values, ndim=ndim, placement=placement)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\internals\blocks.py", line 128, in __init__
+    "{mgr}".format(val=len(self.values), mgr=len(self.mgr_locs))
+ValueError: Wrong number of items passed 4, placement implies 1

@@ -1,0 +1,241 @@
+os.getcwd D:\_devs\Python01\gitdev\dsa2
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+{'model_pars': {'config_model_name': 'LGBMRegressor', 'model_path': '', 'model_pars': {'objective': 'huber'}, 'post_process_fun': <function salary_lightgbm.<locals>.post_process_fun at 0x00000285B4EBC378>, 'pre_process_pars': {'y_norm_fun': <function salary_lightgbm.<locals>.pre_process_fun at 0x00000285B4EBC400>, 'pipe_list': ['filter', 'label', 'dfnum_bin', 'dfnum_hot', 'dfcat_bin', 'dfcat_hot', 'dfcross_hot']}}, 'compute_pars': {'metric_list': ['root_mean_squared_error', 'mean_absolute_error', 'explained_variance_score', 'r2_score', 'median_absolute_error']}, 'data_pars': {'cols_input_type': {'coly': 'salary', 'colid': 'jobId', 'colcat': ['companyId', 'jobType', 'degree', 'major', 'industry'], 'colnum': ['yearsExperience', 'milesFromMetropolis'], 'coltext': [], 'coldate': [], 'colcross': ['jobType', 'degree', 'major', 'industry', 'yearsExperience', 'milesFromMetropolis']}, 'cols_model_group': ['colnum', 'colcat_bin'], 'filter_pars': {'ymax': 100000.0, 'ymin': 0.0}}, 'global_pars': {'model_class': 'salary_lightgbm', 'model_name': 'LGBMRegressor', 'path_config_model': 'D:/_devs/Python01/gitdev/dsa2//salary_regression.py', 'path_model': 'data/output/salary/a01_LGBMRegressor/', 'path_data_train': 'data/input/salary/train/', 'path_data_test': 'data/input/salary/test/', 'path_output_pred': '/data/output/salary/pred_a01_salary_lightgbm/', 'n_sample': 1000}}
+D:/_devs/Python01/gitdev/dsa2/
+os.getcwd D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor/',) 
+
+  ('#### load input column family  ###################################################',) 
+
+  ({'coly': 'salary', 'colid': 'jobId', 'colcat': ['companyId', 'jobType', 'degree', 'major', 'industry'], 'colnum': ['yearsExperience', 'milesFromMetropolis'], 'coltext': [], 'coldate': [], 'colcross': ['jobType', 'degree', 'major', 'industry', 'yearsExperience', 'milesFromMetropolis']},) 
+
+  ('#### Model parameters Dynamic loading  ############################################',) 
+
+  ('D:\\_devs\\Python01\\gitdev',) 
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+
+  ('#### Preprocess  #################################################################',) 
+
+  ({'coly': 'salary', 'colid': 'jobId', 'colcat': ['companyId', 'jobType', 'degree', 'major', 'industry'], 'colnum': ['yearsExperience', 'milesFromMetropolis'], 'coltext': [], 'coldate': [], 'colcross': ['jobType', 'degree', 'major', 'industry', 'yearsExperience', 'milesFromMetropolis']},) 
+
+  (['yearsExperience', 'milesFromMetropolis', 'companyId', 'jobType', 'degree', 'major', 'industry'],) 
+
+  ('loading', 'jobId', 'D:/_devs/Python01/gitdev/dsa2/data/input/salary/train//features*') 
+['D:/_devs/Python01/gitdev/dsa2/data/input/salary/train\\features.zip']
+
+  ('dfX_raw',                           0  ...            999999
+jobId      JOB1362684407687  ...  JOB1362685407686
+companyId            COMP37  ...            COMP59
+jobType                 CFO  ...            JUNIOR
+degree              MASTERS  ...         BACHELORS
+
+[4 rows x 1000000 columns]) 
+
+  ('dfy',               jobId  salary
+0  JOB1362684407687     130
+1  JOB1362684407688     101
+2  JOB1362684407689     137
+3  JOB1362684407690     142
+4  JOB1362684407691     163) 
+
+  ('y_norm_fun preprocess_pars',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//y_norm.pkl',) 
+
+  (yearsExperience        float32
+milesFromMetropolis    float32
+companyId               object
+jobType                 object
+degree                  object
+major                   object
+industry                object
+dtype: object,) 
+
+  ('### colnum Map numerics to Category bin  ###########################################',) 
+yearsExperience
+                    yearsExperience                      
+                                max size       mean   min
+yearsExperience_bin                                      
+0                               2.0  256   0.941406   0.0
+1                               4.0  145   3.468966   3.0
+2                               7.0  225   6.044445   5.0
+3                               9.0  164   8.420732   8.0
+4                              12.0  246  10.983740  10.0
+5                              14.0  144  13.479167  13.0
+6                              16.0  164  15.512196  15.0
+7                              19.0  257  18.007782  17.0
+8                              21.0  158  20.481012  20.0
+9                              24.0  241  23.004148  22.0
+milesFromMetropolis
+                        milesFromMetropolis                      
+                                        max size       mean   min
+milesFromMetropolis_bin                                          
+0                                       9.0  190   4.252632   0.0
+1                                      19.0  210  14.471429  10.0
+2                                      29.0  206  24.233009  20.0
+3                                      39.0  209  34.473682  30.0
+4                                      49.0  201  44.542290  40.0
+5                                      59.0  212  54.613209  50.0
+6                                      69.0  211  64.511848  60.0
+7                                      79.0  183  74.557381  70.0
+8                                      89.0  170  84.317650  80.0
+9                                      99.0  208  94.567307  90.0
+
+  (OrderedDict([('yearsExperience', [-0.0001, 2.4, 4.8, 7.199999999999999, 9.6, 12.0, 14.399999999999999, 16.8, 19.2, 21.599999999999998, 24.0]), ('milesFromMetropolis', [-0.0001, 9.9, 19.8, 29.700000000000003, 39.6, 49.5, 59.400000000000006, 69.3, 79.2, 89.10000000000001, 99.0])]),) 
+
+  (['yearsExperience_bin', 'milesFromMetropolis_bin'],) 
+
+  ('### colnum bin to One Hot',) 
+yearsExperience_bin 10 (2000, 2)
+milesFromMetropolis_bin 10 (2000, 11)
+
+  (['yearsExperience_bin_0', 'yearsExperience_bin_1', 'yearsExperience_bin_2', 'yearsExperience_bin_3', 'yearsExperience_bin_4', 'yearsExperience_bin_5', 'yearsExperience_bin_6', 'yearsExperience_bin_7', 'yearsExperience_bin_8', 'yearsExperience_bin_9', 'milesFromMetropolis_bin_0', 'milesFromMetropolis_bin_1', 'milesFromMetropolis_bin_2', 'milesFromMetropolis_bin_3', 'milesFromMetropolis_bin_4', 'milesFromMetropolis_bin_5', 'milesFromMetropolis_bin_6', 'milesFromMetropolis_bin_7', 'milesFromMetropolis_bin_8', 'milesFromMetropolis_bin_9'],) 
+
+  (companyId    object
+jobType      object
+degree       object
+major        object
+industry     object
+dtype: object, {'cat_map': {'companyId': {'COMP0': 0, 'COMP1': 1, 'COMP10': 2, 'COMP11': 3, 'COMP12': 4, 'COMP13': 5, 'COMP14': 6, 'COMP15': 7, 'COMP16': 8, 'COMP17': 9, 'COMP18': 10, 'COMP19': 11, 'COMP2': 12, 'COMP20': 13, 'COMP21': 14, 'COMP22': 15, 'COMP23': 16, 'COMP24': 17, 'COMP25': 18, 'COMP26': 19, 'COMP27': 20, 'COMP28': 21, 'COMP29': 22, 'COMP3': 23, 'COMP30': 24, 'COMP31': 25, 'COMP32': 26, 'COMP33': 27, 'COMP34': 28, 'COMP35': 29, 'COMP36': 30, 'COMP37': 31, 'COMP38': 32, 'COMP39': 33, 'COMP4': 34, 'COMP40': 35, 'COMP41': 36, 'COMP42': 37, 'COMP43': 38, 'COMP44': 39, 'COMP45': 40, 'COMP46': 41, 'COMP47': 42, 'COMP48': 43, 'COMP49': 44, 'COMP5': 45, 'COMP50': 46, 'COMP51': 47, 'COMP52': 48, 'COMP53': 49, 'COMP54': 50, 'COMP55': 51, 'COMP56': 52, 'COMP57': 53, 'COMP58': 54, 'COMP59': 55, 'COMP6': 56, 'COMP60': 57, 'COMP61': 58, 'COMP62': 59, 'COMP7': 60, 'COMP8': 61, 'COMP9': 62}, 'jobType': {'CEO': 0, 'CFO': 1, 'CTO': 2, 'JANITOR': 3, 'JUNIOR': 4, 'MANAGER': 5, 'SENIOR': 6, 'VICE_PRESIDENT': 7}, 'degree': {'BACHELORS': 0, 'DOCTORAL': 1, 'HIGH_SCHOOL': 2, 'MASTERS': 3, 'NONE': 4}, 'major': {'BIOLOGY': 0, 'BUSINESS': 1, 'CHEMISTRY': 2, 'COMPSCI': 3, 'ENGINEERING': 4, 'LITERATURE': 5, 'MATH': 6, 'NONE': 7, 'PHYSICS': 8}, 'industry': {'AUTO': 0, 'EDUCATION': 1, 'FINANCE': 2, 'HEALTH': 3, 'OIL': 4, 'SERVICE': 5, 'WEB': 6}}, 'cat_map_inverse': {'companyId': {0: 'COMP0', 1: 'COMP1', 2: 'COMP10', 3: 'COMP11', 4: 'COMP12', 5: 'COMP13', 6: 'COMP14', 7: 'COMP15', 8: 'COMP16', 9: 'COMP17', 10: 'COMP18', 11: 'COMP19', 12: 'COMP2', 13: 'COMP20', 14: 'COMP21', 15: 'COMP22', 16: 'COMP23', 17: 'COMP24', 18: 'COMP25', 19: 'COMP26', 20: 'COMP27', 21: 'COMP28', 22: 'COMP29', 23: 'COMP3', 24: 'COMP30', 25: 'COMP31', 26: 'COMP32', 27: 'COMP33', 28: 'COMP34', 29: 'COMP35', 30: 'COMP36', 31: 'COMP37', 32: 'COMP38', 33: 'COMP39', 34: 'COMP4', 35: 'COMP40', 36: 'COMP41', 37: 'COMP42', 38: 'COMP43', 39: 'COMP44', 40: 'COMP45', 41: 'COMP46', 42: 'COMP47', 43: 'COMP48', 44: 'COMP49', 45: 'COMP5', 46: 'COMP50', 47: 'COMP51', 48: 'COMP52', 49: 'COMP53', 50: 'COMP54', 51: 'COMP55', 52: 'COMP56', 53: 'COMP57', 54: 'COMP58', 55: 'COMP59', 56: 'COMP6', 57: 'COMP60', 58: 'COMP61', 59: 'COMP62', 60: 'COMP7', 61: 'COMP8', 62: 'COMP9'}, 'jobType': {0: 'CEO', 1: 'CFO', 2: 'CTO', 3: 'JANITOR', 4: 'JUNIOR', 5: 'MANAGER', 6: 'SENIOR', 7: 'VICE_PRESIDENT'}, 'degree': {0: 'BACHELORS', 1: 'DOCTORAL', 2: 'HIGH_SCHOOL', 3: 'MASTERS', 4: 'NONE'}, 'major': {0: 'BIOLOGY', 1: 'BUSINESS', 2: 'CHEMISTRY', 3: 'COMPSCI', 4: 'ENGINEERING', 5: 'LITERATURE', 6: 'MATH', 7: 'NONE', 8: 'PHYSICS'}, 'industry': {0: 'AUTO', 1: 'EDUCATION', 2: 'FINANCE', 3: 'HEALTH', 4: 'OIL', 5: 'SERVICE', 6: 'WEB'}}}) 
+
+  ('#### colcat to onehot',) 
+companyId 63 (2000, 5)
+jobType 8 (2000, 67)
+degree 5 (2000, 74)
+major 9 (2000, 78)
+industry 7 (2000, 86)
+
+  (                  companyId_COMP0  ...  industry_WEB
+jobId                              ...              
+JOB1362684407687                0  ...             0
+JOB1362684407688                0  ...             1
+JOB1362684407689                0  ...             0
+JOB1362684407690                0  ...             0
+JOB1362684407691                0  ...             0
+
+[5 rows x 92 columns],) 
+
+  ('#### Colcat to integer encoding ',) 
+
+  ('#####  Cross Features From OneHot Features   ######################################',) 
+
+  (jobId                                       JOB1362684407687  JOB1362684407688
+jobType_CEO-degree_BACHELORS                               0                 0
+jobType_CEO-degree_DOCTORAL                                0                 0
+jobType_CEO-degree_HIGH_SCHOOL                             0                 1
+jobType_CEO-degree_MASTERS                                 0                 0
+jobType_CEO-degree_NONE                                    0                 0
+...                                                      ...               ...
+industry_FINANCE-yearsExperience_bin_0                     0                 0
+industry_FINANCE-yearsExperience_bin_4                     0                 0
+industry_SERVICE-yearsExperience_bin_0                     0                 0
+industry_SERVICE-yearsExperience_bin_7                     0                 0
+industry_SERVICE-milesFromMetropolis_bin_5                 0                 0
+
+[184 rows x 2 columns],) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline/',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colid.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colid.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum_binmap.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colnum_binmap.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat_bin_map.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcat_bin_map.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcross_single_onehot_select.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcross_single_onehot_select.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcross_pair_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcross_pair.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colcross_pair.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//coldate.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//coldate.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//coltext.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//coltext.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//coly.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//coly.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//y_norm_fun.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//y_norm_fun.pkl',) 
+----------dfXy----------
+                  yearsExperience  ...  industry_SERVICE-milesFromMetropolis_bin_5
+jobId                              ...                                            
+JOB1362684407687             10.0  ...                                           0
+JOB1362684407688              3.0  ...                                           0
+JOB1362684407689             10.0  ...                                           0
+JOB1362684407690              8.0  ...                                           0
+JOB1362684407691              8.0  ...                                           0
+...                           ...  ...                                         ...
+JOB1362684409682             10.0  ...                                           0
+JOB1362684409683             21.0  ...                                           0
+JOB1362684409684              0.0  ...                                           0
+JOB1362684409685             19.0  ...                                           0
+JOB1362684409686              3.0  ...                                           0
+
+[2000 rows x 311 columns]
+----------dfXy.columns----------
+Index(['yearsExperience', 'milesFromMetropolis', 'companyId', 'jobType',
+       'degree', 'major', 'industry', 'salary', 'yearsExperience_bin',
+       'milesFromMetropolis_bin', 'yearsExperience_bin_0',
+       'yearsExperience_bin_1', 'yearsExperience_bin_2',
+       'yearsExperience_bin_3', 'yearsExperience_bin_4',
+       'yearsExperience_bin_5', 'yearsExperience_bin_6',
+       'yearsExperience_bin_7', 'yearsExperience_bin_8',
+       'yearsExperience_bin_9'],
+      dtype='object')
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//colsX.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/salary/a01_LGBMRegressor//pipeline//cols_family.pkl',) 
+{'colid': 'jobId', 'colnum': ['yearsExperience', 'milesFromMetropolis'], 'colnum_bin': ['yearsExperience_bin', 'milesFromMetropolis_bin'], 'colnum_onehot': ['yearsExperience_bin_0', 'yearsExperience_bin_1', 'yearsExperience_bin_2', 'yearsExperience_bin_3', 'yearsExperience_bin_4', 'yearsExperience_bin_5', 'yearsExperience_bin_6', 'yearsExperience_bin_7', 'yearsExperience_bin_8', 'yearsExperience_bin_9', 'milesFromMetropolis_bin_0', 'milesFromMetropolis_bin_1', 'milesFromMetropolis_bin_2', 'milesFromMetropolis_bin_3', 'milesFromMetropolis_bin_4', 'milesFromMetropolis_bin_5', 'milesFromMetropolis_bin_6', 'milesFromMetropolis_bin_7', 'milesFromMetropolis_bin_8', 'milesFromMetropolis_bin_9'], 'colnum_binmap': OrderedDict([('yearsExperience', [-0.0001, 2.4, 4.8, 7.199999999999999, 9.6, 12.0, 14.399999999999999, 16.8, 19.2, 21.599999999999998, 24.0]), ('milesFromMetropolis', [-0.0001, 9.9, 19.8, 29.700000000000003, 39.6, 49.5, 59.400000000000006, 69.3, 79.2, 89.10000000000001, 99.0])]), 'colcat': ['companyId', 'jobType', 'degree', 'major', 'industry'], 'colcat_bin': ['companyId_int', 'jobType_int', 'degree_int', 'major_int', 'industry_int'], 'colcat_onehot': ['companyId_COMP0', 'companyId_COMP1', 'companyId_COMP10', 'companyId_COMP11', 'companyId_COMP12', 'companyId_COMP13', 'companyId_COMP14', 'companyId_COMP15', 'companyId_COMP16', 'companyId_COMP17', 'companyId_COMP18', 'companyId_COMP19', 'companyId_COMP2', 'companyId_COMP20', 'companyId_COMP21', 'companyId_COMP22', 'companyId_COMP23', 'companyId_COMP24', 'companyId_COMP25', 'companyId_COMP26', 'companyId_COMP27', 'companyId_COMP28', 'companyId_COMP29', 'companyId_COMP3', 'companyId_COMP30', 'companyId_COMP31', 'companyId_COMP32', 'companyId_COMP33', 'companyId_COMP34', 'companyId_COMP35', 'companyId_COMP36', 'companyId_COMP37', 'companyId_COMP38', 'companyId_COMP39', 'companyId_COMP4', 'companyId_COMP40', 'companyId_COMP41', 'companyId_COMP42', 'companyId_COMP43', 'companyId_COMP44', 'companyId_COMP45', 'companyId_COMP46', 'companyId_COMP47', 'companyId_COMP48', 'companyId_COMP49', 'companyId_COMP5', 'companyId_COMP50', 'companyId_COMP51', 'companyId_COMP52', 'companyId_COMP53', 'companyId_COMP54', 'companyId_COMP55', 'companyId_COMP56', 'companyId_COMP57', 'companyId_COMP58', 'companyId_COMP59', 'companyId_COMP6', 'companyId_COMP60', 'companyId_COMP61', 'companyId_COMP62', 'companyId_COMP7', 'companyId_COMP8', 'companyId_COMP9', 'jobType_CEO', 'jobType_CFO', 'jobType_CTO', 'jobType_JANITOR', 'jobType_JUNIOR', 'jobType_MANAGER', 'jobType_SENIOR', 'jobType_VICE_PRESIDENT', 'degree_BACHELORS', 'degree_DOCTORAL', 'degree_HIGH_SCHOOL', 'degree_MASTERS', 'degree_NONE', 'major_BIOLOGY', 'major_BUSINESS', 'major_CHEMISTRY', 'major_COMPSCI', 'major_ENGINEERING', 'major_LITERATURE', 'major_MATH', 'major_NONE', 'major_PHYSICS', 'industry_AUTO', 'industry_EDUCATION', 'industry_FINANCE', 'industry_HEALTH', 'industry_OIL', 'industry_SERVICE', 'industry_WEB'], 'colcat_bin_map': {'companyId': {'decode': {0: 'COMP37', 1: 'COMP19', 2: 'COMP52', 3: 'COMP38', 4: 'COMP7', 5: 'COMP15', 6: 'COMP24', 7: 'COMP20', 8: 'COMP41', 9: 'COMP56', 10: 'COMP4', 11: 'COMP54', 12: 'COMP57', 13: 'COMP14', 14: 'COMP61', 15: 'COMP58', 16: 'COMP3', 17: 'COMP44', 18: 'COMP30', 19: 'COMP27', 20: 'COMP34', 21: 'COMP11', 22: 'COMP31', 23: 'COMP49', 24: 'COMP0', 25: 'COMP1', 26: 'COMP36', 27: 'COMP47', 28: 'COMP8', 29: 'COMP42', 30: 'COMP50', 31: 'COMP53', 32: 'COMP48', 33: 'COMP45', 34: 'COMP46', 35: 'COMP2', 36: 'COMP5', 37: 'COMP55', 38: 'COMP29', 39: 'COMP40', 40: 'COMP33', 41: 'COMP22', 42: 'COMP12', 43: 'COMP25', 44: 'COMP6', 45: 'COMP23', 46: 'COMP17', 47: 'COMP28', 48: 'COMP21', 49: 'COMP26', 50: 'COMP43', 51: 'COMP51', 52: 'COMP10', 53: 'COMP59', 54: 'COMP13', 55: 'COMP39', 56: 'COMP16', 57: 'COMP9', 58: 'COMP32', 59: 'COMP62', 60: 'COMP35', 61: 'COMP18', 62: 'COMP60'}, 'encode': {'COMP37': 0, 'COMP19': 1, 'COMP52': 2, 'COMP38': 3, 'COMP7': 4, 'COMP15': 5, 'COMP24': 6, 'COMP20': 7, 'COMP41': 8, 'COMP56': 9, 'COMP4': 10, 'COMP54': 11, 'COMP57': 12, 'COMP14': 13, 'COMP61': 14, 'COMP58': 15, 'COMP3': 16, 'COMP44': 17, 'COMP30': 18, 'COMP27': 19, 'COMP34': 20, 'COMP11': 21, 'COMP31': 22, 'COMP49': 23, 'COMP0': 24, 'COMP1': 25, 'COMP36': 26, 'COMP47': 27, 'COMP8': 28, 'COMP42': 29, 'COMP50': 30, 'COMP53': 31, 'COMP48': 32, 'COMP45': 33, 'COMP46': 34, 'COMP2': 35, 'COMP5': 36, 'COMP55': 37, 'COMP29': 38, 'COMP40': 39, 'COMP33': 40, 'COMP22': 41, 'COMP12': 42, 'COMP25': 43, 'COMP6': 44, 'COMP23': 45, 'COMP17': 46, 'COMP28': 47, 'COMP21': 48, 'COMP26': 49, 'COMP43': 50, 'COMP51': 51, 'COMP10': 52, 'COMP59': 53, 'COMP13': 54, 'COMP39': 55, 'COMP16': 56, 'COMP9': 57, 'COMP32': 58, 'COMP62': 59, 'COMP35': 60, 'COMP18': 61, 'COMP60': 62}}, 'jobType': {'decode': {0: 'CFO', 1: 'CEO', 2: 'VICE_PRESIDENT', 3: 'MANAGER', 4: 'JUNIOR', 5: 'JANITOR', 6: 'CTO', 7: 'SENIOR'}, 'encode': {'CFO': 0, 'CEO': 1, 'VICE_PRESIDENT': 2, 'MANAGER': 3, 'JUNIOR': 4, 'JANITOR': 5, 'CTO': 6, 'SENIOR': 7}}, 'degree': {'decode': {0: 'MASTERS', 1: 'HIGH_SCHOOL', 2: 'DOCTORAL', 3: 'BACHELORS', 4: 'NONE'}, 'encode': {'MASTERS': 0, 'HIGH_SCHOOL': 1, 'DOCTORAL': 2, 'BACHELORS': 3, 'NONE': 4}}, 'major': {'decode': {0: 'MATH', 1: 'NONE', 2: 'PHYSICS', 3: 'CHEMISTRY', 4: 'COMPSCI', 5: 'BIOLOGY', 6: 'LITERATURE', 7: 'BUSINESS', 8: 'ENGINEERING'}, 'encode': {'MATH': 0, 'NONE': 1, 'PHYSICS': 2, 'CHEMISTRY': 3, 'COMPSCI': 4, 'BIOLOGY': 5, 'LITERATURE': 6, 'BUSINESS': 7, 'ENGINEERING': 8}}, 'industry': {'decode': {0: 'HEALTH', 1: 'WEB', 2: 'AUTO', 3: 'FINANCE', 4: 'EDUCATION', 5: 'OIL', 6: 'SERVICE'}, 'encode': {'HEALTH': 0, 'WEB': 1, 'AUTO': 2, 'FINANCE': 3, 'EDUCATION': 4, 'OIL': 5, 'SERVICE': 6}}}, 'colcross_single_onehot_select': ['jobType_CEO', 'jobType_CFO', 'jobType_CTO', 'jobType_JANITOR', 'jobType_JUNIOR', 'jobType_MANAGER', 'jobType_SENIOR', 'jobType_VICE_PRESIDENT', 'degree_BACHELORS', 'degree_DOCTORAL', 'degree_HIGH_SCHOOL', 'degree_MASTERS', 'degree_NONE', 'major_BIOLOGY', 'major_BUSINESS', 'major_CHEMISTRY', 'major_COMPSCI', 'major_ENGINEERING', 'major_LITERATURE', 'major_MATH', 'major_NONE', 'major_PHYSICS', 'industry_AUTO', 'industry_EDUCATION', 'industry_FINANCE', 'industry_HEALTH', 'industry_OIL', 'industry_SERVICE', 'industry_WEB', 'yearsExperience_bin_0', 'yearsExperience_bin_1', 'yearsExperience_bin_2', 'yearsExperience_bin_3', 'yearsExperience_bin_4', 'yearsExperience_bin_5', 'yearsExperience_bin_6', 'yearsExperience_bin_7', 'yearsExperience_bin_8', 'yearsExperience_bin_9', 'milesFromMetropolis_bin_0', 'milesFromMetropolis_bin_1', 'milesFromMetropolis_bin_2', 'milesFromMetropolis_bin_3', 'milesFromMetropolis_bin_4', 'milesFromMetropolis_bin_5', 'milesFromMetropolis_bin_6', 'milesFromMetropolis_bin_7', 'milesFromMetropolis_bin_8', 'milesFromMetropolis_bin_9'], 'colcross_pair': [('jobType_CEO', 'degree_BACHELORS', 0.03), ('jobType_CEO', 'degree_DOCTORAL', 0.028), ('jobType_CEO', 'degree_HIGH_SCHOOL', 0.024), ('jobType_CEO', 'degree_MASTERS', 0.0245), ('jobType_CEO', 'degree_NONE', 0.023), ('jobType_CEO', 'major_NONE', 0.057), ('jobType_CEO', 'industry_AUTO', 0.0205), ('jobType_CEO', 'yearsExperience_bin_0', 0.0205), ('jobType_CFO', 'degree_BACHELORS', 0.027), ('jobType_CFO', 'degree_MASTERS', 0.0225), ('jobType_CFO', 'degree_NONE', 0.0245), ('jobType_CFO', 'major_NONE', 0.054), ('jobType_CTO', 'degree_BACHELORS', 0.0245), ('jobType_CTO', 'degree_DOCTORAL', 0.021), ('jobType_CTO', 'degree_HIGH_SCHOOL', 0.0235), ('jobType_CTO', 'degree_MASTERS', 0.0265), ('jobType_CTO', 'degree_NONE', 0.024), ('jobType_CTO', 'major_NONE', 0.0585), ('jobType_CTO', 'industry_HEALTH', 0.021), ('jobType_JANITOR', 'degree_HIGH_SCHOOL', 0.057), ('jobType_JANITOR', 'degree_NONE', 0.065), ('jobType_JANITOR', 'major_NONE', 0.122), ('jobType_JANITOR', 'industry_AUTO', 0.022), ('jobType_JANITOR', 'industry_SERVICE', 0.021), ('jobType_JUNIOR', 'degree_BACHELORS', 0.022), ('jobType_JUNIOR', 'degree_DOCTORAL', 0.028), ('jobType_JUNIOR', 'degree_HIGH_SCHOOL', 0.0205), ('jobType_JUNIOR', 'degree_MASTERS', 0.0295), ('jobType_JUNIOR', 'degree_NONE', 0.03), ('jobType_JUNIOR', 'major_NONE', 0.061), ('jobType_JUNIOR', 'industry_AUTO', 0.021), ('jobType_JUNIOR', 'industry_OIL', 0.021), ('jobType_JUNIOR', 'industry_WEB', 0.0245), ('jobType_MANAGER', 'degree_BACHELORS', 0.026), ('jobType_MANAGER', 'degree_DOCTORAL', 0.024), ('jobType_MANAGER', 'degree_HIGH_SCHOOL', 0.025), ('jobType_MANAGER', 'degree_MASTERS', 0.024), ('jobType_MANAGER', 'degree_NONE', 0.028), ('jobType_MANAGER', 'major_NONE', 0.064), ('jobType_MANAGER', 'industry_AUTO', 0.022), ('jobType_MANAGER', 'industry_OIL', 0.0215), ('jobType_SENIOR', 'degree_BACHELORS', 0.0275), ('jobType_SENIOR', 'degree_HIGH_SCHOOL', 0.0255), ('jobType_SENIOR', 'degree_MASTERS', 0.031), ('jobType_SENIOR', 'degree_NONE', 0.0265), ('jobType_SENIOR', 'major_NONE', 0.0575), ('jobType_SENIOR', 'industry_FINANCE', 0.0205), ('jobType_SENIOR', 'industry_HEALTH', 0.022), ('jobType_VICE_PRESIDENT', 'degree_BACHELORS', 0.029), ('jobType_VICE_PRESIDENT', 'degree_DOCTORAL', 0.0265), ('jobType_VICE_PRESIDENT', 'degree_HIGH_SCHOOL', 0.0255), ('jobType_VICE_PRESIDENT', 'degree_MASTERS', 0.024), ('jobType_VICE_PRESIDENT', 'degree_NONE', 0.0255), ('jobType_VICE_PRESIDENT', 'major_NONE', 0.0625), ('jobType_VICE_PRESIDENT', 'industry_FINANCE', 0.021), ('jobType_VICE_PRESIDENT', 'industry_SERVICE', 0.0205), ('degree_BACHELORS', 'major_CHEMISTRY', 0.022), ('degree_BACHELORS', 'major_ENGINEERING', 0.028), ('degree_BACHELORS', 'major_MATH', 0.0215), ('degree_BACHELORS', 'major_NONE', 0.026), ('degree_BACHELORS', 'industry_AUTO', 0.027), ('degree_BACHELORS', 'industry_EDUCATION', 0.03), ('degree_BACHELORS', 'industry_FINANCE', 0.0245), ('degree_BACHELORS', 'industry_HEALTH', 0.032), ('degree_BACHELORS', 'industry_OIL', 0.024), ('degree_BACHELORS', 'industry_SERVICE', 0.021), ('degree_BACHELORS', 'industry_WEB', 0.0275), ('degree_BACHELORS', 'yearsExperience_bin_2', 0.0245), ('degree_BACHELORS', 'yearsExperience_bin_4', 0.0235), ('degree_BACHELORS', 'yearsExperience_bin_7', 0.024), ('degree_BACHELORS', 'yearsExperience_bin_9', 0.0245), ('degree_BACHELORS', 'milesFromMetropolis_bin_1', 0.0245), ('degree_BACHELORS', 'milesFromMetropolis_bin_5', 0.0215), ('degree_BACHELORS', 'milesFromMetropolis_bin_6', 0.0205), ('degree_DOCTORAL', 'major_COMPSCI', 0.0215), ('degree_DOCTORAL', 'major_MATH', 0.021), ('degree_DOCTORAL', 'major_NONE', 0.0225), ('degree_DOCTORAL', 'industry_AUTO', 0.021), ('degree_DOCTORAL', 'industry_EDUCATION', 0.0235), ('degree_DOCTORAL', 'industry_FINANCE', 0.022), ('degree_DOCTORAL', 'industry_HEALTH', 0.0285), ('degree_DOCTORAL', 'industry_OIL', 0.03), ('degree_DOCTORAL', 'industry_WEB', 0.023), ('degree_DOCTORAL', 'yearsExperience_bin_2', 0.021), ('degree_DOCTORAL', 'yearsExperience_bin_4', 0.0245), ('degree_DOCTORAL', 'milesFromMetropolis_bin_9', 0.0205), ('degree_HIGH_SCHOOL', 'major_NONE', 0.22), ('degree_HIGH_SCHOOL', 'industry_AUTO', 0.0295), ('degree_HIGH_SCHOOL', 'industry_EDUCATION', 0.0295), ('degree_HIGH_SCHOOL', 'industry_FINANCE', 0.0335), ('degree_HIGH_SCHOOL', 'industry_HEALTH', 0.034), ('degree_HIGH_SCHOOL', 'industry_OIL', 0.0295), ('degree_HIGH_SCHOOL', 'industry_SERVICE', 0.0325), ('degree_HIGH_SCHOOL', 'industry_WEB', 0.0315), ('degree_HIGH_SCHOOL', 'yearsExperience_bin_0', 0.031), ('degree_HIGH_SCHOOL', 'yearsExperience_bin_2', 0.025), ('degree_HIGH_SCHOOL', 'yearsExperience_bin_3', 0.0215), ('degree_HIGH_SCHOOL', 'yearsExperience_bin_4', 0.0275), ('degree_HIGH_SCHOOL', 'yearsExperience_bin_7', 0.0265), ('degree_HIGH_SCHOOL', 'yearsExperience_bin_9', 0.027), ('degree_HIGH_SCHOOL', 'milesFromMetropolis_bin_0', 0.0235), ('degree_HIGH_SCHOOL', 'milesFromMetropolis_bin_1', 0.0295), ('degree_HIGH_SCHOOL', 'milesFromMetropolis_bin_2', 0.0245), ('degree_HIGH_SCHOOL', 'milesFromMetropolis_bin_3', 0.022), ('degree_HIGH_SCHOOL', 'milesFromMetropolis_bin_4', 0.021), ('degree_HIGH_SCHOOL', 'milesFromMetropolis_bin_5', 0.027), ('degree_HIGH_SCHOOL', 'milesFromMetropolis_bin_6', 0.0225), ('degree_MASTERS', 'major_BIOLOGY', 0.0235), ('degree_MASTERS', 'major_CHEMISTRY', 0.0215), ('degree_MASTERS', 'major_ENGINEERING', 0.0225), ('degree_MASTERS', 'major_MATH', 0.025), ('degree_MASTERS', 'major_NONE', 0.0215), ('degree_MASTERS', 'industry_AUTO', 0.0295), ('degree_MASTERS', 'industry_EDUCATION', 0.0245), ('degree_MASTERS', 'industry_FINANCE', 0.027), ('degree_MASTERS', 'industry_HEALTH', 0.0215), ('degree_MASTERS', 'industry_OIL', 0.0275), ('degree_MASTERS', 'industry_SERVICE', 0.0245), ('degree_MASTERS', 'industry_WEB', 0.0275), ('degree_MASTERS', 'yearsExperience_bin_0', 0.0245), ('degree_MASTERS', 'yearsExperience_bin_4', 0.0205), ('degree_MASTERS', 'yearsExperience_bin_7', 0.025), ('degree_MASTERS', 'yearsExperience_bin_9', 0.024), ('degree_MASTERS', 'milesFromMetropolis_bin_2', 0.0235), ('degree_MASTERS', 'milesFromMetropolis_bin_9', 0.0225), ('degree_NONE', 'major_NONE', 0.2465), ('degree_NONE', 'industry_AUTO', 0.0435), ('degree_NONE', 'industry_EDUCATION', 0.0325), ('degree_NONE', 'industry_FINANCE', 0.037), ('degree_NONE', 'industry_HEALTH', 0.0285), ('degree_NONE', 'industry_OIL', 0.032), ('degree_NONE', 'industry_SERVICE', 0.04), ('degree_NONE', 'industry_WEB', 0.033), ('degree_NONE', 'yearsExperience_bin_0', 0.035), ('degree_NONE', 'yearsExperience_bin_2', 0.024), ('degree_NONE', 'yearsExperience_bin_4', 0.027), ('degree_NONE', 'yearsExperience_bin_6', 0.023), ('degree_NONE', 'yearsExperience_bin_7', 0.0335), ('degree_NONE', 'yearsExperience_bin_8', 0.0235), ('degree_NONE', 'yearsExperience_bin_9', 0.0255), ('degree_NONE', 'milesFromMetropolis_bin_2', 0.0255), ('degree_NONE', 'milesFromMetropolis_bin_3', 0.0265), ('degree_NONE', 'milesFromMetropolis_bin_4', 0.028), ('degree_NONE', 'milesFromMetropolis_bin_5', 0.024), ('degree_NONE', 'milesFromMetropolis_bin_6', 0.0315), ('degree_NONE', 'milesFromMetropolis_bin_7', 0.0215), ('degree_NONE', 'milesFromMetropolis_bin_8', 0.027), ('degree_NONE', 'milesFromMetropolis_bin_9', 0.0255), ('major_NONE', 'industry_AUTO', 0.0815), ('major_NONE', 'industry_EDUCATION', 0.078), ('major_NONE', 'industry_FINANCE', 0.077), ('major_NONE', 'industry_HEALTH', 0.074), ('major_NONE', 'industry_OIL', 0.0715), ('major_NONE', 'industry_SERVICE', 0.081), ('major_NONE', 'industry_WEB', 0.0735), ('major_NONE', 'yearsExperience_bin_0', 0.073), ('major_NONE', 'yearsExperience_bin_1', 0.038), ('major_NONE', 'yearsExperience_bin_2', 0.057), ('major_NONE', 'yearsExperience_bin_3', 0.0435), ('major_NONE', 'yearsExperience_bin_4', 0.0635), ('major_NONE', 'yearsExperience_bin_5', 0.04), ('major_NONE', 'yearsExperience_bin_6', 0.049), ('major_NONE', 'yearsExperience_bin_7', 0.0675), ('major_NONE', 'yearsExperience_bin_8', 0.044), ('major_NONE', 'yearsExperience_bin_9', 0.061), ('major_NONE', 'milesFromMetropolis_bin_0', 0.051), ('major_NONE', 'milesFromMetropolis_bin_1', 0.0565), ('major_NONE', 'milesFromMetropolis_bin_2', 0.0565), ('major_NONE', 'milesFromMetropolis_bin_3', 0.0545), ('major_NONE', 'milesFromMetropolis_bin_4', 0.052), ('major_NONE', 'milesFromMetropolis_bin_5', 0.0575), ('major_NONE', 'milesFromMetropolis_bin_6', 0.063), ('major_NONE', 'milesFromMetropolis_bin_7', 0.048), ('major_NONE', 'milesFromMetropolis_bin_8', 0.044), ('major_NONE', 'milesFromMetropolis_bin_9', 0.0535), ('industry_AUTO', 'yearsExperience_bin_9', 0.023), ('industry_AUTO', 'milesFromMetropolis_bin_2', 0.0205), ('industry_EDUCATION', 'yearsExperience_bin_0', 0.0205), ('industry_EDUCATION', 'yearsExperience_bin_7', 0.0205), ('industry_FINANCE', 'yearsExperience_bin_0', 0.0215), ('industry_FINANCE', 'yearsExperience_bin_4', 0.0225), ('industry_SERVICE', 'yearsExperience_bin_0', 0.0205), ('industry_SERVICE', 'yearsExperience_bin_7', 0.021), ('industry_SERVICE', 'milesFromMetropolis_bin_5', 0.021)], 'coldate': [], 'coltext': [], 'coly': 'salary', 'y_norm_fun': <function salary_lightgbm.<locals>.pre_process_fun at 0x00000285B4EDCAE8>, 'colX': ['yearsExperience', 'milesFromMetropolis', 'companyId', 'jobType', 'degree', 'major', 'industry', 'yearsExperience_bin', 'milesFromMetropolis_bin', 'yearsExperience_bin_0', 'yearsExperience_bin_1', 'yearsExperience_bin_2', 'yearsExperience_bin_3', 'yearsExperience_bin_4', 'yearsExperience_bin_5', 'yearsExperience_bin_6', 'yearsExperience_bin_7', 'yearsExperience_bin_8', 'yearsExperience_bin_9', 'milesFromMetropolis_bin_0', 'milesFromMetropolis_bin_1', 'milesFromMetropolis_bin_2', 'milesFromMetropolis_bin_3', 'milesFromMetropolis_bin_4', 'milesFromMetropolis_bin_5', 'milesFromMetropolis_bin_6', 'milesFromMetropolis_bin_7', 'milesFromMetropolis_bin_8', 'milesFromMetropolis_bin_9', 'companyId_int', 'jobType_int', 'degree_int', 'major_int', 'industry_int', 'companyId_COMP0', 'companyId_COMP1', 'companyId_COMP10', 'companyId_COMP11', 'companyId_COMP12', 'companyId_COMP13', 'companyId_COMP14', 'companyId_COMP15', 'companyId_COMP16', 'companyId_COMP17', 'companyId_COMP18', 'companyId_COMP19', 'companyId_COMP2', 'companyId_COMP20', 'companyId_COMP21', 'companyId_COMP22', 'companyId_COMP23', 'companyId_COMP24', 'companyId_COMP25', 'companyId_COMP26', 'companyId_COMP27', 'companyId_COMP28', 'companyId_COMP29', 'companyId_COMP3', 'companyId_COMP30', 'companyId_COMP31', 'companyId_COMP32', 'companyId_COMP33', 'companyId_COMP34', 'companyId_COMP35', 'companyId_COMP36', 'companyId_COMP37', 'companyId_COMP38', 'companyId_COMP39', 'companyId_COMP4', 'companyId_COMP40', 'companyId_COMP41', 'companyId_COMP42', 'companyId_COMP43', 'companyId_COMP44', 'companyId_COMP45', 'companyId_COMP46', 'companyId_COMP47', 'companyId_COMP48', 'companyId_COMP49', 'companyId_COMP5', 'companyId_COMP50', 'companyId_COMP51', 'companyId_COMP52', 'companyId_COMP53', 'companyId_COMP54', 'companyId_COMP55', 'companyId_COMP56', 'companyId_COMP57', 'companyId_COMP58', 'companyId_COMP59', 'companyId_COMP6', 'companyId_COMP60', 'companyId_COMP61', 'companyId_COMP62', 'companyId_COMP7', 'companyId_COMP8', 'companyId_COMP9', 'jobType_CEO', 'jobType_CFO', 'jobType_CTO', 'jobType_JANITOR', 'jobType_JUNIOR', 'jobType_MANAGER', 'jobType_SENIOR', 'jobType_VICE_PRESIDENT', 'degree_BACHELORS', 'degree_DOCTORAL', 'degree_HIGH_SCHOOL', 'degree_MASTERS', 'degree_NONE', 'major_BIOLOGY', 'major_BUSINESS', 'major_CHEMISTRY', 'major_COMPSCI', 'major_ENGINEERING', 'major_LITERATURE', 'major_MATH', 'major_NONE', 'major_PHYSICS', 'industry_AUTO', 'industry_EDUCATION', 'industry_FINANCE', 'industry_HEALTH', 'industry_OIL', 'industry_SERVICE', 'industry_WEB', 'jobType_CEO-degree_BACHELORS', 'jobType_CEO-degree_DOCTORAL', 'jobType_CEO-degree_HIGH_SCHOOL', 'jobType_CEO-degree_MASTERS', 'jobType_CEO-degree_NONE', 'jobType_CEO-major_NONE', 'jobType_CEO-industry_AUTO', 'jobType_CEO-yearsExperience_bin_0', 'jobType_CFO-degree_BACHELORS', 'jobType_CFO-degree_MASTERS', 'jobType_CFO-degree_NONE', 'jobType_CFO-major_NONE', 'jobType_CTO-degree_BACHELORS', 'jobType_CTO-degree_DOCTORAL', 'jobType_CTO-degree_HIGH_SCHOOL', 'jobType_CTO-degree_MASTERS', 'jobType_CTO-degree_NONE', 'jobType_CTO-major_NONE', 'jobType_CTO-industry_HEALTH', 'jobType_JANITOR-degree_HIGH_SCHOOL', 'jobType_JANITOR-degree_NONE', 'jobType_JANITOR-major_NONE', 'jobType_JANITOR-industry_AUTO', 'jobType_JANITOR-industry_SERVICE', 'jobType_JUNIOR-degree_BACHELORS', 'jobType_JUNIOR-degree_DOCTORAL', 'jobType_JUNIOR-degree_HIGH_SCHOOL', 'jobType_JUNIOR-degree_MASTERS', 'jobType_JUNIOR-degree_NONE', 'jobType_JUNIOR-major_NONE', 'jobType_JUNIOR-industry_AUTO', 'jobType_JUNIOR-industry_OIL', 'jobType_JUNIOR-industry_WEB', 'jobType_MANAGER-degree_BACHELORS', 'jobType_MANAGER-degree_DOCTORAL', 'jobType_MANAGER-degree_HIGH_SCHOOL', 'jobType_MANAGER-degree_MASTERS', 'jobType_MANAGER-degree_NONE', 'jobType_MANAGER-major_NONE', 'jobType_MANAGER-industry_AUTO', 'jobType_MANAGER-industry_OIL', 'jobType_SENIOR-degree_BACHELORS', 'jobType_SENIOR-degree_HIGH_SCHOOL', 'jobType_SENIOR-degree_MASTERS', 'jobType_SENIOR-degree_NONE', 'jobType_SENIOR-major_NONE', 'jobType_SENIOR-industry_FINANCE', 'jobType_SENIOR-industry_HEALTH', 'jobType_VICE_PRESIDENT-degree_BACHELORS', 'jobType_VICE_PRESIDENT-degree_DOCTORAL', 'jobType_VICE_PRESIDENT-degree_HIGH_SCHOOL', 'jobType_VICE_PRESIDENT-degree_MASTERS', 'jobType_VICE_PRESIDENT-degree_NONE', 'jobType_VICE_PRESIDENT-major_NONE', 'jobType_VICE_PRESIDENT-industry_FINANCE', 'jobType_VICE_PRESIDENT-industry_SERVICE', 'degree_BACHELORS-major_CHEMISTRY', 'degree_BACHELORS-major_ENGINEERING', 'degree_BACHELORS-major_MATH', 'degree_BACHELORS-major_NONE', 'degree_BACHELORS-industry_AUTO', 'degree_BACHELORS-industry_EDUCATION', 'degree_BACHELORS-industry_FINANCE', 'degree_BACHELORS-industry_HEALTH', 'degree_BACHELORS-industry_OIL', 'degree_BACHELORS-industry_SERVICE', 'degree_BACHELORS-industry_WEB', 'degree_BACHELORS-yearsExperience_bin_2', 'degree_BACHELORS-yearsExperience_bin_4', 'degree_BACHELORS-yearsExperience_bin_7', 'degree_BACHELORS-yearsExperience_bin_9', 'degree_BACHELORS-milesFromMetropolis_bin_1', 'degree_BACHELORS-milesFromMetropolis_bin_5', 'degree_BACHELORS-milesFromMetropolis_bin_6', 'degree_DOCTORAL-major_COMPSCI', 'degree_DOCTORAL-major_MATH', 'degree_DOCTORAL-major_NONE', 'degree_DOCTORAL-industry_AUTO', 'degree_DOCTORAL-industry_EDUCATION', 'degree_DOCTORAL-industry_FINANCE', 'degree_DOCTORAL-industry_HEALTH', 'degree_DOCTORAL-industry_OIL', 'degree_DOCTORAL-industry_WEB', 'degree_DOCTORAL-yearsExperience_bin_2', 'degree_DOCTORAL-yearsExperience_bin_4', 'degree_DOCTORAL-milesFromMetropolis_bin_9', 'degree_HIGH_SCHOOL-major_NONE', 'degree_HIGH_SCHOOL-industry_AUTO', 'degree_HIGH_SCHOOL-industry_EDUCATION', 'degree_HIGH_SCHOOL-industry_FINANCE', 'degree_HIGH_SCHOOL-industry_HEALTH', 'degree_HIGH_SCHOOL-industry_OIL', 'degree_HIGH_SCHOOL-industry_SERVICE', 'degree_HIGH_SCHOOL-industry_WEB', 'degree_HIGH_SCHOOL-yearsExperience_bin_0', 'degree_HIGH_SCHOOL-yearsExperience_bin_2', 'degree_HIGH_SCHOOL-yearsExperience_bin_3', 'degree_HIGH_SCHOOL-yearsExperience_bin_4', 'degree_HIGH_SCHOOL-yearsExperience_bin_7', 'degree_HIGH_SCHOOL-yearsExperience_bin_9', 'degree_HIGH_SCHOOL-milesFromMetropolis_bin_0', 'degree_HIGH_SCHOOL-milesFromMetropolis_bin_1', 'degree_HIGH_SCHOOL-milesFromMetropolis_bin_2', 'degree_HIGH_SCHOOL-milesFromMetropolis_bin_3', 'degree_HIGH_SCHOOL-milesFromMetropolis_bin_4', 'degree_HIGH_SCHOOL-milesFromMetropolis_bin_5', 'degree_HIGH_SCHOOL-milesFromMetropolis_bin_6', 'degree_MASTERS-major_BIOLOGY', 'degree_MASTERS-major_CHEMISTRY', 'degree_MASTERS-major_ENGINEERING', 'degree_MASTERS-major_MATH', 'degree_MASTERS-major_NONE', 'degree_MASTERS-industry_AUTO', 'degree_MASTERS-industry_EDUCATION', 'degree_MASTERS-industry_FINANCE', 'degree_MASTERS-industry_HEALTH', 'degree_MASTERS-industry_OIL', 'degree_MASTERS-industry_SERVICE', 'degree_MASTERS-industry_WEB', 'degree_MASTERS-yearsExperience_bin_0', 'degree_MASTERS-yearsExperience_bin_4', 'degree_MASTERS-yearsExperience_bin_7', 'degree_MASTERS-yearsExperience_bin_9', 'degree_MASTERS-milesFromMetropolis_bin_2', 'degree_MASTERS-milesFromMetropolis_bin_9', 'degree_NONE-major_NONE', 'degree_NONE-industry_AUTO', 'degree_NONE-industry_EDUCATION', 'degree_NONE-industry_FINANCE', 'degree_NONE-industry_HEALTH', 'degree_NONE-industry_OIL', 'degree_NONE-industry_SERVICE', 'degree_NONE-industry_WEB', 'degree_NONE-yearsExperience_bin_0', 'degree_NONE-yearsExperience_bin_2', 'degree_NONE-yearsExperience_bin_4', 'degree_NONE-yearsExperience_bin_6', 'degree_NONE-yearsExperience_bin_7', 'degree_NONE-yearsExperience_bin_8', 'degree_NONE-yearsExperience_bin_9', 'degree_NONE-milesFromMetropolis_bin_2', 'degree_NONE-milesFromMetropolis_bin_3', 'degree_NONE-milesFromMetropolis_bin_4', 'degree_NONE-milesFromMetropolis_bin_5', 'degree_NONE-milesFromMetropolis_bin_6', 'degree_NONE-milesFromMetropolis_bin_7', 'degree_NONE-milesFromMetropolis_bin_8', 'degree_NONE-milesFromMetropolis_bin_9', 'major_NONE-industry_AUTO', 'major_NONE-industry_EDUCATION', 'major_NONE-industry_FINANCE', 'major_NONE-industry_HEALTH', 'major_NONE-industry_OIL', 'major_NONE-industry_SERVICE', 'major_NONE-industry_WEB', 'major_NONE-yearsExperience_bin_0', 'major_NONE-yearsExperience_bin_1', 'major_NONE-yearsExperience_bin_2', 'major_NONE-yearsExperience_bin_3', 'major_NONE-yearsExperience_bin_4', 'major_NONE-yearsExperience_bin_5', 'major_NONE-yearsExperience_bin_6', 'major_NONE-yearsExperience_bin_7', 'major_NONE-yearsExperience_bin_8', 'major_NONE-yearsExperience_bin_9', 'major_NONE-milesFromMetropolis_bin_0', 'major_NONE-milesFromMetropolis_bin_1', 'major_NONE-milesFromMetropolis_bin_2', 'major_NONE-milesFromMetropolis_bin_3', 'major_NONE-milesFromMetropolis_bin_4', 'major_NONE-milesFromMetropolis_bin_5', 'major_NONE-milesFromMetropolis_bin_6', 'major_NONE-milesFromMetropolis_bin_7', 'major_NONE-milesFromMetropolis_bin_8', 'major_NONE-milesFromMetropolis_bin_9', 'industry_AUTO-yearsExperience_bin_9', 'industry_AUTO-milesFromMetropolis_bin_2', 'industry_EDUCATION-yearsExperience_bin_0', 'industry_EDUCATION-yearsExperience_bin_7', 'industry_FINANCE-yearsExperience_bin_0', 'industry_FINANCE-yearsExperience_bin_4', 'industry_SERVICE-yearsExperience_bin_0', 'industry_SERVICE-yearsExperience_bin_7', 'industry_SERVICE-milesFromMetropolis_bin_5']}
+-----
+
+  (['yearsExperience', 'milesFromMetropolis', 'companyId_int', 'jobType_int', 'degree_int', 'major_int', 'industry_int'], 'salary') 
+
+  ('######### finish #################################',) 

@@ -1,0 +1,347 @@
+os.getcwd /home/soheil/Soheil/lin-python/S/dsa2
+/home/soheil/Soheil/lin-python/S/dsa2
+/home/soheil/Soheil/lin-python/S/dsa2/
+/home/soheil/Soheil/lin-python/S/dsa2/data/
+/home/soheil/Soheil/lin-python/S/dsa2/
+os.getcwd /home/soheil/Soheil/lin-python/S/dsa2
+
+  #### Model Params Dynamic loading  ############################################### 
+
+  ('/home/soheil/Soheil/lin-python/S',) 
+/home/soheil/Soheil/lin-python/S/dsa2
+/home/soheil/Soheil/lin-python/S/dsa2/
+/home/soheil/Soheil/lin-python/S/dsa2/data/
+
+  {'model_pars': {'model_class': 'LGBMRegressor', 'model_path': '', 'model_pars': {'objective': 'huber'}, 'post_process_fun': <function airbnb_lightgbm.<locals>.post_process_fun at 0x7f8083834e50>, 'pre_process_pars': {'y_norm_fun': <function airbnb_lightgbm.<locals>.pre_process_fun at 0x7f808384ee50>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_coltext', 'pars': {}, 'cols_family': 'coltext', 'cols_out': 'coltext_svd', 'type': ''}, {'uri': 'source/preprocessors.py::pd_coldate', 'pars': {}, 'cols_family': 'coldate', 'cols_out': 'coldate', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}, 'compute_pars': {'metric_list': ['root_mean_squared_error', 'mean_absolute_error', 'explained_variance_score', 'r2_score', 'median_absolute_error']}, 'data_pars': {'cols_input_type': {'coly': 'price', 'colid': 'id', 'colcat': ['cancellation_policy', 'host_response_rate', 'host_response_time'], 'colnum': ['review_scores_communication', 'review_scores_location', 'review_scores_rating'], 'coltext': ['house_rules', 'neighborhood_overview', 'notes', 'street'], 'coldate': ['calendar_last_scraped', 'first_review', 'host_since'], 'colcross': ['review_scores_communication', 'review_scores_location', 'cancellation_policy', 'host_response_rate']}, 'cols_model_group': ['colnum', 'colcat_bin', 'coltext_svd'], 'filter_pars': {'ymax': 100000.0, 'ymin': 0.0}}, 'global_pars': {'config_path': '/home/soheil/Soheil/lin-python/S/dsa2//airbnb_regression.py', 'config_name': 'airbnb_lightgbm', 'path_data_preprocess': '/home/soheil/Soheil/lin-python/S/dsa2//data/input/airbnb/train/', 'path_data_train': '/home/soheil/Soheil/lin-python/S/dsa2//data/input/airbnb/train/', 'path_data_test': '/home/soheil/Soheil/lin-python/S/dsa2//data/input/airbnb/test/', 'path_train_output': '/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/', 'path_train_model': '/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/model/', 'path_features_store': '/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/features_store/', 'path_pipeline': '/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/pipeline/', 'path_pred_data': '/home/soheil/Soheil/lin-python/S/dsa2//data/input/airbnb/test/', 'path_pred_pipeline': '/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/pipeline/', 'path_pred_model': '/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/model/', 'path_pred_output': '/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/pred_airbnb_lightgbm/', 'n_sample': 5000}} 
+
+  /home/soheil/Soheil/lin-python/S/dsa2//data/input/airbnb/test/ /home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/model/ /home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/pred_airbnb_lightgbm/ 
+
+  ('loading', 'id', '/home/soheil/Soheil/lin-python/S/dsa2//data/input/airbnb/test/') 
+['/home/soheil/Soheil/lin-python/S/dsa2//data/input/airbnb/test/features.parquet']
+
+  ('dfX_raw',                                                0   ...                                   90
+id                                         316366  ...                               200125
+listing_url   https://www.airbnb.com/rooms/316366  ...  https://www.airbnb.com/rooms/200125
+scrape_id                          20181107122246  ...                       20181107122246
+last_scraped                           2018-11-07  ...                           2018-11-07
+
+[4 rows x 91 columns]) 
+
+  ('dfy not loaded', None, TypeError('expected str, bytes or os.PathLike object, not NoneType')) 
+/home/soheil/Soheil/lin-python/S/dsa2/
+
+  ('########### Load column by column type ##################################',) 
+
+  ({'coly': 'price', 'colid': 'id', 'colcat': ['cancellation_policy', 'host_response_rate', 'host_response_time'], 'colnum': ['review_scores_communication', 'review_scores_location', 'review_scores_rating'], 'coltext': ['house_rules', 'neighborhood_overview', 'notes', 'street'], 'coldate': ['calendar_last_scraped', 'first_review', 'host_since'], 'colcross': ['review_scores_communication', 'review_scores_location', 'cancellation_policy', 'host_response_rate']},) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, '#######################################################') 
+
+  ('/home/soheil/Soheil/lin-python/S/dsa2',) 
+/home/soheil/Soheil/lin-python/S/dsa2/
+                                listing_url  ...  reviews_per_month
+id                                           ...                   
+316366  https://www.airbnb.com/rooms/316366  ...               0.14
+321308  https://www.airbnb.com/rooms/321308  ...               0.59
+174391  https://www.airbnb.com/rooms/174391  ...               0.03
+196285  https://www.airbnb.com/rooms/196285  ...               1.06
+367634  https://www.airbnb.com/rooms/367634  ...               0.15
+...                                     ...  ...                ...
+260095  https://www.airbnb.com/rooms/260095  ...               0.67
+265416  https://www.airbnb.com/rooms/265416  ...               0.73
+245809  https://www.airbnb.com/rooms/245809  ...               0.42
+345373  https://www.airbnb.com/rooms/345373  ...               0.10
+200125  https://www.airbnb.com/rooms/200125  ...                NaN
+
+[91 rows x 94 columns] ['review_scores_communication', 'review_scores_location', 'review_scores_rating']
+
+  (OrderedDict([('review_scores_communication', [1.9999, 2.8, 3.6, 4.4, 5.2, 6.0, 6.800000000000001, 7.6000000000000005, 8.4, 9.2, 10.0]), ('review_scores_location', [5.9999, 6.4, 6.8, 7.2, 7.6, 8.0, 8.4, 8.8, 9.2, 9.6, 10.0]), ('review_scores_rating', [72.9999, 75.7, 78.4, 81.1, 83.8, 86.5, 89.2, 91.9, 94.6, 97.3, 100.0])]),) 
+
+  ('### colnum Map numerics to Category bin  ###########################################',) 
+review_scores_communication
+                                review_scores_communication                 
+                                                        min size   max  mean
+review_scores_communication_bin                                             
+-1                                                      NaN    4   NaN   NaN
+ 7                                                      8.0    4   8.0   8.0
+ 8                                                      9.0   19   9.0   9.0
+ 9                                                     10.0   64  10.0  10.0
+review_scores_location
+                           review_scores_location                 
+                                              min size   max  mean
+review_scores_location_bin                                        
+-1                                            NaN    4   NaN   NaN
+ 4                                            8.0    5   8.0   8.0
+ 7                                            9.0   38   9.0   9.0
+ 9                                           10.0   44  10.0  10.0
+review_scores_rating
+                         review_scores_rating                       
+                                          min size    max       mean
+review_scores_rating_bin                                            
+-1                                        NaN    4    NaN        NaN
+ 2                                       79.0    3   80.0  79.666664
+ 3                                       82.0    5   83.0  82.800003
+ 4                                       85.0    4   85.0  85.000000
+ 5                                       87.0    4   89.0  88.250000
+ 6                                       90.0    8   91.0  90.250000
+ 7                                       92.0   19   94.0  92.947365
+ 8                                       95.0   26   97.0  96.038460
+ 9                                       98.0   18  100.0  98.722221
+
+  (OrderedDict([('review_scores_communication', [1.9999, 2.8, 3.6, 4.4, 5.2, 6.0, 6.800000000000001, 7.6000000000000005, 8.4, 9.2, 10.0]), ('review_scores_location', [5.9999, 6.4, 6.8, 7.2, 7.6, 8.0, 8.4, 8.8, 9.2, 9.6, 10.0]), ('review_scores_rating', [72.9999, 75.7, 78.4, 81.1, 83.8, 86.5, 89.2, 91.9, 94.6, 97.3, 100.0])]),) 
+
+  (['review_scores_communication_bin', 'review_scores_location_bin', 'review_scores_rating_bin'],) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, '#######################################################') 
+
+  ('/home/soheil/Soheil/lin-python/S/dsa2',) 
+                                listing_url  ...  reviews_per_month
+id                                           ...                   
+316366  https://www.airbnb.com/rooms/316366  ...               0.14
+321308  https://www.airbnb.com/rooms/321308  ...               0.59
+174391  https://www.airbnb.com/rooms/174391  ...               0.03
+196285  https://www.airbnb.com/rooms/196285  ...               1.06
+367634  https://www.airbnb.com/rooms/367634  ...               0.15
+...                                     ...  ...                ...
+260095  https://www.airbnb.com/rooms/260095  ...               0.67
+265416  https://www.airbnb.com/rooms/265416  ...               0.73
+245809  https://www.airbnb.com/rooms/245809  ...               0.42
+345373  https://www.airbnb.com/rooms/345373  ...               0.10
+200125  https://www.airbnb.com/rooms/200125  ...                NaN
+
+[91 rows x 94 columns] ['review_scores_communication_bin', 'review_scores_location_bin', 'review_scores_rating_bin']
+
+  ('###### colnum bin to One Hot  #################################################',) 
+review_scores_communication_bin 4 (91, 3)
+review_scores_location_bin 4 (91, 6)
+review_scores_rating_bin 9 (91, 9)
+review_scores_communication_bin_0 added
+review_scores_communication_bin_2 added
+review_scores_communication_bin_4 added
+review_scores_communication_bin_6 added
+review_scores_location_bin_0 added
+review_scores_location_bin_2 added
+review_scores_rating_bin_0 added
+review_scores_rating_bin_1 added
+
+  (['review_scores_communication_bin_-1', 'review_scores_communication_bin_0', 'review_scores_communication_bin_2', 'review_scores_communication_bin_4', 'review_scores_communication_bin_6', 'review_scores_communication_bin_7', 'review_scores_communication_bin_8', 'review_scores_communication_bin_9', 'review_scores_location_bin_-1', 'review_scores_location_bin_0', 'review_scores_location_bin_2', 'review_scores_location_bin_4', 'review_scores_location_bin_7', 'review_scores_location_bin_9', 'review_scores_rating_bin_-1', 'review_scores_rating_bin_0', 'review_scores_rating_bin_1', 'review_scores_rating_bin_2', 'review_scores_rating_bin_3', 'review_scores_rating_bin_4', 'review_scores_rating_bin_5', 'review_scores_rating_bin_6', 'review_scores_rating_bin_7', 'review_scores_rating_bin_8', 'review_scores_rating_bin_9'],) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, '#######################################################') 
+
+  ('/home/soheil/Soheil/lin-python/S/dsa2',) 
+                                listing_url  ...  reviews_per_month
+id                                           ...                   
+316366  https://www.airbnb.com/rooms/316366  ...               0.14
+321308  https://www.airbnb.com/rooms/321308  ...               0.59
+174391  https://www.airbnb.com/rooms/174391  ...               0.03
+196285  https://www.airbnb.com/rooms/196285  ...               1.06
+367634  https://www.airbnb.com/rooms/367634  ...               0.15
+...                                     ...  ...                ...
+260095  https://www.airbnb.com/rooms/260095  ...               0.67
+265416  https://www.airbnb.com/rooms/265416  ...               0.73
+245809  https://www.airbnb.com/rooms/245809  ...               0.42
+345373  https://www.airbnb.com/rooms/345373  ...               0.10
+200125  https://www.airbnb.com/rooms/200125  ...                NaN
+
+[91 rows x 94 columns] ['cancellation_policy', 'host_response_rate', 'host_response_time']
+
+  ('#### Colcat to integer encoding ',) 
+cancellation_policy cancellation_policy_int
+host_response_rate host_response_rate_int
+host_response_time host_response_time_int
+
+  (cancellation_policy    object
+host_response_rate     object
+host_response_time     object
+dtype: object, {'cat_map': {'cancellation_policy': {'flexible': 0, 'moderate': 1, 'strict_14_with_grace_period': 2}, 'host_response_rate': {'100%': 0, '67%': 1, '70%': 2, '75%': 3, '78%': 4, '86%': 5, '90%': 6, '96%': 7}, 'host_response_time': {'within a day': 0, 'within a few hours': 1, 'within an hour': 2}}, 'cat_map_inverse': {'cancellation_policy': {0: 'flexible', 1: 'moderate', 2: 'strict_14_with_grace_period'}, 'host_response_rate': {0: '100%', 1: '67%', 2: '70%', 3: '75%', 4: '78%', 5: '86%', 6: '90%', 7: '96%'}, 'host_response_time': {0: 'within a day', 1: 'within a few hours', 2: 'within an hour'}}}) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, '#######################################################') 
+
+  ('/home/soheil/Soheil/lin-python/S/dsa2',) 
+                                listing_url  ...  reviews_per_month
+id                                           ...                   
+316366  https://www.airbnb.com/rooms/316366  ...               0.14
+321308  https://www.airbnb.com/rooms/321308  ...               0.59
+174391  https://www.airbnb.com/rooms/174391  ...               0.03
+196285  https://www.airbnb.com/rooms/196285  ...               1.06
+367634  https://www.airbnb.com/rooms/367634  ...               0.15
+...                                     ...  ...                ...
+260095  https://www.airbnb.com/rooms/260095  ...               0.67
+265416  https://www.airbnb.com/rooms/265416  ...               0.73
+245809  https://www.airbnb.com/rooms/245809  ...               0.42
+345373  https://www.airbnb.com/rooms/345373  ...               0.10
+200125  https://www.airbnb.com/rooms/200125  ...                NaN
+
+[91 rows x 94 columns] ['cancellation_policy_int', 'host_response_rate_int', 'host_response_time_int']
+
+  ('#### colcat to onehot',) 
+cancellation_policy_int 3 (91, 3)
+host_response_rate_int 7 (91, 5)
+host_response_time_int 4 (91, 10)
+host_response_rate_int_-1 added
+host_response_rate_int_0 added
+host_response_rate_int_1 added
+host_response_rate_int_2 added
+host_response_rate_int_3 added
+host_response_rate_int_4 added
+host_response_rate_int_5 added
+host_response_rate_int_6 added
+host_response_rate_int_7 added
+host_response_rate_int_8 added
+host_response_rate_int_9 added
+host_response_rate_int_10 added
+host_response_rate_int_11 added
+host_response_rate_int_12 added
+host_response_rate_int_13 added
+host_response_rate_int_14 added
+host_response_rate_int_15 added
+host_response_rate_int_16 added
+host_response_rate_int_17 added
+host_response_rate_int_18 added
+host_response_time_int_-1 added
+host_response_time_int_0 added
+host_response_time_int_1 added
+host_response_time_int_2 added
+host_response_time_int_3 added
+
+  (        cancellation_policy_int_0  ...  host_response_time_int_3
+id                                 ...                          
+316366                          1  ...                         0
+321308                          1  ...                         0
+174391                          0  ...                         0
+196285                          0  ...                         0
+367634                          1  ...                         0
+
+[5 rows x 28 columns],) 
+ok ------------
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_coltext', 'pars': {}, 'cols_family': 'coltext', 'cols_out': 'coltext_svd', 'type': ''}, '#######################################################') 
+
+  ('/home/soheil/Soheil/lin-python/S/dsa2',) 
+                                listing_url  ...  reviews_per_month
+id                                           ...                   
+316366  https://www.airbnb.com/rooms/316366  ...               0.14
+321308  https://www.airbnb.com/rooms/321308  ...               0.59
+174391  https://www.airbnb.com/rooms/174391  ...               0.03
+196285  https://www.airbnb.com/rooms/196285  ...               1.06
+367634  https://www.airbnb.com/rooms/367634  ...               0.15
+...                                     ...  ...                ...
+260095  https://www.airbnb.com/rooms/260095  ...               0.67
+265416  https://www.airbnb.com/rooms/265416  ...               0.73
+245809  https://www.airbnb.com/rooms/245809  ...               0.42
+345373  https://www.airbnb.com/rooms/345373  ...               0.10
+200125  https://www.airbnb.com/rooms/200125  ...                NaN
+
+[91 rows x 94 columns] ['house_rules', 'neighborhood_overview', 'notes', 'street']
+/home/soheil/Soheil/lin-python/S/dsa2/source/
+os.getcwd /home/soheil/Soheil/lin-python/S/dsa2
+evolutionary_search None No module named 'evolutionary_search'
+imported <module 'lightgbm' from '/home/soheil/.local/lib/python3.8/site-packages/lightgbm/__init__.py'>
+kmodes None No module named 'kmodes'
+catboost None No module named 'catboost'
+tpot None No module named 'tpot'
+os.getcwd /home/soheil/Soheil/lin-python/S/dsa2
+['', ' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', 'a', 'about', 'above', 'after', 'again', 'against', 'ain', 'all', 'am', 'an', 'and', 'any', 'are', 'aren', "aren't", 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', 'can', 'couldn', "couldn't", 'd', 'did', 'didn', "didn't", 'do', 'does', 'doesn', "doesn't", 'doing', 'don', "don't", 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had', 'hadn', "hadn't", 'has', 'hasn', "hasn't", 'have', 'haven', "haven't", 'having', 'he', 'her', 'here', 'hers', 'herself', 'him', 'himself', 'his', 'how', 'i', 'if', 'in', 'into', 'is', 'isn', "isn't", 'it', "it's", 'its', 'itself', 'just', 'll', 'm', 'ma', 'me', 'mightn', "mightn't", 'more', 'most', 'mustn', "mustn't", 'my', 'myself', 'needn', "needn't", 'no', 'nor', 'not', 'now', 'o', 'of', 'off', 'on', 'once', 'only', 'or', 'other', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 're', 's', 'same', 'shan', "shan't", 'she', "she's", 'should', "should've", 'shouldn', "shouldn't", 'so', 'some', 'such', 't', 'than', 'that', "that'll", 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', 'these', 'they', 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 've', 'very', 'was', 'wasn', "wasn't", 'we', 'were', 'weren', "weren't", 'what', 'when', 'where', 'which', 'while', 'who', 'whom', 'why', 'will', 'with', 'won', "won't", 'wouldn', "wouldn't", 'y', 'you', "you'd", "you'll", "you're", "you've", 'your', 'yours', 'yourself', 'yourselves', '{', '|', '}', '~', '€']
+
+  (                                              house_rules  ...                   street
+id                                                         ...                         
+316366                                                     ...  Berlin, Berlin, Germany
+321308  Bettwäsche, Handtücher, WLAN und Nutzung Wasch...  ...  Berlin, Berlin, Germany
+174391                                                     ...  Berlin, Berlin, Germany
+196285  - this is not a hotel, be neat, tidy and respe...  ...  Berlin, Berlin, Germany
+367634  In der Wohnung darf nicht geraucht werden. Hun...  ...  Berlin, Berlin, Germany
+...                                                   ...  ...                      ...
+260095                                                     ...  Berlin, Berlin, Germany
+265416                                                     ...  Berlin, Berlin, Germany
+245809           Children up to 12 years 5,00 € per night  ...  Berlin, Berlin, Germany
+345373  Kaution 1 MM.  ab 2 Monaten Mietzeit 1500,00 T...  ...  Berlin, Berlin, Germany
+200125  Der Mieter verpflichtet sich die Wohnung und a...  ...  Berlin, Berlin, Germany
+
+[91 rows x 4 columns],) 
+
+  (['house_rules', 'neighborhood_overview', 'notes', 'street'],) 
+
+  ({'please': 27, 'und': 37, 'none': 25, 'no': 24, 'apartment': 1, 'die': 9, 'der': 8, 'the': 35, 'ist': 17, 'use': 38, 'für': 12, 'zu': 43, 'sie': 31, 'smoking': 32, 'bitte': 4, 'allowed': 0, 'nicht': 23, 'auf': 3, 'we': 40, 'wohnung': 41, 'illegal': 16, 'leave': 19, 'von': 39, 'guests': 13, 'house': 14, 'shoes': 29, 'you': 42, 'take': 34, 'make': 21, 'sich': 30, 'keine': 18, 'if': 15, 'das': 6, 'flat': 11, 'uhr': 36, 'respect': 28, 'nach': 22, 'like': 20, 'clean': 5, 'dem': 7, 'stay': 33, 'parties': 26, 'es': 10, 'ask': 2},) 
+
+  ({'none': 36, 'the': 49, 'und': 51, 'berlin': 6, 'der': 15, 'apartment': 1, 'area': 2, 'in': 23, 'ist': 24, 'restaurants': 42, 'many': 27, 'mit': 31, 'prenzlauer': 39, 'minutes': 30, 'street': 48, 'bars': 4, 'also': 0, 'die': 16, 'one': 37, 'around': 3, 'shops': 44, 'famous': 20, 'walking': 53, 'market': 28, 'within': 55, 'walk': 52, 'located': 26, 'dem': 13, 'nice': 35, 'sind': 46, 'well': 54, 'zu': 56, 'quiet': 41, 'berg': 5, 'there': 50, 'cafes': 8, 'im': 22, 'find': 21, 'meters': 29, 'ein': 18, 'central': 10, 'neukölln': 34, 'it': 25, 'neighborhood': 33, 'de': 12, 'sich': 45, 'den': 14, 'small': 47, 'close': 11, 'district': 17, 'public': 40, 'cafés': 9, 'right': 43, 'best': 7, 'mitte': 32, 'eine': 19, 'part': 38},) 
+
+  ({'none': 27, 'berlin': 7, 'der': 11, 'und': 43, 'the': 38, 'die': 12, 'apartment': 4, 'eine': 13, 'please': 31, 'von': 46, 'arrival': 5, 'city': 10, 'sie': 33, 'bis': 8, 'for': 16, 'free': 17, 'if': 21, 'tax': 37, 'ist': 23, 'upon': 44, 'need': 25, 'paid': 28, 'this': 40, 'nicht': 26, 'price': 32, 'im': 22, 'must': 24, 'we': 47, 'uhr': 42, 'sind': 35, 'stays': 36, 'pay': 30, 'use': 45, 'fee': 15, 'hidden': 20, 'airbnb': 2, 'business': 9, 'parking': 29, '2014': 1, 'für': 18, 'extra': 14, 'guests': 19, '15': 0, 'since': 34, 'auf': 6, 'also': 3, 'two': 41, 'there': 39},) 
+
+  ({'berlin': 0, 'germany': 1, 'schöneberg': 2},) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_coldate', 'pars': {}, 'cols_family': 'coldate', 'cols_out': 'coldate', 'type': ''}, '#######################################################') 
+
+  ('/home/soheil/Soheil/lin-python/S/dsa2',) 
+                                listing_url  ...  reviews_per_month
+id                                           ...                   
+316366  https://www.airbnb.com/rooms/316366  ...               0.14
+321308  https://www.airbnb.com/rooms/321308  ...               0.59
+174391  https://www.airbnb.com/rooms/174391  ...               0.03
+196285  https://www.airbnb.com/rooms/196285  ...               1.06
+367634  https://www.airbnb.com/rooms/367634  ...               0.15
+...                                     ...  ...                ...
+260095  https://www.airbnb.com/rooms/260095  ...               0.67
+265416  https://www.airbnb.com/rooms/265416  ...               0.73
+245809  https://www.airbnb.com/rooms/245809  ...               0.42
+345373  https://www.airbnb.com/rooms/345373  ...               0.10
+200125  https://www.airbnb.com/rooms/200125  ...                NaN
+
+[91 rows x 94 columns] ['calendar_last_scraped', 'first_review', 'host_since']
+
+  ('##### Coldate processing   #############################################################',) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}, '#######################################################') 
+
+  ('/home/soheil/Soheil/lin-python/S/dsa2',) 
+                                listing_url  ...  reviews_per_month
+id                                           ...                   
+316366  https://www.airbnb.com/rooms/316366  ...               0.14
+321308  https://www.airbnb.com/rooms/321308  ...               0.59
+174391  https://www.airbnb.com/rooms/174391  ...               0.03
+196285  https://www.airbnb.com/rooms/196285  ...               1.06
+367634  https://www.airbnb.com/rooms/367634  ...               0.15
+...                                     ...  ...                ...
+260095  https://www.airbnb.com/rooms/260095  ...               0.67
+265416  https://www.airbnb.com/rooms/265416  ...               0.73
+245809  https://www.airbnb.com/rooms/245809  ...               0.42
+345373  https://www.airbnb.com/rooms/345373  ...               0.10
+200125  https://www.airbnb.com/rooms/200125  ...                NaN
+
+[91 rows x 94 columns] ['review_scores_communication', 'review_scores_location', 'cancellation_policy', 'host_response_rate']
+
+  ('#####  Cross Features From OneHot Features   ######################################',) 
+
+  (Empty DataFrame
+Columns: [316366, 321308]
+Index: [],) 
+
+  ('######  Merge AlL int dfXy  #############################################################',) 
+cannot import pyod
+
+  <module 'models.model_sklearn' from '/home/soheil/Soheil/lin-python/S/dsa2/source/models/model_sklearn.py'> /home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/model/ 
+
+  #### Load model  ############################################ 
+/home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/airbnb_lightgbm/model//model/model.pkl
+
+  #### modelx
+ LGBMRegressor(objective='huber') 
+
+  ### Prediction  ############################################ 
+
+  ############ Saving prediction  ################################################### 
+
+  (91,) /home/soheil/Soheil/lin-python/S/dsa2//data/output/airbnb/pred_airbnb_lightgbm/ 
+
+                                  listing_url  ...  price_pred
+id                                           ...            
+316366  https://www.airbnb.com/rooms/316366  ...   73.817887
+321308  https://www.airbnb.com/rooms/321308  ...   70.003510
+174391  https://www.airbnb.com/rooms/174391  ...   67.332564
+196285  https://www.airbnb.com/rooms/196285  ...   65.305237
+367634  https://www.airbnb.com/rooms/367634  ...   69.420084
+359917  https://www.airbnb.com/rooms/359917  ...   65.305237
+305987  https://www.airbnb.com/rooms/305987  ...   72.001483
+22415    https://www.airbnb.com/rooms/22415  ...   73.817887
+
+[8 rows x 95 columns] 
+
+  ###########  Export Specific ###################################################### 

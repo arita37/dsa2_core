@@ -1,0 +1,596 @@
+os.getcwd D:\_devs\Python01\gitdev\dsa2
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+{'model_pars': {'model_path': '', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'n_estimators': 100, 'learning_rate': 0.01, 'boosting_type': 'gbdt', 'early_stopping_rounds': 5}, 'post_process_fun': <function cardif_lightgbm.<locals>.post_process_fun at 0x00000254D186CD08>, 'pre_process_pars': {'y_norm_fun': <function cardif_lightgbm.<locals>.pre_process_fun at 0x00000254D186CD90>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}, 'compute_pars': {'metric_list': ['accuracy_score', 'average_precision_score']}, 'data_pars': {'n_sample': 5000, 'cols_input_type': {'coly': 'target', 'colid': 'ID', 'colcat': ['v3', 'v30', 'v31', 'v47', 'v52'], 'colnum': ['v1', 'v2', 'v4', 'v5', 'v108', 'v109', 'v111', 'v114', 'v115', 'v116', 'v117', 'v118'], 'coltext': [], 'coldate': [], 'colcross': ['v3', 'v30']}, 'cols_model_group': ['colnum', 'colcat_bin'], 'filter_pars': {'ymax': 2, 'ymin': -1}}, 'global_pars': {'path_config_model': 'D:/_devs/Python01/gitdev/dsa2//cardif_classifier.py', 'config_name': 'cardif_lightgbm', 'path_data_train': 'data/input/cardif/train/', 'path_data_test': 'data/input/cardif/test/', 'path_model': 'data/output/cardif/cardif_lightgbm/', 'path_output_pred': 'data/output/cardif/pred_cardif_lightgbm/', 'n_sample': 5000}}
+D:/_devs/Python01/gitdev/dsa2/
+os.getcwd D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm/',) 
+  ('#### Model Params Dynamic loading  ###############################################',) 
+
+  ('D:\\_devs\\Python01\\gitdev',) 
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+  ({'model_pars': {'model_path': 'D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//model/', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'n_estimators': 100, 'learning_rate': 0.01, 'boosting_type': 'gbdt', 'early_stopping_rounds': 5}, 'post_process_fun': <function cardif_lightgbm.<locals>.post_process_fun at 0x00000254D1891A60>, 'pre_process_pars': {'y_norm_fun': <function cardif_lightgbm.<locals>.pre_process_fun at 0x00000254D18A00D0>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}, 'compute_pars': {'metric_list': ['accuracy_score', 'average_precision_score']}, 'data_pars': {'n_sample': 5000, 'cols_input_type': {'coly': 'target', 'colid': 'ID', 'colcat': ['v3', 'v30', 'v31', 'v47', 'v52'], 'colnum': ['v1', 'v2', 'v4', 'v5', 'v108', 'v109', 'v111', 'v114', 'v115', 'v116', 'v117', 'v118'], 'coltext': [], 'coldate': [], 'colcross': ['v3', 'v30']}, 'cols_model_group': ['colnum', 'colcat_bin'], 'filter_pars': {'ymax': 2, 'ymin': -1}}, 'global_pars': {'path_config_model': 'D:/_devs/Python01/gitdev/dsa2//cardif_classifier.py', 'config_name': 'cardif_lightgbm', 'path_data_train': 'data/input/cardif/train/', 'path_data_test': 'data/input/cardif/test/', 'path_model': 'data/output/cardif/cardif_lightgbm/', 'path_output_pred': 'data/output/cardif/pred_cardif_lightgbm/', 'n_sample': 5000}},) 
+  ('#### load input column family  ###################################################',) 
+  ({'coly': 'target', 'colid': 'ID', 'colcat': ['v3', 'v30', 'v31', 'v47', 'v52'], 'colnum': ['v1', 'v2', 'v4', 'v5', 'v108', 'v109', 'v111', 'v114', 'v115', 'v116', 'v117', 'v118'], 'coltext': [], 'coldate': [], 'colcross': ['v3', 'v30']},) 
+  ('#### Preprocess  #################################################################',) 
+
+  ({'coly': 'target', 'colid': 'ID', 'colcat': ['v3', 'v30', 'v31', 'v47', 'v52'], 'colnum': ['v1', 'v2', 'v4', 'v5', 'v108', 'v109', 'v111', 'v114', 'v115', 'v116', 'v117', 'v118'], 'coltext': [], 'coldate': [], 'colcross': ['v3', 'v30']},) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline/',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colid.pkl',) 
+
+  ('loading', 'ID', 'D:/_devs/Python01/gitdev/dsa2/data/input/cardif/train//features.zip') 
+['D:/_devs/Python01/gitdev/dsa2/data/input/cardif/train\\features.zip']
+
+  ('dfX_raw',        0        1        2            3     ...    4996    4997    4998    4999
+ID        3      156      172          202  ...  228423  228462  228475  228601
+v1  1.33574  1.56835  1.58993  1.49142e-07  ...     NaN     NaN     NaN     NaN
+v2  8.72747  4.88496  4.46944       12.663  ...     NaN     NaN     NaN     NaN
+v3        C        C        C            C  ...       C       C       C       C
+
+[4 rows x 5000 columns]) 
+
+  ('dfy',     ID  target
+0    3       1
+1  156       1
+2  172       0
+3  202       1
+4  223       1) 
+
+  ('#####  coly  ###########################################################################',) 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+D:/_devs/Python01/gitdev/dsa2/
+----------df----------
+                   v1         v2 v3  ...      v130          v131  target
+ID                                  ...                                
+3       1.335739e+00   8.727474  C  ...  0.636365  2.857144e+00       1
+156     1.568350e+00   4.884959  C  ...  8.318840  8.362374e-01       1
+172     1.589931e+00   4.469436  C  ...  1.769633  1.656804e+00       0
+202     1.491423e-07  12.663041  C  ...  0.565218  1.347706e-07       1
+223     1.312057e+00   8.827250  C  ...  0.695651  2.500001e+00       1
+...              ...        ... ..  ...       ...           ...     ...
+228386           NaN        NaN  C  ...       NaN           NaN       1
+228423           NaN        NaN  C  ...       NaN           NaN       1
+228462           NaN        NaN  C  ...       NaN           NaN       0
+228475           NaN        NaN  C  ...       NaN           NaN       1
+228601           NaN        NaN  C  ...       NaN           NaN       1
+
+[5000 rows x 132 columns]
+----------df[coly]------------ ID
+3         1.0
+156       1.0
+172       0.0
+202       1.0
+223       1.0
+         ... 
+228386    1.0
+228423    1.0
+228462    0.0
+228475    1.0
+228601    1.0
+Name: target, Length: 5000, dtype: float32
+
+  ('y_norm_fun preprocess_pars',) 
+----------df----------
+                   v1         v2 v3  ...      v130          v131  target
+ID                                  ...                                
+3       1.335739e+00   8.727474  C  ...  0.636365  2.857144e+00     1.0
+156     1.568350e+00   4.884959  C  ...  8.318840  8.362374e-01     1.0
+172     1.589931e+00   4.469436  C  ...  1.769633  1.656804e+00     0.0
+202     1.491423e-07  12.663041  C  ...  0.565218  1.347706e-07     1.0
+223     1.312057e+00   8.827250  C  ...  0.695651  2.500001e+00     1.0
+...              ...        ... ..  ...       ...           ...     ...
+228386           NaN        NaN  C  ...       NaN           NaN     1.0
+228423           NaN        NaN  C  ...       NaN           NaN     1.0
+228462           NaN        NaN  C  ...       NaN           NaN     0.0
+228475           NaN        NaN  C  ...       NaN           NaN     1.0
+228601           NaN        NaN  C  ...       NaN           NaN     1.0
+
+[5000 rows x 132 columns]
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//features_store//coly/features.parquet',) 
+
+  (        target
+ID            
+3          1.0
+156        1.0
+172        0.0
+202        1.0
+223        1.0
+...        ...
+228386     1.0
+228423     1.0
+228462     0.0
+228475     1.0
+228601     1.0
+
+[5000 rows x 1 columns], ['target']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//coly.pkl',) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+                  v1         v2        v4  ...      v116      v117       v118
+ID                                         ...                               
+3       1.335739e+00   8.727474  3.921026  ...  1.951220  6.592012   5.909091
+156     1.568350e+00   4.884959  1.670503  ...  1.442841  8.938290  11.159420
+172     1.589931e+00   4.469436  3.752165  ...  1.874126  5.352744   7.696334
+202     1.491423e-07  12.663041  3.996847  ...  2.349206  5.681225   8.043478
+223     1.312057e+00   8.827250  4.550562  ...  2.637364  6.748787   7.065218
+...              ...        ...       ...  ...       ...       ...        ...
+228386           NaN        NaN       NaN  ...       NaN       NaN        NaN
+228423           NaN        NaN       NaN  ...       NaN  8.393900        NaN
+228462           NaN        NaN       NaN  ...       NaN       NaN        NaN
+228475           NaN        NaN       NaN  ...       NaN       NaN        NaN
+228601           NaN        NaN       NaN  ...       NaN       NaN        NaN
+
+[5000 rows x 12 columns]
+
+  (None,) 
+
+  ('### colnum Map numerics to Category bin  ###########################################',) 
+v1
+          v1                                  
+        size       max      mean           min
+v1_bin                                        
+-1      2172       NaN       NaN           NaN
+ 0       592  0.821310  0.393535 -9.469364e-07
+ 1      1063  1.641526  1.247179  8.231367e-01
+ 2       725  2.464612  1.995903  1.644444e+00
+ 3       260  3.275451  2.791653  2.466667e+00
+ 4       108  4.085174  3.647194  3.293344e+00
+ 5        49  4.889869  4.452883  4.134079e+00
+ 6        12  5.563910  5.113418  4.933334e+00
+ 7         5  6.351932  6.201978  6.072210e+00
+ 8        11  7.370518  6.886681  6.594876e+00
+ 9         3  8.222222  7.908302  7.476229e+00
+v2
+          v2                                    
+        size        max       mean           min
+v2_bin                                          
+-1      2171        NaN        NaN           NaN
+ 0        29   1.941770   1.483523 -9.817614e-07
+ 1       244   3.894449   3.145874  1.962129e+00
+ 2       655   5.849251   5.011874  3.907078e+00
+ 3       740   7.796310   6.691112  5.850549e+00
+ 4       542   9.748524   8.760249  7.804209e+00
+ 5       372  11.680262  10.619343  9.753760e+00
+ 6       165  13.645329  12.524041  1.170600e+01
+ 7        64  15.589130  14.540961  1.369055e+01
+ 8        17  17.511482  16.279922  1.559985e+01
+ 9         1  19.498669  19.498669  1.949867e+01
+v4
+          v4                                    
+        size        max       mean           min
+v4_bin                                          
+-1      2172  11.086727  11.086727  1.108673e+01
+ 0        14   1.104927   0.823379 -3.630168e-07
+ 1       176   2.202642   1.741860  1.133731e+00
+ 2       416   3.325703   2.878341  2.235335e+00
+ 3      1098   4.434611   3.936678  3.327420e+00
+ 4       852   5.534676   4.899541  4.435015e+00
+ 5       215   6.638871   5.928451  5.545757e+00
+ 6        49   7.725010   7.114799  6.716598e+00
+ 7         7   8.410676   8.067027  7.764146e+00
+ 8         1   8.926999   8.926999  8.926999e+00
+v5
+          v5                                 
+        size        max       mean        min
+v5_bin                                       
+-1      2099        NaN        NaN        NaN
+ 0        13   3.550774   3.067400   1.943510
+ 1       108   5.259212   4.690857   3.611731
+ 2       328   6.919973   6.230086   5.279085
+ 3       975   8.584065   7.856117   6.926699
+ 4      1050  10.247997   9.373113   8.587760
+ 5       253  11.903161  10.812683  10.257873
+ 6        85  13.530599  12.561890  11.930059
+ 7        60  15.104237  14.298140  13.577672
+ 8        22  16.718225  15.985816  15.292535
+ 9         7  18.554134  17.738495  17.000673
+v108
+          v108                              
+          size       max      mean       min
+v108_bin                                    
+-1        2101  9.491804  9.491804  9.491804
+ 0         274  1.251127  1.097929  0.337587
+ 1        1500  2.167916  1.708978  1.256762
+ 2         788  3.082888  2.550269  2.168871
+ 3         237  3.994996  3.447643  3.088237
+ 4          73  4.912070  4.350739  4.009129
+ 5          10  5.823128  5.398616  5.094377
+ 6           7  6.577470  6.187099  5.835636
+ 7           5  7.603509  7.499224  7.082087
+ 8           3  8.037072  7.840441  7.704070
+ 9           2  8.993778  8.993778  8.993778
+v109
+          v109                                    
+          size        max       mean           min
+v109_bin                                          
+-1        2099        NaN        NaN           NaN
+ 0         833   1.996090   1.195341 -9.873798e-07
+ 1        1022   3.996711   2.918865  2.002955e+00
+ 2         480   5.995274   4.885323  4.002871e+00
+ 3         244   7.976974   6.916469  6.001987e+00
+ 4         119   9.974216   8.779004  8.007920e+00
+ 5          46  11.966909  11.020684  1.001394e+01
+ 6          55  13.992469  12.805371  1.200658e+01
+ 7          32  15.819295  15.030962  1.447369e+01
+ 8          31  17.919687  17.020533  1.602238e+01
+ 9          39  20.000002  19.742994  1.821316e+01
+v111
+          v111                                    
+          size        max       mean           min
+v111_bin                                          
+-1        2172        NaN        NaN           NaN
+ 0         180   1.562501   1.182538 -8.874371e-07
+ 1        1318   3.147396   2.438720  1.573771e+00
+ 2         892   4.716157   3.816731  3.148335e+00
+ 3         317   6.286701   5.319232  4.727100e+00
+ 4          84   7.866388   7.029223  6.303270e+00
+ 5          30   8.926109   8.336646  7.877566e+00
+ 6           6  10.497826  10.009914  9.471516e+00
+ 9           1  15.737705  15.737705  1.573771e+01
+v114
+          v114                                 
+          size        max       mean        min
+v114_bin                                       
+-1           1        NaN        NaN        NaN
+ 0          23   6.172577   5.741500   4.670570
+ 1         113   7.697343   7.022135   6.211519
+ 2         225   9.195092   8.517954   7.704657
+ 3         417  10.730104  10.024359   9.219322
+ 4         602  12.243396  11.585504  10.730873
+ 5         877  13.759551  13.088015  12.252636
+ 6        1398  15.273967  14.580855  13.760118
+ 7         920  16.789909  15.855163  15.276398
+ 8         330  18.304619  17.494955  16.794916
+ 9          94  19.819777  18.621819  18.311420
+v115
+          v115                                          
+          size           max          mean           min
+v115_bin                                                
+-1        2185  2.000000e+01  2.000000e+01  2.000000e+01
+ 0           6  9.975150e-07 -2.223539e-08 -9.343944e-07
+ 1           2  3.333334e+00  3.095239e+00  2.857144e+00
+ 2          13  5.999999e+00  4.989666e+00  4.117647e+00
+ 3         167  7.999999e+00  7.210812e+00  6.000000e+00
+ 4         883  9.999999e+00  9.190666e+00  8.000000e+00
+ 5        1228  1.200000e+01  1.088282e+01  1.000000e+01
+ 6         418  1.400000e+01  1.269639e+01  1.200000e+01
+ 7          78  1.583333e+01  1.463985e+01  1.400000e+01
+ 8          19  1.777778e+01  1.652609e+01  1.600000e+01
+ 9           1  1.800000e+01  1.800000e+01  1.800000e+01
+v116
+          v116                                    
+          size        max       mean           min
+v116_bin                                          
+-1        2173  20.000000  20.000000  2.000000e+01
+ 0         993   2.000000   1.648727 -1.345322e-07
+ 1        1775   4.000000   2.609109  2.000000e+00
+ 2          58   5.894134   4.534982  4.000000e+00
+ 3           1   6.086957   6.086957  6.086957e+00
+v117
+          v117                                    
+          size        max       mean           min
+v117_bin                                          
+-1        2099        NaN        NaN           NaN
+ 0          79   1.724524   0.194469 -9.731466e-07
+ 1         160   3.516237   2.860338  1.851437e+00
+ 2         375   5.285555   4.468169  3.531169e+00
+ 3         487   7.054872   6.193964  5.293021e+00
+ 4         597   8.786860   7.915418  7.069801e+00
+ 5         497  10.581815   9.647959  8.824187e+00
+ 6         263  12.346210  11.404571  1.058604e+01
+ 7         219  14.079881  13.163376  1.236983e+01
+ 8         187  15.849197  14.957572  1.412532e+01
+ 9          37  17.640911  16.464931  1.594015e+01
+v118
+          v118                                    
+          size        max       mean           min
+v118_bin                                          
+-1        2173  20.000000  20.000000  2.000000e+01
+ 0           4   1.864408   1.273252 -1.383729e-07
+ 1          10   4.000000   3.309404  2.352941e+00
+ 2         251   5.992779   5.354091  4.055299e+00
+ 3        1066   8.000000   7.103541  6.000000e+00
+ 4         948   9.999999   8.892302  8.000000e+00
+ 5         400  11.979696  10.800993  1.000000e+01
+ 6         129  13.937008  12.697954  1.200000e+01
+ 7          18  15.357141  14.622865  1.402985e+01
+ 8           1  16.132074  16.132074  1.613207e+01
+
+  (OrderedDict([('v1', [-0.00010094693643859501, 0.8222213812495965, 1.6444437094356317, 2.4666660376216667, 3.288888365807702, 4.111110693993737, 4.933333022179772, 5.755555350365808, 6.5777776785518425, 7.400000006737877, 8.222222334923913]), ('v2', [-0.00010098176144547324, 1.9498660760388475, 3.8997331338391406, 5.849600191639434, 7.799467249439727, 9.74933430724002, 11.699201365040313, 13.649068422840605, 15.598935480640899, 17.54880253844119, 19.498669596241484]), ('v4', [-0.00010036301679529061, 1.1086723512166032, 2.2173450654500018, 3.3260177796834003, 4.434690493916799, 5.543363208150197, 6.652035922383596, 7.760708636616995, 8.869381350850393, 9.978054065083791, 11.086726779317189]), ('v5', [1.9434100555419922, 3.6045724868774416, 5.265634918212891, 6.9266973495483395, 8.58775978088379, 10.248822212219238, 11.909884643554687, 13.570947074890137, 15.232009506225586, 16.893071937561032, 18.554134368896484]), ('v108', [0.3374869691371918, 1.253008645772934, 2.168430322408676, 3.083851999044418, 3.9992736756801603, 4.914695352315903, 5.830117028951644, 6.7455387055873866, 7.660960382223129, 8.57638205885887, 9.491803735494614]), ('v109', [-0.00010098737984899345, 1.9999993940898775, 3.999999775559604, 6.00000015702933, 8.000000538499057, 10.000000919968784, 12.000001301438509, 14.000001682908236, 16.000002064377963, 18.000002445847688, 20.000002827317417]), ('v111', [-0.00010088743706783135, 1.573769731001653, 3.1475403494403738, 4.721310967879095, 6.295081586317815, 7.868852204756536, 9.442622823195258, 11.016393441633978, 12.590164060072699, 14.163934678511419, 15.73770529695014]), ('v114', [4.6704703735351565, 6.185490989685059, 7.700411605834961, 9.215332221984863, 10.730252838134765, 12.245173454284668, 13.760094070434569, 15.275014686584472, 16.789935302734374, 18.30485591888428, 19.81977653503418]), ('v115', [-0.00010093439439297072, 1.999999065605607, 3.999999065605607, 5.999999065605607, 7.999999065605607, 9.999999065605607, 11.999999065605607, 13.999999065605607, 15.999999065605607, 17.999999065605607, 19.999999065605607]), ('v116', [-0.00010013453221470173, 1.9999998654677853, 3.9999998654677853, 5.999999865467785, 7.999999865467785, 9.999999865467785, 11.999999865467785, 13.999999865467785, 15.999999865467785, 17.999999865467785, 19.999999865467785]), ('v117', [-0.00010097314659797121, 1.7640903278177575, 3.528181628782113, 5.292272929746469, 7.056364230710824, 8.82045553167518, 10.584546832639536, 12.34863813360389, 14.112729434568246, 15.876820735532602, 17.640912036496957]), ('v118', [-0.00010013837292556218, 1.9999998616270744, 3.9999998616270744, 5.999999861627074, 7.999999861627074, 9.999999861627074, 11.999999861627074, 13.999999861627074, 15.999999861627074, 17.999999861627074, 19.999999861627074])]),) 
+
+  (['v1_bin', 'v2_bin', 'v4_bin', 'v5_bin', 'v108_bin', 'v109_bin', 'v111_bin', 'v114_bin', 'v115_bin', 'v116_bin', 'v117_bin', 'v118_bin'],) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colnum_binmap.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colnum_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//features_store//colnum/features.parquet',) 
+
+  (                  v1         v2        v4  ...  v116_bin  v117_bin  v118_bin
+ID                                         ...                              
+3       1.335739e+00   8.727474  3.921026  ...         0         3         2
+156     1.568350e+00   4.884959  1.670503  ...         0         5         5
+172     1.589931e+00   4.469436  3.752165  ...         0         3         3
+202     1.491423e-07  12.663041  3.996847  ...         1         3         4
+223     1.312057e+00   8.827250  4.550562  ...         1         3         3
+...              ...        ...       ...  ...       ...       ...       ...
+228386           NaN        NaN       NaN  ...        -1        -1        -1
+228423           NaN        NaN       NaN  ...        -1         4        -1
+228462           NaN        NaN       NaN  ...        -1        -1        -1
+228475           NaN        NaN       NaN  ...        -1        -1        -1
+228601           NaN        NaN       NaN  ...        -1        -1        -1
+
+[5000 rows x 24 columns], ['v1', 'v2', 'v4', 'v5', 'v108', 'v109', 'v111', 'v114', 'v115', 'v116', 'v117', 'v118', 'v1_bin', 'v2_bin', 'v4_bin', 'v5_bin', 'v108_bin', 'v109_bin', 'v111_bin', 'v114_bin', 'v115_bin', 'v116_bin', 'v117_bin', 'v118_bin']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//features_store//colnum_bin/features.parquet',) 
+
+  (        v1_bin  v2_bin  v4_bin  v5_bin  ...  v115_bin  v116_bin  v117_bin  v118_bin
+ID                                      ...                                        
+3            1       4       3       3  ...         1         0         3         2
+156          1       2       1       3  ...         5         0         5         5
+172          1       2       3       5  ...         5         0         3         3
+202          0       6       3       3  ...         6         1         3         4
+223          1       4       4       3  ...         7         1         3         3
+...        ...     ...     ...     ...  ...       ...       ...       ...       ...
+228386      -1      -1      -1      -1  ...        -1        -1        -1        -1
+228423      -1      -1      -1       3  ...        -1        -1         4        -1
+228462      -1      -1      -1      -1  ...        -1        -1        -1        -1
+228475      -1      -1      -1      -1  ...        -1        -1        -1        -1
+228601      -1      -1      -1      -1  ...        -1        -1        -1        -1
+
+[5000 rows x 12 columns], ['v1_bin', 'v2_bin', 'v4_bin', 'v5_bin', 'v108_bin', 'v109_bin', 'v111_bin', 'v114_bin', 'v115_bin', 'v116_bin', 'v117_bin', 'v118_bin']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+        v1_bin  v2_bin  v4_bin  v5_bin  ...  v115_bin  v116_bin  v117_bin  v118_bin
+ID                                      ...                                        
+3            1       4       3       3  ...         1         0         3         2
+156          1       2       1       3  ...         5         0         5         5
+172          1       2       3       5  ...         5         0         3         3
+202          0       6       3       3  ...         6         1         3         4
+223          1       4       4       3  ...         7         1         3         3
+...        ...     ...     ...     ...  ...       ...       ...       ...       ...
+228386      -1      -1      -1      -1  ...        -1        -1        -1        -1
+228423      -1      -1      -1       3  ...        -1        -1         4        -1
+228462      -1      -1      -1      -1  ...        -1        -1        -1        -1
+228475      -1      -1      -1      -1  ...        -1        -1        -1        -1
+228601      -1      -1      -1      -1  ...        -1        -1        -1        -1
+
+[5000 rows x 12 columns]
+
+  ('###### colnum bin to One Hot  #################################################',) 
+v1_bin 11 (5000, 12)
+v2_bin 11 (5000, 22)
+v4_bin 10 (5000, 32)
+v5_bin 11 (5000, 41)
+v108_bin 11 (5000, 51)
+v109_bin 11 (5000, 61)
+v111_bin 9 (5000, 71)
+v114_bin 11 (5000, 79)
+v115_bin 11 (5000, 89)
+v116_bin 5 (5000, 99)
+v117_bin 11 (5000, 103)
+v118_bin 10 (5000, 113)
+
+  (['v1_bin_-1', 'v1_bin_0', 'v1_bin_1', 'v1_bin_2', 'v1_bin_3', 'v1_bin_4', 'v1_bin_5', 'v1_bin_6', 'v1_bin_7', 'v1_bin_8', 'v1_bin_9', 'v2_bin_-1', 'v2_bin_0', 'v2_bin_1', 'v2_bin_2', 'v2_bin_3', 'v2_bin_4', 'v2_bin_5', 'v2_bin_6', 'v2_bin_7', 'v2_bin_8', 'v2_bin_9', 'v4_bin_-1', 'v4_bin_0', 'v4_bin_1', 'v4_bin_2', 'v4_bin_3', 'v4_bin_4', 'v4_bin_5', 'v4_bin_6', 'v4_bin_7', 'v4_bin_8', 'v5_bin_-1', 'v5_bin_0', 'v5_bin_1', 'v5_bin_2', 'v5_bin_3', 'v5_bin_4', 'v5_bin_5', 'v5_bin_6', 'v5_bin_7', 'v5_bin_8', 'v5_bin_9', 'v108_bin_-1', 'v108_bin_0', 'v108_bin_1', 'v108_bin_2', 'v108_bin_3', 'v108_bin_4', 'v108_bin_5', 'v108_bin_6', 'v108_bin_7', 'v108_bin_8', 'v108_bin_9', 'v109_bin_-1', 'v109_bin_0', 'v109_bin_1', 'v109_bin_2', 'v109_bin_3', 'v109_bin_4', 'v109_bin_5', 'v109_bin_6', 'v109_bin_7', 'v109_bin_8', 'v109_bin_9', 'v111_bin_-1', 'v111_bin_0', 'v111_bin_1', 'v111_bin_2', 'v111_bin_3', 'v111_bin_4', 'v111_bin_5', 'v111_bin_6', 'v111_bin_9', 'v114_bin_-1', 'v114_bin_0', 'v114_bin_1', 'v114_bin_2', 'v114_bin_3', 'v114_bin_4', 'v114_bin_5', 'v114_bin_6', 'v114_bin_7', 'v114_bin_8', 'v114_bin_9', 'v115_bin_-1', 'v115_bin_0', 'v115_bin_1', 'v115_bin_2', 'v115_bin_3', 'v115_bin_4', 'v115_bin_5', 'v115_bin_6', 'v115_bin_7', 'v115_bin_8', 'v115_bin_9', 'v116_bin_-1', 'v116_bin_0', 'v116_bin_1', 'v116_bin_2', 'v116_bin_3', 'v117_bin_-1', 'v117_bin_0', 'v117_bin_1', 'v117_bin_2', 'v117_bin_3', 'v117_bin_4', 'v117_bin_5', 'v117_bin_6', 'v117_bin_7', 'v117_bin_8', 'v117_bin_9', 'v118_bin_-1', 'v118_bin_0', 'v118_bin_1', 'v118_bin_2', 'v118_bin_3', 'v118_bin_4', 'v118_bin_5', 'v118_bin_6', 'v118_bin_7', 'v118_bin_8'],) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colnum_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//features_store//colnum_onehot/features.parquet',) 
+
+  (        v1_bin_-1  v1_bin_0  v1_bin_1  ...  v118_bin_6  v118_bin_7  v118_bin_8
+ID                                     ...                                    
+3               0         0         1  ...           0           0           0
+156             0         0         1  ...           0           0           0
+172             0         0         1  ...           0           0           0
+202             0         1         0  ...           0           0           0
+223             0         0         1  ...           0           0           0
+...           ...       ...       ...  ...         ...         ...         ...
+228386          1         0         0  ...           0           0           0
+228423          1         0         0  ...           0           0           0
+228462          1         0         0  ...           0           0           0
+228475          1         0         0  ...           0           0           0
+228601          1         0         0  ...           0           0           0
+
+[5000 rows x 122 columns], ['v1_bin_-1', 'v1_bin_0', 'v1_bin_1', 'v1_bin_2', 'v1_bin_3', 'v1_bin_4', 'v1_bin_5', 'v1_bin_6', 'v1_bin_7', 'v1_bin_8', 'v1_bin_9', 'v2_bin_-1', 'v2_bin_0', 'v2_bin_1', 'v2_bin_2', 'v2_bin_3', 'v2_bin_4', 'v2_bin_5', 'v2_bin_6', 'v2_bin_7', 'v2_bin_8', 'v2_bin_9', 'v4_bin_-1', 'v4_bin_0', 'v4_bin_1', 'v4_bin_2', 'v4_bin_3', 'v4_bin_4', 'v4_bin_5', 'v4_bin_6', 'v4_bin_7', 'v4_bin_8', 'v5_bin_-1', 'v5_bin_0', 'v5_bin_1', 'v5_bin_2', 'v5_bin_3', 'v5_bin_4', 'v5_bin_5', 'v5_bin_6', 'v5_bin_7', 'v5_bin_8', 'v5_bin_9', 'v108_bin_-1', 'v108_bin_0', 'v108_bin_1', 'v108_bin_2', 'v108_bin_3', 'v108_bin_4', 'v108_bin_5', 'v108_bin_6', 'v108_bin_7', 'v108_bin_8', 'v108_bin_9', 'v109_bin_-1', 'v109_bin_0', 'v109_bin_1', 'v109_bin_2', 'v109_bin_3', 'v109_bin_4', 'v109_bin_5', 'v109_bin_6', 'v109_bin_7', 'v109_bin_8', 'v109_bin_9', 'v111_bin_-1', 'v111_bin_0', 'v111_bin_1', 'v111_bin_2', 'v111_bin_3', 'v111_bin_4', 'v111_bin_5', 'v111_bin_6', 'v111_bin_9', 'v114_bin_-1', 'v114_bin_0', 'v114_bin_1', 'v114_bin_2', 'v114_bin_3', 'v114_bin_4', 'v114_bin_5', 'v114_bin_6', 'v114_bin_7', 'v114_bin_8', 'v114_bin_9', 'v115_bin_-1', 'v115_bin_0', 'v115_bin_1', 'v115_bin_2', 'v115_bin_3', 'v115_bin_4', 'v115_bin_5', 'v115_bin_6', 'v115_bin_7', 'v115_bin_8', 'v115_bin_9', 'v116_bin_-1', 'v116_bin_0', 'v116_bin_1', 'v116_bin_2', 'v116_bin_3', 'v117_bin_-1', 'v117_bin_0', 'v117_bin_1', 'v117_bin_2', 'v117_bin_3', 'v117_bin_4', 'v117_bin_5', 'v117_bin_6', 'v117_bin_7', 'v117_bin_8', 'v117_bin_9', 'v118_bin_-1', 'v118_bin_0', 'v118_bin_1', 'v118_bin_2', 'v118_bin_3', 'v118_bin_4', 'v118_bin_5', 'v118_bin_6', 'v118_bin_7', 'v118_bin_8']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+       v3  v30 v31 v47 v52
+ID                        
+3       C    C   A   C   G
+156     C    C   A   I   D
+172     C    C   A   I   E
+202     C    C   A   I   J
+223     C  NaN   A   C   G
+...    ..  ...  ..  ..  ..
+228386  C    A   B   C   G
+228423  C    C   C   C   I
+228462  C  NaN   A   I   C
+228475  C  NaN   A   C   H
+228601  C  NaN   A   I   K
+
+[5000 rows x 5 columns]
+
+  ('#### Colcat to integer encoding ',) 
+
+  (v3     object
+v30    object
+v31    object
+v47    object
+v52    object
+dtype: object, {'cat_map': {'v3': {'A': 0, 'C': 1}, 'v30': {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6}, 'v31': {'A': 0, 'B': 1, 'C': 2}, 'v47': {'A': 0, 'C': 1, 'D': 2, 'E': 3, 'F': 4, 'G': 5, 'I': 6, 'J': 7}, 'v52': {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9, 'K': 10, 'L': 11}}, 'cat_map_inverse': {'v3': {0: 'A', 1: 'C'}, 'v30': {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G'}, 'v31': {0: 'A', 1: 'B', 2: 'C'}, 'v47': {0: 'A', 1: 'C', 2: 'D', 3: 'E', 4: 'F', 5: 'G', 6: 'I', 7: 'J'}, 'v52': {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K', 11: 'L'}}}) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colcat_bin_map.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colcat_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//features_store//colcat/features.parquet',) 
+
+  (       v3  v30 v31 v47 v52  v3_int  v30_int  v31_int  v47_int  v52_int
+ID                                                                    
+3       C    C   A   C   G       0        0        0        0        0
+156     C    C   A   I   D       0        0        0        1        1
+172     C    C   A   I   E       0        0        0        1        2
+202     C    C   A   I   J       0        0        0        1        3
+223     C  NaN   A   C   G       0       -1        0        0        0
+...    ..  ...  ..  ..  ..     ...      ...      ...      ...      ...
+228386  C    A   B   C   G       0        5        1        0        0
+228423  C    C   C   C   I       0        0        2        0        6
+228462  C  NaN   A   I   C       0       -1        0        1       10
+228475  C  NaN   A   C   H       0       -1        0        0       11
+228601  C  NaN   A   I   K       0       -1        0        1        9
+
+[5000 rows x 10 columns], ['v3', 'v30', 'v31', 'v47', 'v52', 'v3_int', 'v30_int', 'v31_int', 'v47_int', 'v52_int']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//features_store//colcat_bin/features.parquet',) 
+
+  (        v3_int  v30_int  v31_int  v47_int  v52_int
+ID                                                
+3            0        0        0        0        0
+156          0        0        0        1        1
+172          0        0        0        1        2
+202          0        0        0        1        3
+223          0       -1        0        0        0
+...        ...      ...      ...      ...      ...
+228386       0        5        1        0        0
+228423       0        0        2        0        6
+228462       0       -1        0        1       10
+228475       0       -1        0        0       11
+228601       0       -1        0        1        9
+
+[5000 rows x 5 columns], ['v3_int', 'v30_int', 'v31_int', 'v47_int', 'v52_int']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+        v3_int  v30_int  v31_int  v47_int  v52_int
+ID                                                
+3            0        0        0        0        0
+156          0        0        0        1        1
+172          0        0        0        1        2
+202          0        0        0        1        3
+223          0       -1        0        0        0
+...        ...      ...      ...      ...      ...
+228386       0        5        1        0        0
+228423       0        0        2        0        6
+228462       0       -1        0        1       10
+228475       0       -1        0        0       11
+228601       0       -1        0        1        9
+
+[5000 rows x 5 columns]
+
+  ('#### colcat to onehot',) 
+v3_int 3 (5000, 5)
+v30_int 8 (5000, 7)
+v31_int 4 (5000, 14)
+v47_int 8 (5000, 17)
+v52_int 12 (5000, 24)
+
+  (     v3_int_-1  v3_int_0  v3_int_1  ...  v52_int_9  v52_int_10  v52_int_11
+ID                                  ...                                   
+3            0         1         0  ...          0           0           0
+156          0         1         0  ...          0           0           0
+172          0         1         0  ...          0           0           0
+202          0         1         0  ...          0           0           0
+223          0         1         0  ...          0           0           0
+
+[5 rows x 35 columns],) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colcat_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//pipeline//colcat.pkl',) 
+ok ------------
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/cardif/cardif_lightgbm//features_store//colcat_onehot/features.parquet',) 
+
+  (        v3_int_-1  v3_int_0  v3_int_1  ...  v52_int_9  v52_int_10  v52_int_11
+ID                                     ...                                   
+3               0         1         0  ...          0           0           0
+156             0         1         0  ...          0           0           0
+172             0         1         0  ...          0           0           0
+202             0         1         0  ...          0           0           0
+223             0         1         0  ...          0           0           0
+...           ...       ...       ...  ...        ...         ...         ...
+228386          0         1         0  ...          0           0           0
+228423          0         1         0  ...          0           0           0
+228462          0         1         0  ...          0           1           0
+228475          0         1         0  ...          0           0           1
+228601          0         1         0  ...          1           0           0
+
+[5000 rows x 35 columns], ['v3_int_-1', 'v3_int_0', 'v3_int_1', 'v30_int_-1', 'v30_int_0', 'v30_int_1', 'v30_int_2', 'v30_int_3', 'v30_int_4', 'v30_int_5', 'v30_int_6', 'v31_int_-1', 'v31_int_0', 'v31_int_1', 'v31_int_2', 'v47_int_0', 'v47_int_1', 'v47_int_2', 'v47_int_3', 'v47_int_4', 'v47_int_5', 'v47_int_6', 'v47_int_7', 'v52_int_0', 'v52_int_1', 'v52_int_2', 'v52_int_3', 'v52_int_4', 'v52_int_5', 'v52_int_6', 'v52_int_7', 'v52_int_8', 'v52_int_9', 'v52_int_10', 'v52_int_11']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+       v3  v30
+ID            
+3       C    C
+156     C    C
+172     C    C
+202     C    C
+223     C  NaN
+...    ..  ...
+228386  C    A
+228423  C    C
+228462  C  NaN
+228475  C  NaN
+228601  C  NaN
+
+[5000 rows x 2 columns]
+
+  ('#####  Cross Features From OneHot Features   ######################################',) 
+Traceback (most recent call last):
+  File "cardif_classifier.py", line 257, in <module>
+    fire.Fire()
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\fire\core.py", line 138, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\fire\core.py", line 468, in _Fire
+    target=component.__name__)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\fire\core.py", line 672, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "cardif_classifier.py", line 205, in train
+    n_sample          =  nsample if nsample is not None else m['n_sample']
+  File "D:\_devs\Python01\gitdev\dsa2\source\run_train.py", line 219, in run_train
+    preprocess_pars,  path_features_store=path_features_store)
+  File "D:\_devs\Python01\gitdev\dsa2\source\run_preprocess.py", line 175, in preprocess
+    dfi, col_pars = pipe_fun(df_, cols_list, pars= pars)
+  File "D:\_devs\Python01\gitdev\dsa2\source\preprocessors.py", line 468, in pd_colcross
+    pct_threshold=0.02,  m_combination=2)
+  File "D:\_devs\Python01\gitdev\dsa2\source\util_feature.py", line 462, in pd_feature_generate_cross
+    dfX_cross[coli + "-" + colj] = dfX[coli] * dfX[colj]
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\ops\__init__.py", line 1499, in f
+    self, other, pass_op, fill_value=fill_value, axis=axis, level=level
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\ops\__init__.py", line 1400, in _combine_series_frame
+    return self._combine_match_columns(other, func, level=level)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\frame.py", line 5412, in _combine_match_columns
+    left, right = self.align(other, join="outer", axis=1, level=level, copy=False)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\frame.py", line 3954, in align
+    broadcast_axis=broadcast_axis,
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\generic.py", line 8823, in align
+    fill_axis=fill_axis,
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\generic.py", line 8938, in _align_series
+    other.index, how=join, level=level, return_indexers=True
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\indexes\base.py", line 3561, in join
+    return this.join(other, how=how, return_indexers=return_indexers)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\indexes\base.py", line 3572, in join
+    other, how=how, return_indexers=return_indexers
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\indexes\base.py", line 3884, in _join_monotonic
+    join_index, lidx, ridx = self._outer_indexer(sv, ov)
+  File "D:\_devs\Python01\ana3\envs\py36\lib\site-packages\pandas\core\indexes\base.py", line 247, in _outer_indexer
+    return libjoin.outer_join_indexer(left, right)
+  File "pandas/_libs/join.pyx", line 563, in pandas._libs.join.outer_join_indexer
+TypeError: '<' not supported between instances of 'str' and 'int'

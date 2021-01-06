@@ -1,0 +1,2288 @@
+os.getcwd D:\_devs\Python01\gitdev\dsa2
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+{'model_pars': {'model_path': '', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'n_estimators': 3000, 'learning_rate': 0.001, 'boosting_type': 'gbdt', 'early_stopping_rounds': 5}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x000001D80ABE9048>, 'pre_process_pars': {'y_norm_fun': <function titanic_lightgbm.<locals>.pre_process_fun at 0x000001D80ABE90D0>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}, 'compute_pars': {'metric_list': ['accuracy_score', 'average_precision_score']}, 'data_pars': {'n_sample': 1000, 'cols_input_type': {'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': [], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']}, 'cols_model_group': ['colnum_bin', 'colcat_bin'], 'filter_pars': {'ymax': 2, 'ymin': -1}}, 'global_pars': {'path_config_model': 'D:/_devs/Python01/gitdev/dsa2//titanic_classifier.py', 'model_class': 'titanic_lightgbm', 'path_data_train': 'data/input/titanic/train/', 'path_data_test': 'data/input/titanic/test/', 'path_model': 'data/output/titanic/titanic_lightgbm/', 'path_output_pred': 'data/output/titanic/pred_titanic_lightgbm/', 'n_sample': 1000}}
+D:/_devs/Python01/gitdev/dsa2/
+os.getcwd D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm/',) 
+  ('#### Model Params Dynamic loading  ###############################################',) 
+
+  ('D:\\_devs\\Python01\\gitdev',) 
+D:\_devs\Python01\gitdev\dsa2
+D:/_devs/Python01/gitdev/dsa2/
+D:/_devs/Python01/gitdev/dsa2/data/
+  ({'model_pars': {'model_path': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model/', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'n_estimators': 3000, 'learning_rate': 0.001, 'boosting_type': 'gbdt', 'early_stopping_rounds': 5}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x000001D80AC01D08>, 'pre_process_pars': {'y_norm_fun': <function titanic_lightgbm.<locals>.pre_process_fun at 0x000001D80AC0C2F0>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}, 'compute_pars': {'metric_list': ['accuracy_score', 'average_precision_score']}, 'data_pars': {'n_sample': 1000, 'cols_input_type': {'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': [], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']}, 'cols_model_group': ['colnum_bin', 'colcat_bin'], 'filter_pars': {'ymax': 2, 'ymin': -1}}, 'global_pars': {'path_config_model': 'D:/_devs/Python01/gitdev/dsa2//titanic_classifier.py', 'model_class': 'titanic_lightgbm', 'path_data_train': 'data/input/titanic/train/', 'path_data_test': 'data/input/titanic/test/', 'path_model': 'data/output/titanic/titanic_lightgbm/', 'path_output_pred': 'data/output/titanic/pred_titanic_lightgbm/', 'n_sample': 1000}},) 
+  ('#### load input column family  ###################################################',) 
+  ({'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': [], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']},) 
+  ('#### Preprocess  #################################################################',) 
+
+  ({'coly': 'Survived', 'colid': 'PassengerId', 'colcat': ['Sex', 'Embarked'], 'colnum': ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare'], 'coltext': [], 'coldate': [], 'colcross': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']},) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colid.pkl',) 
+
+  ('loading', 'PassengerId', 'D:/_devs/Python01/gitdev/dsa2/data/input/titanic/train//features.zip') 
+['D:/_devs/Python01/gitdev/dsa2/data/input/titanic/train\\features.zip']
+
+  ('dfX_raw',                                    0  ...                  890
+PassengerId                        1  ...                  891
+Pclass                             3  ...                    3
+Name         Braund, Mr. Owen Harris  ...  Dooley, Mr. Patrick
+Sex                             male  ...                 male
+
+[4 rows x 891 columns]) 
+
+  ('dfy',    PassengerId  Survived
+0            1         0
+1            2         1
+2            3         1
+3            4         1
+4            5         0) 
+
+  ('#####  coly  ###########################################################################',) 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+D:/_devs/Python01/gitdev/dsa2/
+----------df----------
+              Pclass  ... Survived
+PassengerId          ...         
+1                 3  ...        0
+2                 1  ...        1
+3                 3  ...        1
+4                 1  ...        1
+5                 3  ...        0
+...             ...  ...      ...
+887               2  ...        0
+888               1  ...        1
+889               3  ...        0
+890               1  ...        1
+891               3  ...        0
+
+[891 rows x 10 columns]
+----------df[coly]------------ PassengerId
+1      0.0
+2      1.0
+3      1.0
+4      1.0
+5      0.0
+      ... 
+887    0.0
+888    1.0
+889    0.0
+890    1.0
+891    0.0
+Name: Survived, Length: 891, dtype: float32
+
+  ('y_norm_fun preprocess_pars',) 
+----------df----------
+              Pclass  ... Survived
+PassengerId          ...         
+1                 3  ...      0.0
+2                 1  ...      1.0
+3                 3  ...      1.0
+4                 1  ...      1.0
+5                 3  ...      0.0
+...             ...  ...      ...
+887               2  ...      0.0
+888               1  ...      1.0
+889               3  ...      0.0
+890               1  ...      1.0
+891               3  ...      0.0
+
+[891 rows x 10 columns]
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//coly/features.parquet',) 
+
+  (             Survived
+PassengerId          
+1                 0.0
+2                 1.0
+3                 1.0
+4                 1.0
+5                 0.0
+...               ...
+887               0.0
+888               1.0
+889               0.0
+890               1.0
+891               0.0
+
+[891 rows x 1 columns], ['Survived']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//coly.pkl',) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+             Pclass   Age  SibSp  Parch     Fare
+PassengerId                                     
+1                 3  22.0      1      0   7.2500
+2                 1  38.0      1      0  71.2833
+3                 3  26.0      0      0   7.9250
+4                 1  35.0      1      0  53.1000
+5                 3  35.0      0      0   8.0500
+...             ...   ...    ...    ...      ...
+887               2  27.0      0      0  13.0000
+888               1  19.0      0      0  30.0000
+889               3  21.2      1      2  23.4500
+890               1  26.0      0      0  30.0000
+891               3  32.0      0      0   7.7500
+
+[891 rows x 5 columns]
+
+  (None,) 
+
+  ('### colnum Map numerics to Category bin  ###########################################',) 
+Pclass
+           Pclass               
+              max size  min mean
+Pclass_bin                      
+0             1.0  216  1.0  1.0
+4             2.0  184  2.0  2.0
+9             3.0  491  3.0  3.0
+Age
+               Age                       
+               max size    min       mean
+Age_bin                                  
+0         8.000000   54   0.42   3.355000
+1        16.000000   46   9.00  13.467391
+2        24.000000  193  17.00  20.778238
+3        32.200001  330  24.50  30.183939
+4        40.000000  118  32.50  36.177967
+5        48.000000   70  40.50  44.400002
+6        56.000000   45  49.00  51.944443
+7        64.000000   24  57.00  60.291668
+8        71.000000    9  65.00  68.166664
+9        80.000000    2  74.00  77.000000
+SibSp
+          SibSp               
+            max size  min mean
+SibSp_bin                     
+0           0.0  608  0.0  0.0
+1           1.0  209  1.0  1.0
+2           2.0   28  2.0  2.0
+3           3.0   16  3.0  3.0
+4           4.0   18  4.0  4.0
+6           5.0    5  5.0  5.0
+9           8.0    7  8.0  8.0
+Parch
+          Parch               
+            max size  min mean
+Parch_bin                     
+0           0.0  678  0.0  0.0
+1           1.0  118  1.0  1.0
+3           2.0   80  2.0  2.0
+4           3.0    5  3.0  3.0
+6           4.0    4  4.0  4.0
+8           5.0    5  5.0  5.0
+9           6.0    1  6.0  6.0
+Fare
+                Fare                             
+                 max size         min        mean
+Fare_bin                                         
+0          50.495800  732    0.000000   15.595536
+1          93.500000  106   51.479198   69.483727
+2         153.462494   31  106.425003  128.930237
+3         164.866699    2  164.866699  164.866699
+4         247.520798   11  211.337494  224.766663
+5         263.000000    6  262.375000  262.791656
+9         512.329224    3  512.329224  512.329224
+
+  (OrderedDict([('Pclass', [0.9999, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4000000000000004, 2.6, 2.8, 3.0]), ('Age', [0.41989998688697816, 8.378000169992447, 16.336000353097916, 24.294000536203384, 32.25200071930885, 40.21000090241432, 48.16800108551979, 56.12600126862526, 64.08400145173073, 72.0420016348362, 80.00000181794167]), ('SibSp', [-0.0001, 0.8, 1.6, 2.4000000000000004, 3.2, 4.0, 4.800000000000001, 5.6000000000000005, 6.4, 7.2, 8.0]), ('Parch', [-0.0001, 0.6, 1.2, 1.7999999999999998, 2.4, 3.0, 3.5999999999999996, 4.2, 4.8, 5.3999999999999995, 6.0]), ('Fare', [-0.0001, 51.23292236328125, 102.4658447265625, 153.69876708984373, 204.931689453125, 256.16461181640625, 307.39753417968745, 358.6304565429687, 409.86337890625, 461.09630126953124, 512.3292236328125])]),) 
+
+  (['Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin'],) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colnum_binmap.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colnum_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//colnum/features.parquet',) 
+
+  (             Pclass   Age  SibSp  ...  SibSp_bin  Parch_bin  Fare_bin
+PassengerId                       ...                                
+1                 3  22.0      1  ...          1          0         0
+2                 1  38.0      1  ...          1          0         1
+3                 3  26.0      0  ...          0          0         0
+4                 1  35.0      1  ...          1          0         1
+5                 3  35.0      0  ...          0          0         0
+...             ...   ...    ...  ...        ...        ...       ...
+887               2  27.0      0  ...          0          0         0
+888               1  19.0      0  ...          0          0         0
+889               3  21.2      1  ...          1          3         0
+890               1  26.0      0  ...          0          0         0
+891               3  32.0      0  ...          0          0         0
+
+[891 rows x 10 columns], ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//colnum_bin/features.parquet',) 
+
+  (             Pclass_bin  Age_bin  SibSp_bin  Parch_bin  Fare_bin
+PassengerId                                                     
+1                     9        2          1          0         0
+2                     0        4          1          0         1
+3                     9        3          0          0         0
+4                     0        4          1          0         1
+5                     9        4          0          0         0
+...                 ...      ...        ...        ...       ...
+887                   4        3          0          0         0
+888                   0        2          0          0         0
+889                   9        2          1          3         0
+890                   0        3          0          0         0
+891                   9        3          0          0         0
+
+[891 rows x 5 columns], ['Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+             Pclass_bin  Age_bin  SibSp_bin  Parch_bin  Fare_bin
+PassengerId                                                     
+1                     9        2          1          0         0
+2                     0        4          1          0         1
+3                     9        3          0          0         0
+4                     0        4          1          0         1
+5                     9        4          0          0         0
+...                 ...      ...        ...        ...       ...
+887                   4        3          0          0         0
+888                   0        2          0          0         0
+889                   9        2          1          3         0
+890                   0        3          0          0         0
+891                   9        3          0          0         0
+
+[891 rows x 5 columns]
+
+  ('###### colnum bin to One Hot  #################################################',) 
+Pclass_bin 3 (891, 5)
+Age_bin 10 (891, 7)
+SibSp_bin 7 (891, 16)
+Parch_bin 7 (891, 22)
+Fare_bin 7 (891, 28)
+
+  (['Pclass_bin_0', 'Pclass_bin_4', 'Pclass_bin_9', 'Age_bin_0', 'Age_bin_1', 'Age_bin_2', 'Age_bin_3', 'Age_bin_4', 'Age_bin_5', 'Age_bin_6', 'Age_bin_7', 'Age_bin_8', 'Age_bin_9', 'SibSp_bin_0', 'SibSp_bin_1', 'SibSp_bin_2', 'SibSp_bin_3', 'SibSp_bin_4', 'SibSp_bin_6', 'SibSp_bin_9', 'Parch_bin_0', 'Parch_bin_1', 'Parch_bin_3', 'Parch_bin_4', 'Parch_bin_6', 'Parch_bin_8', 'Parch_bin_9', 'Fare_bin_0', 'Fare_bin_1', 'Fare_bin_2', 'Fare_bin_3', 'Fare_bin_4', 'Fare_bin_5', 'Fare_bin_9'],) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colnum_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//colnum_onehot/features.parquet',) 
+
+  (             Pclass_bin_0  Pclass_bin_4  ...  Fare_bin_5  Fare_bin_9
+PassengerId                              ...                        
+1                       0             0  ...           0           0
+2                       1             0  ...           0           0
+3                       0             0  ...           0           0
+4                       1             0  ...           0           0
+5                       0             0  ...           0           0
+...                   ...           ...  ...         ...         ...
+887                     0             1  ...           0           0
+888                     1             0  ...           0           0
+889                     0             0  ...           0           0
+890                     1             0  ...           0           0
+891                     0             0  ...           0           0
+
+[891 rows x 34 columns], ['Pclass_bin_0', 'Pclass_bin_4', 'Pclass_bin_9', 'Age_bin_0', 'Age_bin_1', 'Age_bin_2', 'Age_bin_3', 'Age_bin_4', 'Age_bin_5', 'Age_bin_6', 'Age_bin_7', 'Age_bin_8', 'Age_bin_9', 'SibSp_bin_0', 'SibSp_bin_1', 'SibSp_bin_2', 'SibSp_bin_3', 'SibSp_bin_4', 'SibSp_bin_6', 'SibSp_bin_9', 'Parch_bin_0', 'Parch_bin_1', 'Parch_bin_3', 'Parch_bin_4', 'Parch_bin_6', 'Parch_bin_8', 'Parch_bin_9', 'Fare_bin_0', 'Fare_bin_1', 'Fare_bin_2', 'Fare_bin_3', 'Fare_bin_4', 'Fare_bin_5', 'Fare_bin_9']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+                Sex Embarked
+PassengerId                 
+1              male        S
+2            female        C
+3            female        S
+4            female        S
+5              male        S
+...             ...      ...
+887            male        S
+888          female        S
+889          female        S
+890            male        C
+891            male        Q
+
+[891 rows x 2 columns]
+
+  ('#### Colcat to integer encoding ',) 
+
+  (Sex         object
+Embarked    object
+dtype: object, {'cat_map': {'Sex': {'female': 0, 'male': 1}, 'Embarked': {'C': 0, 'Q': 1, 'S': 2}}, 'cat_map_inverse': {'Sex': {0: 'female', 1: 'male'}, 'Embarked': {0: 'C', 1: 'Q', 2: 'S'}}}) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colcat_bin_map.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colcat_bin.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//colcat/features.parquet',) 
+
+  (                Sex Embarked  Sex_int  Embarked_int
+PassengerId                                        
+1              male        S        0             0
+2            female        C        1             1
+3            female        S        1             0
+4            female        S        1             0
+5              male        S        0             0
+...             ...      ...      ...           ...
+887            male        S        0             0
+888          female        S        1             0
+889          female        S        1             0
+890            male        C        0             1
+891            male        Q        0             2
+
+[891 rows x 4 columns], ['Sex', 'Embarked', 'Sex_int', 'Embarked_int']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//colcat_bin/features.parquet',) 
+
+  (             Sex_int  Embarked_int
+PassengerId                       
+1                  0             0
+2                  1             1
+3                  1             0
+4                  1             0
+5                  0             0
+...              ...           ...
+887                0             0
+888                1             0
+889                1             0
+890                0             1
+891                0             2
+
+[891 rows x 2 columns], ['Sex_int', 'Embarked_int']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+             Sex_int  Embarked_int
+PassengerId                       
+1                  0             0
+2                  1             1
+3                  1             0
+4                  1             0
+5                  0             0
+...              ...           ...
+887                0             0
+888                1             0
+889                1             0
+890                0             1
+891                0             2
+
+[891 rows x 2 columns]
+
+  ('#### colcat to onehot',) 
+Sex_int 2 (891, 2)
+Embarked_int 3 (891, 2)
+
+  (             Embarked_int_0  Embarked_int_1  Embarked_int_2
+PassengerId                                                
+1                         1               0               0
+2                         0               1               0
+3                         1               0               0
+4                         1               0               0
+5                         1               0               0,) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colcat_onehot.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colcat.pkl',) 
+ok ------------
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//colcat_onehot/features.parquet',) 
+
+  (             Embarked_int_0  Embarked_int_1  Embarked_int_2
+PassengerId                                                
+1                         1               0               0
+2                         0               1               0
+3                         1               0               0
+4                         1               0               0
+5                         1               0               0
+...                     ...             ...             ...
+887                       1               0               0
+888                       1               0               0
+889                       1               0               0
+890                       0               1               0
+891                       0               0               1
+
+[891 rows x 3 columns], ['Embarked_int_0', 'Embarked_int_1', 'Embarked_int_2']) 
+
+  ('###################', {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}, '##########################################################') 
+
+  ('D:\\_devs\\Python01\\gitdev\\dsa2',) 
+                                                          Name  ...     Fare
+PassengerId                                                     ...         
+1                                      Braund, Mr. Owen Harris  ...   7.2500
+2            Cumings, Mrs. John Bradley (Florence Briggs Th...  ...  71.2833
+3                                       Heikkinen, Miss. Laina  ...   7.9250
+4                 Futrelle, Mrs. Jacques Heath (Lily May Peel)  ...  53.1000
+5                                     Allen, Mr. William Henry  ...   8.0500
+...                                                        ...  ...      ...
+887                                      Montvila, Rev. Juozas  ...  13.0000
+888                               Graham, Miss. Margaret Edith  ...  30.0000
+889                   Johnston, Miss. Catherine Helen "Carrie"  ...  23.4500
+890                                      Behr, Mr. Karl Howell  ...  30.0000
+891                                        Dooley, Mr. Patrick  ...   7.7500
+
+[891 rows x 9 columns]
+
+  ('#####  Cross Features From OneHot Features   ######################################',) 
+
+  (PassengerId                  1  2
+Embarked_int_0-Pclass_bin_0  0  0
+Embarked_int_0-Pclass_bin_4  0  0
+Embarked_int_0-Pclass_bin_9  1  0
+Embarked_int_0-Age_bin_0     0  0
+Embarked_int_0-Age_bin_1     0  0
+...                         .. ..
+Parch_bin_0-Fare_bin_0       1  0
+Parch_bin_0-Fare_bin_1       0  1
+Parch_bin_1-Fare_bin_0       0  0
+Parch_bin_1-Fare_bin_1       0  0
+Parch_bin_3-Fare_bin_0       0  0
+
+[117 rows x 2 columns],) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colcross_single_onehot_select.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colcross_pair.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//colcross_pair/features.parquet',) 
+
+  (             Embarked_int_0-Pclass_bin_0  ...  Parch_bin_3-Fare_bin_0
+PassengerId                               ...                        
+1                                      0  ...                       0
+2                                      0  ...                       0
+3                                      0  ...                       0
+4                                      1  ...                       0
+5                                      0  ...                       0
+...                                  ...  ...                     ...
+887                                    0  ...                       0
+888                                    1  ...                       0
+889                                    0  ...                       1
+890                                    0  ...                       0
+891                                    0  ...                       0
+
+[891 rows x 117 columns], ['Embarked_int_0-Pclass_bin_0', 'Embarked_int_0-Pclass_bin_4', 'Embarked_int_0-Pclass_bin_9', 'Embarked_int_0-Age_bin_0', 'Embarked_int_0-Age_bin_1', 'Embarked_int_0-Age_bin_2', 'Embarked_int_0-Age_bin_3', 'Embarked_int_0-Age_bin_4', 'Embarked_int_0-Age_bin_5', 'Embarked_int_0-Age_bin_6', 'Embarked_int_0-Age_bin_7', 'Embarked_int_0-SibSp_bin_0', 'Embarked_int_0-SibSp_bin_1', 'Embarked_int_0-SibSp_bin_2', 'Embarked_int_0-Parch_bin_0', 'Embarked_int_0-Parch_bin_1', 'Embarked_int_0-Parch_bin_3', 'Embarked_int_0-Fare_bin_0', 'Embarked_int_0-Fare_bin_1', 'Embarked_int_1-Pclass_bin_0', 'Embarked_int_1-Pclass_bin_9', 'Embarked_int_1-Age_bin_2', 'Embarked_int_1-Age_bin_3', 'Embarked_int_1-Age_bin_4', 'Embarked_int_1-SibSp_bin_0', 'Embarked_int_1-SibSp_bin_1', 'Embarked_int_1-Parch_bin_0', 'Embarked_int_1-Parch_bin_1', 'Embarked_int_1-Fare_bin_0', 'Embarked_int_1-Fare_bin_1', 'Embarked_int_2-Pclass_bin_9', 'Embarked_int_2-Age_bin_3', 'Embarked_int_2-SibSp_bin_0', 'Embarked_int_2-Parch_bin_0', 'Embarked_int_2-Fare_bin_0', 'Pclass_bin_0-Age_bin_2', 'Pclass_bin_0-Age_bin_3', 'Pclass_bin_0-Age_bin_4', 'Pclass_bin_0-Age_bin_5', 'Pclass_bin_0-Age_bin_6', 'Pclass_bin_0-SibSp_bin_0', 'Pclass_bin_0-SibSp_bin_1', 'Pclass_bin_0-Parch_bin_0', 'Pclass_bin_0-Parch_bin_1', 'Pclass_bin_0-Parch_bin_3', 'Pclass_bin_0-Fare_bin_0', 'Pclass_bin_0-Fare_bin_1', 'Pclass_bin_0-Fare_bin_2', 'Pclass_bin_4-Age_bin_2', 'Pclass_bin_4-Age_bin_3', 'Pclass_bin_4-Age_bin_4', 'Pclass_bin_4-SibSp_bin_0', 'Pclass_bin_4-SibSp_bin_1', 'Pclass_bin_4-Parch_bin_0', 'Pclass_bin_4-Parch_bin_1', 'Pclass_bin_4-Fare_bin_0', 'Pclass_bin_9-Age_bin_0', 'Pclass_bin_9-Age_bin_1', 'Pclass_bin_9-Age_bin_2', 'Pclass_bin_9-Age_bin_3', 'Pclass_bin_9-Age_bin_4', 'Pclass_bin_9-Age_bin_5', 'Pclass_bin_9-SibSp_bin_0', 'Pclass_bin_9-SibSp_bin_1', 'Pclass_bin_9-SibSp_bin_4', 'Pclass_bin_9-Parch_bin_0', 'Pclass_bin_9-Parch_bin_1', 'Pclass_bin_9-Parch_bin_3', 'Pclass_bin_9-Fare_bin_0', 'Age_bin_0-Parch_bin_1', 'Age_bin_0-Parch_bin_3', 'Age_bin_0-Fare_bin_0', 'Age_bin_1-SibSp_bin_0', 'Age_bin_1-Parch_bin_0', 'Age_bin_1-Fare_bin_0', 'Age_bin_2-SibSp_bin_0', 'Age_bin_2-SibSp_bin_1', 'Age_bin_2-Parch_bin_0', 'Age_bin_2-Parch_bin_1', 'Age_bin_2-Parch_bin_3', 'Age_bin_2-Fare_bin_0', 'Age_bin_2-Fare_bin_1', 'Age_bin_3-SibSp_bin_0', 'Age_bin_3-SibSp_bin_1', 'Age_bin_3-Parch_bin_0', 'Age_bin_3-Fare_bin_0', 'Age_bin_3-Fare_bin_1', 'Age_bin_4-SibSp_bin_0', 'Age_bin_4-SibSp_bin_1', 'Age_bin_4-Parch_bin_0', 'Age_bin_4-Fare_bin_0', 'Age_bin_5-SibSp_bin_0', 'Age_bin_5-SibSp_bin_1', 'Age_bin_5-Parch_bin_0', 'Age_bin_5-Fare_bin_0', 'Age_bin_6-SibSp_bin_0', 'Age_bin_6-Parch_bin_0', 'Age_bin_6-Fare_bin_0', 'Age_bin_7-SibSp_bin_0', 'Age_bin_7-Parch_bin_0', 'SibSp_bin_0-Parch_bin_0', 'SibSp_bin_0-Parch_bin_1', 'SibSp_bin_0-Parch_bin_3', 'SibSp_bin_0-Fare_bin_0', 'SibSp_bin_0-Fare_bin_1', 'SibSp_bin_1-Parch_bin_0', 'SibSp_bin_1-Parch_bin_1', 'SibSp_bin_1-Parch_bin_3', 'SibSp_bin_1-Fare_bin_0', 'SibSp_bin_1-Fare_bin_1', 'SibSp_bin_2-Fare_bin_0', 'SibSp_bin_4-Fare_bin_0', 'Parch_bin_0-Fare_bin_0', 'Parch_bin_0-Fare_bin_1', 'Parch_bin_1-Fare_bin_0', 'Parch_bin_1-Fare_bin_1', 'Parch_bin_3-Fare_bin_0']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store//dfX/features.parquet',) 
+
+  (             Survived  Pclass  ...  Parch_bin_1-Fare_bin_1  Parch_bin_3-Fare_bin_0
+PassengerId                    ...                                                
+1                 0.0       3  ...                       0                       0
+2                 1.0       1  ...                       0                       0
+3                 1.0       3  ...                       0                       0
+4                 1.0       1  ...                       0                       0
+5                 0.0       3  ...                       0                       0
+...               ...     ...  ...                     ...                     ...
+887               0.0       2  ...                       0                       0
+888               1.0       1  ...                       0                       0
+889               0.0       3  ...                       0                       1
+890               1.0       1  ...                       0                       0
+891               0.0       3  ...                       0                       0
+
+[891 rows x 169 columns], ['Survived', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex', 'Embarked', 'Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin', 'Pclass_bin_0', 'Pclass_bin_4', 'Pclass_bin_9', 'Age_bin_0', 'Age_bin_1', 'Age_bin_2', 'Age_bin_3', 'Age_bin_4', 'Age_bin_5', 'Age_bin_6', 'Age_bin_7', 'Age_bin_8', 'Age_bin_9', 'SibSp_bin_0', 'SibSp_bin_1', 'SibSp_bin_2', 'SibSp_bin_3', 'SibSp_bin_4', 'SibSp_bin_6', 'SibSp_bin_9', 'Parch_bin_0', 'Parch_bin_1', 'Parch_bin_3', 'Parch_bin_4', 'Parch_bin_6', 'Parch_bin_8', 'Parch_bin_9', 'Fare_bin_0', 'Fare_bin_1', 'Fare_bin_2', 'Fare_bin_3', 'Fare_bin_4', 'Fare_bin_5', 'Fare_bin_9', 'Sex_int', 'Embarked_int', 'Embarked_int_0', 'Embarked_int_1', 'Embarked_int_2', 'Embarked_int_0-Pclass_bin_0', 'Embarked_int_0-Pclass_bin_4', 'Embarked_int_0-Pclass_bin_9', 'Embarked_int_0-Age_bin_0', 'Embarked_int_0-Age_bin_1', 'Embarked_int_0-Age_bin_2', 'Embarked_int_0-Age_bin_3', 'Embarked_int_0-Age_bin_4', 'Embarked_int_0-Age_bin_5', 'Embarked_int_0-Age_bin_6', 'Embarked_int_0-Age_bin_7', 'Embarked_int_0-SibSp_bin_0', 'Embarked_int_0-SibSp_bin_1', 'Embarked_int_0-SibSp_bin_2', 'Embarked_int_0-Parch_bin_0', 'Embarked_int_0-Parch_bin_1', 'Embarked_int_0-Parch_bin_3', 'Embarked_int_0-Fare_bin_0', 'Embarked_int_0-Fare_bin_1', 'Embarked_int_1-Pclass_bin_0', 'Embarked_int_1-Pclass_bin_9', 'Embarked_int_1-Age_bin_2', 'Embarked_int_1-Age_bin_3', 'Embarked_int_1-Age_bin_4', 'Embarked_int_1-SibSp_bin_0', 'Embarked_int_1-SibSp_bin_1', 'Embarked_int_1-Parch_bin_0', 'Embarked_int_1-Parch_bin_1', 'Embarked_int_1-Fare_bin_0', 'Embarked_int_1-Fare_bin_1', 'Embarked_int_2-Pclass_bin_9', 'Embarked_int_2-Age_bin_3', 'Embarked_int_2-SibSp_bin_0', 'Embarked_int_2-Parch_bin_0', 'Embarked_int_2-Fare_bin_0', 'Pclass_bin_0-Age_bin_2', 'Pclass_bin_0-Age_bin_3', 'Pclass_bin_0-Age_bin_4', 'Pclass_bin_0-Age_bin_5', 'Pclass_bin_0-Age_bin_6', 'Pclass_bin_0-SibSp_bin_0', 'Pclass_bin_0-SibSp_bin_1', 'Pclass_bin_0-Parch_bin_0', 'Pclass_bin_0-Parch_bin_1', 'Pclass_bin_0-Parch_bin_3', 'Pclass_bin_0-Fare_bin_0', 'Pclass_bin_0-Fare_bin_1', 'Pclass_bin_0-Fare_bin_2', 'Pclass_bin_4-Age_bin_2', 'Pclass_bin_4-Age_bin_3', 'Pclass_bin_4-Age_bin_4', 'Pclass_bin_4-SibSp_bin_0', 'Pclass_bin_4-SibSp_bin_1', 'Pclass_bin_4-Parch_bin_0', 'Pclass_bin_4-Parch_bin_1', 'Pclass_bin_4-Fare_bin_0', 'Pclass_bin_9-Age_bin_0', 'Pclass_bin_9-Age_bin_1', 'Pclass_bin_9-Age_bin_2', 'Pclass_bin_9-Age_bin_3', 'Pclass_bin_9-Age_bin_4', 'Pclass_bin_9-Age_bin_5', 'Pclass_bin_9-SibSp_bin_0', 'Pclass_bin_9-SibSp_bin_1', 'Pclass_bin_9-SibSp_bin_4', 'Pclass_bin_9-Parch_bin_0', 'Pclass_bin_9-Parch_bin_1', 'Pclass_bin_9-Parch_bin_3', 'Pclass_bin_9-Fare_bin_0', 'Age_bin_0-Parch_bin_1', 'Age_bin_0-Parch_bin_3', 'Age_bin_0-Fare_bin_0', 'Age_bin_1-SibSp_bin_0', 'Age_bin_1-Parch_bin_0', 'Age_bin_1-Fare_bin_0', 'Age_bin_2-SibSp_bin_0', 'Age_bin_2-SibSp_bin_1', 'Age_bin_2-Parch_bin_0', 'Age_bin_2-Parch_bin_1', 'Age_bin_2-Parch_bin_3', 'Age_bin_2-Fare_bin_0', 'Age_bin_2-Fare_bin_1', 'Age_bin_3-SibSp_bin_0', 'Age_bin_3-SibSp_bin_1', 'Age_bin_3-Parch_bin_0', 'Age_bin_3-Fare_bin_0', 'Age_bin_3-Fare_bin_1', 'Age_bin_4-SibSp_bin_0', 'Age_bin_4-SibSp_bin_1', 'Age_bin_4-Parch_bin_0', 'Age_bin_4-Fare_bin_0', 'Age_bin_5-SibSp_bin_0', 'Age_bin_5-SibSp_bin_1', 'Age_bin_5-Parch_bin_0', 'Age_bin_5-Fare_bin_0', 'Age_bin_6-SibSp_bin_0', 'Age_bin_6-Parch_bin_0', 'Age_bin_6-Fare_bin_0', 'Age_bin_7-SibSp_bin_0', 'Age_bin_7-Parch_bin_0', 'SibSp_bin_0-Parch_bin_0', 'SibSp_bin_0-Parch_bin_1', 'SibSp_bin_0-Parch_bin_3', 'SibSp_bin_0-Fare_bin_0', 'SibSp_bin_0-Fare_bin_1', 'SibSp_bin_1-Parch_bin_0', 'SibSp_bin_1-Parch_bin_1', 'SibSp_bin_1-Parch_bin_3', 'SibSp_bin_1-Fare_bin_0', 'SibSp_bin_1-Fare_bin_1', 'SibSp_bin_2-Fare_bin_0', 'SibSp_bin_4-Fare_bin_0', 'Parch_bin_0-Fare_bin_0', 'Parch_bin_0-Fare_bin_1', 'Parch_bin_1-Fare_bin_0', 'Parch_bin_1-Fare_bin_1', 'Parch_bin_3-Fare_bin_0']) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//colsX.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline//cols_family.pkl',) 
+  ('used columns', ['Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin', 'Sex_int', 'Embarked_int'], 'Survived') 
+  ('######### Train model: ###########################################################',) 
+  ("{'model_pars': {'model_path': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model/', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'n_estimators': 3000, 'learning_rate': 0.001, 'boosting_type': 'gbdt', 'early_stopping_rounds': 5}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x000001D80AC01D08>, 'pre_process_pars': {'y_norm_fun': <function titanic_lightgbm.<locals>.pre_process_fun at 0x000001D80AC0C2F0>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', '",) 
+  ('#### Data preparation #############################################################',) 
+  ((891, 169),) 
+colsX ['Pclass_bin', 'Age_bin', 'SibSp_bin', 'Parch_bin', 'Fare_bin', 'Sex_int', 'Embarked_int']
+  ('#### Model Instance ##########################################################',) 
+cannot import pyod
+  (<module 'models.model_sklearn' from 'D:\\_devs\\Python01\\gitdev\\dsa2\\source\\models\\model_sklearn.py'>,) 
+<class 'lightgbm.sklearn.LGBMClassifier'> LGBMClassifier(early_stopping_rounds=5, learning_rate=0.001, n_estimators=3000,
+               objective='binary')
+(534, 7) LGBMClassifier(early_stopping_rounds=5, learning_rate=0.001, n_estimators=3000,
+               objective='binary')
+[1]	valid_0's binary_logloss: 0.649459
+Training until validation scores don't improve for 5 rounds
+[2]	valid_0's binary_logloss: 0.649126
+[3]	valid_0's binary_logloss: 0.648794
+[4]	valid_0's binary_logloss: 0.648462
+[5]	valid_0's binary_logloss: 0.648131
+[6]	valid_0's binary_logloss: 0.647801
+[7]	valid_0's binary_logloss: 0.647472
+[8]	valid_0's binary_logloss: 0.647143
+[9]	valid_0's binary_logloss: 0.646815
+[10]	valid_0's binary_logloss: 0.646488
+[11]	valid_0's binary_logloss: 0.646162
+[12]	valid_0's binary_logloss: 0.645836
+[13]	valid_0's binary_logloss: 0.645511
+[14]	valid_0's binary_logloss: 0.645187
+[15]	valid_0's binary_logloss: 0.644864
+[16]	valid_0's binary_logloss: 0.644541
+[17]	valid_0's binary_logloss: 0.644219
+[18]	valid_0's binary_logloss: 0.643898
+[19]	valid_0's binary_logloss: 0.643578
+[20]	valid_0's binary_logloss: 0.643258
+[21]	valid_0's binary_logloss: 0.642939
+[22]	valid_0's binary_logloss: 0.642621
+[23]	valid_0's binary_logloss: 0.642303
+[24]	valid_0's binary_logloss: 0.641986
+[25]	valid_0's binary_logloss: 0.64167
+[26]	valid_0's binary_logloss: 0.641355
+[27]	valid_0's binary_logloss: 0.64104
+[28]	valid_0's binary_logloss: 0.640726
+[29]	valid_0's binary_logloss: 0.640413
+[30]	valid_0's binary_logloss: 0.6401
+[31]	valid_0's binary_logloss: 0.639788
+[32]	valid_0's binary_logloss: 0.639477
+[33]	valid_0's binary_logloss: 0.639166
+[34]	valid_0's binary_logloss: 0.638857
+[35]	valid_0's binary_logloss: 0.638547
+[36]	valid_0's binary_logloss: 0.638239
+[37]	valid_0's binary_logloss: 0.637931
+[38]	valid_0's binary_logloss: 0.637624
+[39]	valid_0's binary_logloss: 0.637318
+[40]	valid_0's binary_logloss: 0.637012
+[41]	valid_0's binary_logloss: 0.636707
+[42]	valid_0's binary_logloss: 0.636403
+[43]	valid_0's binary_logloss: 0.636099
+[44]	valid_0's binary_logloss: 0.635796
+[45]	valid_0's binary_logloss: 0.635494
+[46]	valid_0's binary_logloss: 0.635193
+[47]	valid_0's binary_logloss: 0.634892
+[48]	valid_0's binary_logloss: 0.634591
+[49]	valid_0's binary_logloss: 0.634292
+[50]	valid_0's binary_logloss: 0.633993
+[51]	valid_0's binary_logloss: 0.633695
+[52]	valid_0's binary_logloss: 0.633397
+[53]	valid_0's binary_logloss: 0.6331
+[54]	valid_0's binary_logloss: 0.632804
+[55]	valid_0's binary_logloss: 0.632508
+[56]	valid_0's binary_logloss: 0.632213
+[57]	valid_0's binary_logloss: 0.631919
+[58]	valid_0's binary_logloss: 0.631625
+[59]	valid_0's binary_logloss: 0.631332
+[60]	valid_0's binary_logloss: 0.63104
+[61]	valid_0's binary_logloss: 0.630748
+[62]	valid_0's binary_logloss: 0.630457
+[63]	valid_0's binary_logloss: 0.630168
+[64]	valid_0's binary_logloss: 0.629878
+[65]	valid_0's binary_logloss: 0.62959
+[66]	valid_0's binary_logloss: 0.629301
+[67]	valid_0's binary_logloss: 0.629014
+[68]	valid_0's binary_logloss: 0.628727
+[69]	valid_0's binary_logloss: 0.62844
+[70]	valid_0's binary_logloss: 0.628155
+[71]	valid_0's binary_logloss: 0.62787
+[72]	valid_0's binary_logloss: 0.627586
+[73]	valid_0's binary_logloss: 0.627302
+[74]	valid_0's binary_logloss: 0.627019
+[75]	valid_0's binary_logloss: 0.626736
+[76]	valid_0's binary_logloss: 0.626454
+[77]	valid_0's binary_logloss: 0.626173
+[78]	valid_0's binary_logloss: 0.625892
+[79]	valid_0's binary_logloss: 0.625612
+[80]	valid_0's binary_logloss: 0.625333
+[81]	valid_0's binary_logloss: 0.625054
+[82]	valid_0's binary_logloss: 0.624776
+[83]	valid_0's binary_logloss: 0.624501
+[84]	valid_0's binary_logloss: 0.624226
+[85]	valid_0's binary_logloss: 0.62395
+[86]	valid_0's binary_logloss: 0.623677
+[87]	valid_0's binary_logloss: 0.623404
+[88]	valid_0's binary_logloss: 0.623132
+[89]	valid_0's binary_logloss: 0.622861
+[90]	valid_0's binary_logloss: 0.62259
+[91]	valid_0's binary_logloss: 0.62232
+[92]	valid_0's binary_logloss: 0.62205
+[93]	valid_0's binary_logloss: 0.621781
+[94]	valid_0's binary_logloss: 0.621512
+[95]	valid_0's binary_logloss: 0.621244
+[96]	valid_0's binary_logloss: 0.620977
+[97]	valid_0's binary_logloss: 0.620708
+[98]	valid_0's binary_logloss: 0.620442
+[99]	valid_0's binary_logloss: 0.620176
+[100]	valid_0's binary_logloss: 0.619911
+[101]	valid_0's binary_logloss: 0.619647
+[102]	valid_0's binary_logloss: 0.619383
+[103]	valid_0's binary_logloss: 0.619119
+[104]	valid_0's binary_logloss: 0.618857
+[105]	valid_0's binary_logloss: 0.618594
+[106]	valid_0's binary_logloss: 0.618333
+[107]	valid_0's binary_logloss: 0.618071
+[108]	valid_0's binary_logloss: 0.617811
+[109]	valid_0's binary_logloss: 0.617549
+[110]	valid_0's binary_logloss: 0.617289
+[111]	valid_0's binary_logloss: 0.617031
+[112]	valid_0's binary_logloss: 0.616772
+[113]	valid_0's binary_logloss: 0.616514
+[114]	valid_0's binary_logloss: 0.616257
+[115]	valid_0's binary_logloss: 0.616001
+[116]	valid_0's binary_logloss: 0.615744
+[117]	valid_0's binary_logloss: 0.615489
+[118]	valid_0's binary_logloss: 0.615234
+[119]	valid_0's binary_logloss: 0.614979
+[120]	valid_0's binary_logloss: 0.614725
+[121]	valid_0's binary_logloss: 0.61447
+[122]	valid_0's binary_logloss: 0.614217
+[123]	valid_0's binary_logloss: 0.613965
+[124]	valid_0's binary_logloss: 0.613713
+[125]	valid_0's binary_logloss: 0.613462
+[126]	valid_0's binary_logloss: 0.613211
+[127]	valid_0's binary_logloss: 0.612961
+[128]	valid_0's binary_logloss: 0.612711
+[129]	valid_0's binary_logloss: 0.612462
+[130]	valid_0's binary_logloss: 0.612213
+[131]	valid_0's binary_logloss: 0.611965
+[132]	valid_0's binary_logloss: 0.611718
+[133]	valid_0's binary_logloss: 0.611469
+[134]	valid_0's binary_logloss: 0.611222
+[135]	valid_0's binary_logloss: 0.610976
+[136]	valid_0's binary_logloss: 0.610731
+[137]	valid_0's binary_logloss: 0.610486
+[138]	valid_0's binary_logloss: 0.610242
+[139]	valid_0's binary_logloss: 0.609998
+[140]	valid_0's binary_logloss: 0.609754
+[141]	valid_0's binary_logloss: 0.609511
+[142]	valid_0's binary_logloss: 0.609269
+[143]	valid_0's binary_logloss: 0.609027
+[144]	valid_0's binary_logloss: 0.608784
+[145]	valid_0's binary_logloss: 0.608543
+[146]	valid_0's binary_logloss: 0.608303
+[147]	valid_0's binary_logloss: 0.608063
+[148]	valid_0's binary_logloss: 0.607824
+[149]	valid_0's binary_logloss: 0.607585
+[150]	valid_0's binary_logloss: 0.607347
+[151]	valid_0's binary_logloss: 0.607109
+[152]	valid_0's binary_logloss: 0.606872
+[153]	valid_0's binary_logloss: 0.606635
+[154]	valid_0's binary_logloss: 0.606399
+[155]	valid_0's binary_logloss: 0.606163
+[156]	valid_0's binary_logloss: 0.605926
+[157]	valid_0's binary_logloss: 0.605691
+[158]	valid_0's binary_logloss: 0.605456
+[159]	valid_0's binary_logloss: 0.605223
+[160]	valid_0's binary_logloss: 0.604989
+[161]	valid_0's binary_logloss: 0.604757
+[162]	valid_0's binary_logloss: 0.604524
+[163]	valid_0's binary_logloss: 0.604292
+[164]	valid_0's binary_logloss: 0.604061
+[165]	valid_0's binary_logloss: 0.60383
+[166]	valid_0's binary_logloss: 0.6036
+[167]	valid_0's binary_logloss: 0.60337
+[168]	valid_0's binary_logloss: 0.603138
+[169]	valid_0's binary_logloss: 0.602909
+[170]	valid_0's binary_logloss: 0.602681
+[171]	valid_0's binary_logloss: 0.602453
+[172]	valid_0's binary_logloss: 0.602225
+[173]	valid_0's binary_logloss: 0.601998
+[174]	valid_0's binary_logloss: 0.601772
+[175]	valid_0's binary_logloss: 0.601546
+[176]	valid_0's binary_logloss: 0.60132
+[177]	valid_0's binary_logloss: 0.601095
+[178]	valid_0's binary_logloss: 0.60087
+[179]	valid_0's binary_logloss: 0.600646
+[180]	valid_0's binary_logloss: 0.60042
+[181]	valid_0's binary_logloss: 0.600197
+[182]	valid_0's binary_logloss: 0.599974
+[183]	valid_0's binary_logloss: 0.599752
+[184]	valid_0's binary_logloss: 0.59953
+[185]	valid_0's binary_logloss: 0.599309
+[186]	valid_0's binary_logloss: 0.599088
+[187]	valid_0's binary_logloss: 0.598867
+[188]	valid_0's binary_logloss: 0.598647
+[189]	valid_0's binary_logloss: 0.598428
+[190]	valid_0's binary_logloss: 0.598208
+[191]	valid_0's binary_logloss: 0.597988
+[192]	valid_0's binary_logloss: 0.59777
+[193]	valid_0's binary_logloss: 0.597552
+[194]	valid_0's binary_logloss: 0.597335
+[195]	valid_0's binary_logloss: 0.597118
+[196]	valid_0's binary_logloss: 0.596901
+[197]	valid_0's binary_logloss: 0.596685
+[198]	valid_0's binary_logloss: 0.59647
+[199]	valid_0's binary_logloss: 0.596255
+[200]	valid_0's binary_logloss: 0.59604
+[201]	valid_0's binary_logloss: 0.595826
+[202]	valid_0's binary_logloss: 0.595612
+[203]	valid_0's binary_logloss: 0.595397
+[204]	valid_0's binary_logloss: 0.595184
+[205]	valid_0's binary_logloss: 0.594972
+[206]	valid_0's binary_logloss: 0.59476
+[207]	valid_0's binary_logloss: 0.594548
+[208]	valid_0's binary_logloss: 0.594337
+[209]	valid_0's binary_logloss: 0.594126
+[210]	valid_0's binary_logloss: 0.593916
+[211]	valid_0's binary_logloss: 0.593706
+[212]	valid_0's binary_logloss: 0.593497
+[213]	valid_0's binary_logloss: 0.593288
+[214]	valid_0's binary_logloss: 0.59308
+[215]	valid_0's binary_logloss: 0.59287
+[216]	valid_0's binary_logloss: 0.592662
+[217]	valid_0's binary_logloss: 0.592455
+[218]	valid_0's binary_logloss: 0.592248
+[219]	valid_0's binary_logloss: 0.592042
+[220]	valid_0's binary_logloss: 0.591836
+[221]	valid_0's binary_logloss: 0.59163
+[222]	valid_0's binary_logloss: 0.591425
+[223]	valid_0's binary_logloss: 0.59122
+[224]	valid_0's binary_logloss: 0.591016
+[225]	valid_0's binary_logloss: 0.590812
+[226]	valid_0's binary_logloss: 0.590609
+[227]	valid_0's binary_logloss: 0.590404
+[228]	valid_0's binary_logloss: 0.590201
+[229]	valid_0's binary_logloss: 0.59
+[230]	valid_0's binary_logloss: 0.5898
+[231]	valid_0's binary_logloss: 0.5896
+[232]	valid_0's binary_logloss: 0.589399
+[233]	valid_0's binary_logloss: 0.5892
+[234]	valid_0's binary_logloss: 0.589001
+[235]	valid_0's binary_logloss: 0.588803
+[236]	valid_0's binary_logloss: 0.588605
+[237]	valid_0's binary_logloss: 0.588407
+[238]	valid_0's binary_logloss: 0.58821
+[239]	valid_0's binary_logloss: 0.58801
+[240]	valid_0's binary_logloss: 0.587813
+[241]	valid_0's binary_logloss: 0.587617
+[242]	valid_0's binary_logloss: 0.587422
+[243]	valid_0's binary_logloss: 0.587219
+[244]	valid_0's binary_logloss: 0.587017
+[245]	valid_0's binary_logloss: 0.586815
+[246]	valid_0's binary_logloss: 0.586614
+[247]	valid_0's binary_logloss: 0.586413
+[248]	valid_0's binary_logloss: 0.586212
+[249]	valid_0's binary_logloss: 0.586012
+[250]	valid_0's binary_logloss: 0.585818
+[251]	valid_0's binary_logloss: 0.585617
+[252]	valid_0's binary_logloss: 0.585418
+[253]	valid_0's binary_logloss: 0.58522
+[254]	valid_0's binary_logloss: 0.585022
+[255]	valid_0's binary_logloss: 0.584824
+[256]	valid_0's binary_logloss: 0.584627
+[257]	valid_0's binary_logloss: 0.584436
+[258]	valid_0's binary_logloss: 0.584239
+[259]	valid_0's binary_logloss: 0.584043
+[260]	valid_0's binary_logloss: 0.583848
+[261]	valid_0's binary_logloss: 0.583652
+[262]	valid_0's binary_logloss: 0.583457
+[263]	valid_0's binary_logloss: 0.583263
+[264]	valid_0's binary_logloss: 0.583073
+[265]	valid_0's binary_logloss: 0.582879
+[266]	valid_0's binary_logloss: 0.582686
+[267]	valid_0's binary_logloss: 0.582493
+[268]	valid_0's binary_logloss: 0.5823
+[269]	valid_0's binary_logloss: 0.582108
+[270]	valid_0's binary_logloss: 0.581917
+[271]	valid_0's binary_logloss: 0.581725
+[272]	valid_0's binary_logloss: 0.58154
+[273]	valid_0's binary_logloss: 0.58135
+[274]	valid_0's binary_logloss: 0.58116
+[275]	valid_0's binary_logloss: 0.58097
+[276]	valid_0's binary_logloss: 0.580779
+[277]	valid_0's binary_logloss: 0.580587
+[278]	valid_0's binary_logloss: 0.580399
+[279]	valid_0's binary_logloss: 0.580214
+[280]	valid_0's binary_logloss: 0.580027
+[281]	valid_0's binary_logloss: 0.579837
+[282]	valid_0's binary_logloss: 0.57965
+[283]	valid_0's binary_logloss: 0.579461
+[284]	valid_0's binary_logloss: 0.579275
+[285]	valid_0's binary_logloss: 0.579089
+[286]	valid_0's binary_logloss: 0.578907
+[287]	valid_0's binary_logloss: 0.578722
+[288]	valid_0's binary_logloss: 0.578535
+[289]	valid_0's binary_logloss: 0.578348
+[290]	valid_0's binary_logloss: 0.578162
+[291]	valid_0's binary_logloss: 0.577978
+[292]	valid_0's binary_logloss: 0.577793
+[293]	valid_0's binary_logloss: 0.57761
+[294]	valid_0's binary_logloss: 0.577431
+[295]	valid_0's binary_logloss: 0.577249
+[296]	valid_0's binary_logloss: 0.577065
+[297]	valid_0's binary_logloss: 0.576883
+[298]	valid_0's binary_logloss: 0.5767
+[299]	valid_0's binary_logloss: 0.576519
+[300]	valid_0's binary_logloss: 0.576336
+[301]	valid_0's binary_logloss: 0.576162
+[302]	valid_0's binary_logloss: 0.57598
+[303]	valid_0's binary_logloss: 0.575799
+[304]	valid_0's binary_logloss: 0.57562
+[305]	valid_0's binary_logloss: 0.575439
+[306]	valid_0's binary_logloss: 0.575261
+[307]	valid_0's binary_logloss: 0.575081
+[308]	valid_0's binary_logloss: 0.574909
+[309]	valid_0's binary_logloss: 0.57473
+[310]	valid_0's binary_logloss: 0.574553
+[311]	valid_0's binary_logloss: 0.574374
+[312]	valid_0's binary_logloss: 0.574198
+[313]	valid_0's binary_logloss: 0.57402
+[314]	valid_0's binary_logloss: 0.573845
+[315]	valid_0's binary_logloss: 0.573671
+[316]	valid_0's binary_logloss: 0.573496
+[317]	valid_0's binary_logloss: 0.573322
+[318]	valid_0's binary_logloss: 0.573146
+[319]	valid_0's binary_logloss: 0.572972
+[320]	valid_0's binary_logloss: 0.572797
+[321]	valid_0's binary_logloss: 0.572624
+[322]	valid_0's binary_logloss: 0.572454
+[323]	valid_0's binary_logloss: 0.572282
+[324]	valid_0's binary_logloss: 0.572108
+[325]	valid_0's binary_logloss: 0.571936
+[326]	valid_0's binary_logloss: 0.571763
+[327]	valid_0's binary_logloss: 0.571592
+[328]	valid_0's binary_logloss: 0.571418
+[329]	valid_0's binary_logloss: 0.571253
+[330]	valid_0's binary_logloss: 0.571081
+[331]	valid_0's binary_logloss: 0.570911
+[332]	valid_0's binary_logloss: 0.570742
+[333]	valid_0's binary_logloss: 0.570571
+[334]	valid_0's binary_logloss: 0.570402
+[335]	valid_0's binary_logloss: 0.570232
+[336]	valid_0's binary_logloss: 0.570064
+[337]	valid_0's binary_logloss: 0.5699
+[338]	valid_0's binary_logloss: 0.569733
+[339]	valid_0's binary_logloss: 0.569564
+[340]	valid_0's binary_logloss: 0.569397
+[341]	valid_0's binary_logloss: 0.569229
+[342]	valid_0's binary_logloss: 0.569061
+[343]	valid_0's binary_logloss: 0.568895
+[344]	valid_0's binary_logloss: 0.568733
+[345]	valid_0's binary_logloss: 0.568569
+[346]	valid_0's binary_logloss: 0.568402
+[347]	valid_0's binary_logloss: 0.568238
+[348]	valid_0's binary_logloss: 0.568072
+[349]	valid_0's binary_logloss: 0.567908
+[350]	valid_0's binary_logloss: 0.567743
+[351]	valid_0's binary_logloss: 0.567585
+[352]	valid_0's binary_logloss: 0.56742
+[353]	valid_0's binary_logloss: 0.567258
+[354]	valid_0's binary_logloss: 0.567094
+[355]	valid_0's binary_logloss: 0.566932
+[356]	valid_0's binary_logloss: 0.566771
+[357]	valid_0's binary_logloss: 0.566606
+[358]	valid_0's binary_logloss: 0.566451
+[359]	valid_0's binary_logloss: 0.566288
+[360]	valid_0's binary_logloss: 0.566128
+[361]	valid_0's binary_logloss: 0.565966
+[362]	valid_0's binary_logloss: 0.565807
+[363]	valid_0's binary_logloss: 0.565646
+[364]	valid_0's binary_logloss: 0.565487
+[365]	valid_0's binary_logloss: 0.565332
+[366]	valid_0's binary_logloss: 0.565173
+[367]	valid_0's binary_logloss: 0.565016
+[368]	valid_0's binary_logloss: 0.564856
+[369]	valid_0's binary_logloss: 0.564699
+[370]	valid_0's binary_logloss: 0.56454
+[371]	valid_0's binary_logloss: 0.564381
+[372]	valid_0's binary_logloss: 0.564228
+[373]	valid_0's binary_logloss: 0.564072
+[374]	valid_0's binary_logloss: 0.563915
+[375]	valid_0's binary_logloss: 0.563759
+[376]	valid_0's binary_logloss: 0.563602
+[377]	valid_0's binary_logloss: 0.563447
+[378]	valid_0's binary_logloss: 0.563293
+[379]	valid_0's binary_logloss: 0.563142
+[380]	valid_0's binary_logloss: 0.562988
+[381]	valid_0's binary_logloss: 0.562832
+[382]	valid_0's binary_logloss: 0.562679
+[383]	valid_0's binary_logloss: 0.562524
+[384]	valid_0's binary_logloss: 0.562372
+[385]	valid_0's binary_logloss: 0.562217
+[386]	valid_0's binary_logloss: 0.56207
+[387]	valid_0's binary_logloss: 0.561917
+[388]	valid_0's binary_logloss: 0.561764
+[389]	valid_0's binary_logloss: 0.561613
+[390]	valid_0's binary_logloss: 0.56146
+[391]	valid_0's binary_logloss: 0.561309
+[392]	valid_0's binary_logloss: 0.561157
+[393]	valid_0's binary_logloss: 0.561012
+[394]	valid_0's binary_logloss: 0.56086
+[395]	valid_0's binary_logloss: 0.560711
+[396]	valid_0's binary_logloss: 0.56056
+[397]	valid_0's binary_logloss: 0.560411
+[398]	valid_0's binary_logloss: 0.560263
+[399]	valid_0's binary_logloss: 0.560113
+[400]	valid_0's binary_logloss: 0.55997
+[401]	valid_0's binary_logloss: 0.55982
+[402]	valid_0's binary_logloss: 0.559673
+[403]	valid_0's binary_logloss: 0.559522
+[404]	valid_0's binary_logloss: 0.559376
+[405]	valid_0's binary_logloss: 0.559227
+[406]	valid_0's binary_logloss: 0.559081
+[407]	valid_0's binary_logloss: 0.558941
+[408]	valid_0's binary_logloss: 0.558793
+[409]	valid_0's binary_logloss: 0.558648
+[410]	valid_0's binary_logloss: 0.558501
+[411]	valid_0's binary_logloss: 0.558356
+[412]	valid_0's binary_logloss: 0.55821
+[413]	valid_0's binary_logloss: 0.558066
+[414]	valid_0's binary_logloss: 0.557925
+[415]	valid_0's binary_logloss: 0.557781
+[416]	valid_0's binary_logloss: 0.557638
+[417]	valid_0's binary_logloss: 0.557493
+[418]	valid_0's binary_logloss: 0.557351
+[419]	valid_0's binary_logloss: 0.557206
+[420]	valid_0's binary_logloss: 0.557063
+[421]	valid_0's binary_logloss: 0.556924
+[422]	valid_0's binary_logloss: 0.556782
+[423]	valid_0's binary_logloss: 0.556639
+[424]	valid_0's binary_logloss: 0.556498
+[425]	valid_0's binary_logloss: 0.556357
+[426]	valid_0's binary_logloss: 0.556215
+[427]	valid_0's binary_logloss: 0.556075
+[428]	valid_0's binary_logloss: 0.555938
+[429]	valid_0's binary_logloss: 0.555798
+[430]	valid_0's binary_logloss: 0.555657
+[431]	valid_0's binary_logloss: 0.555518
+[432]	valid_0's binary_logloss: 0.555377
+[433]	valid_0's binary_logloss: 0.555239
+[434]	valid_0's binary_logloss: 0.555101
+[435]	valid_0's binary_logloss: 0.554965
+[436]	valid_0's binary_logloss: 0.554828
+[437]	valid_0's binary_logloss: 0.554688
+[438]	valid_0's binary_logloss: 0.554551
+[439]	valid_0's binary_logloss: 0.554411
+[440]	valid_0's binary_logloss: 0.554274
+[441]	valid_0's binary_logloss: 0.554138
+[442]	valid_0's binary_logloss: 0.554005
+[443]	valid_0's binary_logloss: 0.553869
+[444]	valid_0's binary_logloss: 0.553732
+[445]	valid_0's binary_logloss: 0.553597
+[446]	valid_0's binary_logloss: 0.55346
+[447]	valid_0's binary_logloss: 0.553325
+[448]	valid_0's binary_logloss: 0.553193
+[449]	valid_0's binary_logloss: 0.553059
+[450]	valid_0's binary_logloss: 0.552925
+[451]	valid_0's binary_logloss: 0.55279
+[452]	valid_0's binary_logloss: 0.552657
+[453]	valid_0's binary_logloss: 0.552521
+[454]	valid_0's binary_logloss: 0.552389
+[455]	valid_0's binary_logloss: 0.552259
+[456]	valid_0's binary_logloss: 0.552127
+[457]	valid_0's binary_logloss: 0.551995
+[458]	valid_0's binary_logloss: 0.551861
+[459]	valid_0's binary_logloss: 0.551729
+[460]	valid_0's binary_logloss: 0.551594
+[461]	valid_0's binary_logloss: 0.551464
+[462]	valid_0's binary_logloss: 0.551335
+[463]	valid_0's binary_logloss: 0.551205
+[464]	valid_0's binary_logloss: 0.551073
+[465]	valid_0's binary_logloss: 0.550943
+[466]	valid_0's binary_logloss: 0.550813
+[467]	valid_0's binary_logloss: 0.550682
+[468]	valid_0's binary_logloss: 0.550553
+[469]	valid_0's binary_logloss: 0.550426
+[470]	valid_0's binary_logloss: 0.550298
+[471]	valid_0's binary_logloss: 0.550167
+[472]	valid_0's binary_logloss: 0.550039
+[473]	valid_0's binary_logloss: 0.549912
+[474]	valid_0's binary_logloss: 0.549782
+[475]	valid_0's binary_logloss: 0.549655
+[476]	valid_0's binary_logloss: 0.54953
+[477]	valid_0's binary_logloss: 0.549403
+[478]	valid_0's binary_logloss: 0.549274
+[479]	valid_0's binary_logloss: 0.549148
+[480]	valid_0's binary_logloss: 0.54902
+[481]	valid_0's binary_logloss: 0.548894
+[482]	valid_0's binary_logloss: 0.548769
+[483]	valid_0's binary_logloss: 0.548644
+[484]	valid_0's binary_logloss: 0.548519
+[485]	valid_0's binary_logloss: 0.548392
+[486]	valid_0's binary_logloss: 0.548268
+[487]	valid_0's binary_logloss: 0.548141
+[488]	valid_0's binary_logloss: 0.548017
+[489]	valid_0's binary_logloss: 0.547893
+[490]	valid_0's binary_logloss: 0.547772
+[491]	valid_0's binary_logloss: 0.547649
+[492]	valid_0's binary_logloss: 0.547524
+[493]	valid_0's binary_logloss: 0.547401
+[494]	valid_0's binary_logloss: 0.547276
+[495]	valid_0's binary_logloss: 0.547154
+[496]	valid_0's binary_logloss: 0.547032
+[497]	valid_0's binary_logloss: 0.546912
+[498]	valid_0's binary_logloss: 0.546791
+[499]	valid_0's binary_logloss: 0.546667
+[500]	valid_0's binary_logloss: 0.546546
+[501]	valid_0's binary_logloss: 0.546423
+[502]	valid_0's binary_logloss: 0.546303
+[503]	valid_0's binary_logloss: 0.546182
+[504]	valid_0's binary_logloss: 0.546064
+[505]	valid_0's binary_logloss: 0.545944
+[506]	valid_0's binary_logloss: 0.545823
+[507]	valid_0's binary_logloss: 0.545703
+[508]	valid_0's binary_logloss: 0.545582
+[509]	valid_0's binary_logloss: 0.545463
+[510]	valid_0's binary_logloss: 0.545342
+[511]	valid_0's binary_logloss: 0.545228
+[512]	valid_0's binary_logloss: 0.545108
+[513]	valid_0's binary_logloss: 0.544988
+[514]	valid_0's binary_logloss: 0.54488
+[515]	valid_0's binary_logloss: 0.54476
+[516]	valid_0's binary_logloss: 0.544643
+[517]	valid_0's binary_logloss: 0.544528
+[518]	valid_0's binary_logloss: 0.544421
+[519]	valid_0's binary_logloss: 0.544314
+[520]	valid_0's binary_logloss: 0.544196
+[521]	valid_0's binary_logloss: 0.544089
+[522]	valid_0's binary_logloss: 0.543975
+[523]	valid_0's binary_logloss: 0.54386
+[524]	valid_0's binary_logloss: 0.543752
+[525]	valid_0's binary_logloss: 0.543637
+[526]	valid_0's binary_logloss: 0.543515
+[527]	valid_0's binary_logloss: 0.543398
+[528]	valid_0's binary_logloss: 0.543278
+[529]	valid_0's binary_logloss: 0.543161
+[530]	valid_0's binary_logloss: 0.543041
+[531]	valid_0's binary_logloss: 0.542919
+[532]	valid_0's binary_logloss: 0.542805
+[533]	valid_0's binary_logloss: 0.542685
+[534]	valid_0's binary_logloss: 0.54257
+[535]	valid_0's binary_logloss: 0.542451
+[536]	valid_0's binary_logloss: 0.542336
+[537]	valid_0's binary_logloss: 0.542217
+[538]	valid_0's binary_logloss: 0.542096
+[539]	valid_0's binary_logloss: 0.541984
+[540]	valid_0's binary_logloss: 0.541866
+[541]	valid_0's binary_logloss: 0.541752
+[542]	valid_0's binary_logloss: 0.541635
+[543]	valid_0's binary_logloss: 0.541521
+[544]	valid_0's binary_logloss: 0.541404
+[545]	valid_0's binary_logloss: 0.541285
+[546]	valid_0's binary_logloss: 0.541175
+[547]	valid_0's binary_logloss: 0.541058
+[548]	valid_0's binary_logloss: 0.540946
+[549]	valid_0's binary_logloss: 0.54083
+[550]	valid_0's binary_logloss: 0.540712
+[551]	valid_0's binary_logloss: 0.540602
+[552]	valid_0's binary_logloss: 0.540485
+[553]	valid_0's binary_logloss: 0.540376
+[554]	valid_0's binary_logloss: 0.540261
+[555]	valid_0's binary_logloss: 0.54015
+[556]	valid_0's binary_logloss: 0.540036
+[557]	valid_0's binary_logloss: 0.539919
+[558]	valid_0's binary_logloss: 0.539811
+[559]	valid_0's binary_logloss: 0.539694
+[560]	valid_0's binary_logloss: 0.539586
+[561]	valid_0's binary_logloss: 0.539473
+[562]	valid_0's binary_logloss: 0.539363
+[563]	valid_0's binary_logloss: 0.53925
+[564]	valid_0's binary_logloss: 0.539135
+[565]	valid_0's binary_logloss: 0.539029
+[566]	valid_0's binary_logloss: 0.538914
+[567]	valid_0's binary_logloss: 0.538808
+[568]	valid_0's binary_logloss: 0.538696
+[569]	valid_0's binary_logloss: 0.538583
+[570]	valid_0's binary_logloss: 0.538477
+[571]	valid_0's binary_logloss: 0.538364
+[572]	valid_0's binary_logloss: 0.538259
+[573]	valid_0's binary_logloss: 0.538148
+[574]	valid_0's binary_logloss: 0.538041
+[575]	valid_0's binary_logloss: 0.537931
+[576]	valid_0's binary_logloss: 0.537818
+[577]	valid_0's binary_logloss: 0.537714
+[578]	valid_0's binary_logloss: 0.537602
+[579]	valid_0's binary_logloss: 0.537499
+[580]	valid_0's binary_logloss: 0.537389
+[581]	valid_0's binary_logloss: 0.537284
+[582]	valid_0's binary_logloss: 0.537175
+[583]	valid_0's binary_logloss: 0.537064
+[584]	valid_0's binary_logloss: 0.536961
+[585]	valid_0's binary_logloss: 0.536851
+[586]	valid_0's binary_logloss: 0.536749
+[587]	valid_0's binary_logloss: 0.536641
+[588]	valid_0's binary_logloss: 0.536531
+[589]	valid_0's binary_logloss: 0.536429
+[590]	valid_0's binary_logloss: 0.53632
+[591]	valid_0's binary_logloss: 0.536219
+[592]	valid_0's binary_logloss: 0.53611
+[593]	valid_0's binary_logloss: 0.536009
+[594]	valid_0's binary_logloss: 0.535902
+[595]	valid_0's binary_logloss: 0.535794
+[596]	valid_0's binary_logloss: 0.535694
+[597]	valid_0's binary_logloss: 0.535586
+[598]	valid_0's binary_logloss: 0.535486
+[599]	valid_0's binary_logloss: 0.535378
+[600]	valid_0's binary_logloss: 0.535273
+[601]	valid_0's binary_logloss: 0.535174
+[602]	valid_0's binary_logloss: 0.535067
+[603]	valid_0's binary_logloss: 0.534968
+[604]	valid_0's binary_logloss: 0.534861
+[605]	valid_0's binary_logloss: 0.534763
+[606]	valid_0's binary_logloss: 0.534659
+[607]	valid_0's binary_logloss: 0.534553
+[608]	valid_0's binary_logloss: 0.534455
+[609]	valid_0's binary_logloss: 0.534349
+[610]	valid_0's binary_logloss: 0.534252
+[611]	valid_0's binary_logloss: 0.534147
+[612]	valid_0's binary_logloss: 0.534049
+[613]	valid_0's binary_logloss: 0.533947
+[614]	valid_0's binary_logloss: 0.533842
+[615]	valid_0's binary_logloss: 0.533746
+[616]	valid_0's binary_logloss: 0.533641
+[617]	valid_0's binary_logloss: 0.533545
+[618]	valid_0's binary_logloss: 0.533441
+[619]	valid_0's binary_logloss: 0.53334
+[620]	valid_0's binary_logloss: 0.533244
+[621]	valid_0's binary_logloss: 0.533141
+[622]	valid_0's binary_logloss: 0.533046
+[623]	valid_0's binary_logloss: 0.532943
+[624]	valid_0's binary_logloss: 0.532848
+[625]	valid_0's binary_logloss: 0.532746
+[626]	valid_0's binary_logloss: 0.532646
+[627]	valid_0's binary_logloss: 0.532551
+[628]	valid_0's binary_logloss: 0.532449
+[629]	valid_0's binary_logloss: 0.532356
+[630]	valid_0's binary_logloss: 0.532254
+[631]	valid_0's binary_logloss: 0.53216
+[632]	valid_0's binary_logloss: 0.532062
+[633]	valid_0's binary_logloss: 0.531961
+[634]	valid_0's binary_logloss: 0.531868
+[635]	valid_0's binary_logloss: 0.531767
+[636]	valid_0's binary_logloss: 0.531674
+[637]	valid_0's binary_logloss: 0.531574
+[638]	valid_0's binary_logloss: 0.531476
+[639]	valid_0's binary_logloss: 0.531384
+[640]	valid_0's binary_logloss: 0.531285
+[641]	valid_0's binary_logloss: 0.531193
+[642]	valid_0's binary_logloss: 0.531094
+[643]	valid_0's binary_logloss: 0.531002
+[644]	valid_0's binary_logloss: 0.530903
+[645]	valid_0's binary_logloss: 0.530807
+[646]	valid_0's binary_logloss: 0.530716
+[647]	valid_0's binary_logloss: 0.530618
+[648]	valid_0's binary_logloss: 0.530527
+[649]	valid_0's binary_logloss: 0.530429
+[650]	valid_0's binary_logloss: 0.530339
+[651]	valid_0's binary_logloss: 0.530244
+[652]	valid_0's binary_logloss: 0.530147
+[653]	valid_0's binary_logloss: 0.530057
+[654]	valid_0's binary_logloss: 0.52996
+[655]	valid_0's binary_logloss: 0.529871
+[656]	valid_0's binary_logloss: 0.529774
+[657]	valid_0's binary_logloss: 0.529685
+[658]	valid_0's binary_logloss: 0.529591
+[659]	valid_0's binary_logloss: 0.529495
+[660]	valid_0's binary_logloss: 0.529402
+[661]	valid_0's binary_logloss: 0.529312
+[662]	valid_0's binary_logloss: 0.529219
+[663]	valid_0's binary_logloss: 0.529124
+[664]	valid_0's binary_logloss: 0.529037
+[665]	valid_0's binary_logloss: 0.528944
+[666]	valid_0's binary_logloss: 0.52885
+[667]	valid_0's binary_logloss: 0.528763
+[668]	valid_0's binary_logloss: 0.528668
+[669]	valid_0's binary_logloss: 0.528577
+[670]	valid_0's binary_logloss: 0.528491
+[671]	valid_0's binary_logloss: 0.528397
+[672]	valid_0's binary_logloss: 0.528306
+[673]	valid_0's binary_logloss: 0.528218
+[674]	valid_0's binary_logloss: 0.528127
+[675]	valid_0's binary_logloss: 0.528034
+[676]	valid_0's binary_logloss: 0.527943
+[677]	valid_0's binary_logloss: 0.527854
+[678]	valid_0's binary_logloss: 0.527766
+[679]	valid_0's binary_logloss: 0.527676
+[680]	valid_0's binary_logloss: 0.527585
+[681]	valid_0's binary_logloss: 0.5275
+[682]	valid_0's binary_logloss: 0.527408
+[683]	valid_0's binary_logloss: 0.527319
+[684]	valid_0's binary_logloss: 0.527235
+[685]	valid_0's binary_logloss: 0.527143
+[686]	valid_0's binary_logloss: 0.527055
+[687]	valid_0's binary_logloss: 0.526965
+[688]	valid_0's binary_logloss: 0.526881
+[689]	valid_0's binary_logloss: 0.526793
+[690]	valid_0's binary_logloss: 0.526703
+[691]	valid_0's binary_logloss: 0.52662
+[692]	valid_0's binary_logloss: 0.526529
+[693]	valid_0's binary_logloss: 0.526442
+[694]	valid_0's binary_logloss: 0.526358
+[695]	valid_0's binary_logloss: 0.52627
+[696]	valid_0's binary_logloss: 0.526184
+[697]	valid_0's binary_logloss: 0.526094
+[698]	valid_0's binary_logloss: 0.526008
+[699]	valid_0's binary_logloss: 0.525924
+[700]	valid_0's binary_logloss: 0.525837
+[701]	valid_0's binary_logloss: 0.525751
+[702]	valid_0's binary_logloss: 0.525668
+[703]	valid_0's binary_logloss: 0.525581
+[704]	valid_0's binary_logloss: 0.525494
+[705]	valid_0's binary_logloss: 0.525413
+[706]	valid_0's binary_logloss: 0.525325
+[707]	valid_0's binary_logloss: 0.52524
+[708]	valid_0's binary_logloss: 0.52516
+[709]	valid_0's binary_logloss: 0.525072
+[710]	valid_0's binary_logloss: 0.524988
+[711]	valid_0's binary_logloss: 0.524906
+[712]	valid_0's binary_logloss: 0.524821
+[713]	valid_0's binary_logloss: 0.524738
+[714]	valid_0's binary_logloss: 0.524656
+[715]	valid_0's binary_logloss: 0.524572
+[716]	valid_0's binary_logloss: 0.524486
+[717]	valid_0's binary_logloss: 0.524402
+[718]	valid_0's binary_logloss: 0.524317
+[719]	valid_0's binary_logloss: 0.524238
+[720]	valid_0's binary_logloss: 0.524155
+[721]	valid_0's binary_logloss: 0.52407
+[722]	valid_0's binary_logloss: 0.523992
+[723]	valid_0's binary_logloss: 0.523906
+[724]	valid_0's binary_logloss: 0.523824
+[725]	valid_0's binary_logloss: 0.523745
+[726]	valid_0's binary_logloss: 0.523662
+[727]	valid_0's binary_logloss: 0.52358
+[728]	valid_0's binary_logloss: 0.523501
+[729]	valid_0's binary_logloss: 0.523419
+[730]	valid_0's binary_logloss: 0.523336
+[731]	valid_0's binary_logloss: 0.523255
+[732]	valid_0's binary_logloss: 0.523178
+[733]	valid_0's binary_logloss: 0.523094
+[734]	valid_0's binary_logloss: 0.523014
+[735]	valid_0's binary_logloss: 0.522936
+[736]	valid_0's binary_logloss: 0.522855
+[737]	valid_0's binary_logloss: 0.522772
+[738]	valid_0's binary_logloss: 0.522697
+[739]	valid_0's binary_logloss: 0.522616
+[740]	valid_0's binary_logloss: 0.522534
+[741]	valid_0's binary_logloss: 0.522454
+[742]	valid_0's binary_logloss: 0.522372
+[743]	valid_0's binary_logloss: 0.522298
+[744]	valid_0's binary_logloss: 0.522218
+[745]	valid_0's binary_logloss: 0.522137
+[746]	valid_0's binary_logloss: 0.522063
+[747]	valid_0's binary_logloss: 0.521981
+[748]	valid_0's binary_logloss: 0.521902
+[749]	valid_0's binary_logloss: 0.521826
+[750]	valid_0's binary_logloss: 0.521747
+[751]	valid_0's binary_logloss: 0.521669
+[752]	valid_0's binary_logloss: 0.521594
+[753]	valid_0's binary_logloss: 0.521515
+[754]	valid_0's binary_logloss: 0.521435
+[755]	valid_0's binary_logloss: 0.521363
+[756]	valid_0's binary_logloss: 0.521285
+[757]	valid_0's binary_logloss: 0.521205
+[758]	valid_0's binary_logloss: 0.521133
+[759]	valid_0's binary_logloss: 0.521053
+[760]	valid_0's binary_logloss: 0.520976
+[761]	valid_0's binary_logloss: 0.520896
+[762]	valid_0's binary_logloss: 0.520818
+[763]	valid_0's binary_logloss: 0.520746
+[764]	valid_0's binary_logloss: 0.520667
+[765]	valid_0's binary_logloss: 0.520588
+[766]	valid_0's binary_logloss: 0.520515
+[767]	valid_0's binary_logloss: 0.520439
+[768]	valid_0's binary_logloss: 0.520358
+[769]	valid_0's binary_logloss: 0.520288
+[770]	valid_0's binary_logloss: 0.520212
+[771]	valid_0's binary_logloss: 0.520132
+[772]	valid_0's binary_logloss: 0.520062
+[773]	valid_0's binary_logloss: 0.519984
+[774]	valid_0's binary_logloss: 0.519906
+[775]	valid_0's binary_logloss: 0.519837
+[776]	valid_0's binary_logloss: 0.519758
+[777]	valid_0's binary_logloss: 0.519681
+[778]	valid_0's binary_logloss: 0.51961
+[779]	valid_0's binary_logloss: 0.519534
+[780]	valid_0's binary_logloss: 0.519455
+[781]	valid_0's binary_logloss: 0.519386
+[782]	valid_0's binary_logloss: 0.519312
+[783]	valid_0's binary_logloss: 0.519234
+[784]	valid_0's binary_logloss: 0.519165
+[785]	valid_0's binary_logloss: 0.519088
+[786]	valid_0's binary_logloss: 0.519012
+[787]	valid_0's binary_logloss: 0.518953
+[788]	valid_0's binary_logloss: 0.518875
+[789]	valid_0's binary_logloss: 0.5188
+[790]	valid_0's binary_logloss: 0.518739
+[791]	valid_0's binary_logloss: 0.518667
+[792]	valid_0's binary_logloss: 0.518606
+[793]	valid_0's binary_logloss: 0.518531
+[794]	valid_0's binary_logloss: 0.518473
+[795]	valid_0's binary_logloss: 0.518399
+[796]	valid_0's binary_logloss: 0.518341
+[797]	valid_0's binary_logloss: 0.518267
+[798]	valid_0's binary_logloss: 0.518209
+[799]	valid_0's binary_logloss: 0.518136
+[800]	valid_0's binary_logloss: 0.518062
+[801]	valid_0's binary_logloss: 0.518005
+[802]	valid_0's binary_logloss: 0.517929
+[803]	valid_0's binary_logloss: 0.517872
+[804]	valid_0's binary_logloss: 0.517799
+[805]	valid_0's binary_logloss: 0.517742
+[806]	valid_0's binary_logloss: 0.517672
+[807]	valid_0's binary_logloss: 0.517613
+[808]	valid_0's binary_logloss: 0.517541
+[809]	valid_0's binary_logloss: 0.517482
+[810]	valid_0's binary_logloss: 0.517412
+[811]	valid_0's binary_logloss: 0.51734
+[812]	valid_0's binary_logloss: 0.517282
+[813]	valid_0's binary_logloss: 0.517212
+[814]	valid_0's binary_logloss: 0.517154
+[815]	valid_0's binary_logloss: 0.517085
+[816]	valid_0's binary_logloss: 0.517028
+[817]	valid_0's binary_logloss: 0.516956
+[818]	valid_0's binary_logloss: 0.516901
+[819]	valid_0's binary_logloss: 0.51683
+[820]	valid_0's binary_logloss: 0.516775
+[821]	valid_0's binary_logloss: 0.516705
+[822]	valid_0's binary_logloss: 0.516634
+[823]	valid_0's binary_logloss: 0.516579
+[824]	valid_0's binary_logloss: 0.516509
+[825]	valid_0's binary_logloss: 0.516455
+[826]	valid_0's binary_logloss: 0.516383
+[827]	valid_0's binary_logloss: 0.516328
+[828]	valid_0's binary_logloss: 0.516259
+[829]	valid_0's binary_logloss: 0.516205
+[830]	valid_0's binary_logloss: 0.516138
+[831]	valid_0's binary_logloss: 0.516066
+[832]	valid_0's binary_logloss: 0.516013
+[833]	valid_0's binary_logloss: 0.515944
+[834]	valid_0's binary_logloss: 0.51589
+[835]	valid_0's binary_logloss: 0.515819
+[836]	valid_0's binary_logloss: 0.515766
+[837]	valid_0's binary_logloss: 0.5157
+[838]	valid_0's binary_logloss: 0.515645
+[839]	valid_0's binary_logloss: 0.515579
+[840]	valid_0's binary_logloss: 0.515524
+[841]	valid_0's binary_logloss: 0.515456
+[842]	valid_0's binary_logloss: 0.515391
+[843]	valid_0's binary_logloss: 0.515336
+[844]	valid_0's binary_logloss: 0.515268
+[845]	valid_0's binary_logloss: 0.515214
+[846]	valid_0's binary_logloss: 0.515149
+[847]	valid_0's binary_logloss: 0.515095
+[848]	valid_0's binary_logloss: 0.51503
+[849]	valid_0's binary_logloss: 0.514979
+[850]	valid_0's binary_logloss: 0.51491
+[851]	valid_0's binary_logloss: 0.514859
+[852]	valid_0's binary_logloss: 0.514792
+[853]	valid_0's binary_logloss: 0.514725
+[854]	valid_0's binary_logloss: 0.514675
+[855]	valid_0's binary_logloss: 0.514608
+[856]	valid_0's binary_logloss: 0.514558
+[857]	valid_0's binary_logloss: 0.514492
+[858]	valid_0's binary_logloss: 0.514442
+[859]	valid_0's binary_logloss: 0.514373
+[860]	valid_0's binary_logloss: 0.514323
+[861]	valid_0's binary_logloss: 0.51426
+[862]	valid_0's binary_logloss: 0.514208
+[863]	valid_0's binary_logloss: 0.514142
+[864]	valid_0's binary_logloss: 0.514077
+[865]	valid_0's binary_logloss: 0.514028
+[866]	valid_0's binary_logloss: 0.513965
+[867]	valid_0's binary_logloss: 0.513914
+[868]	valid_0's binary_logloss: 0.513849
+[869]	valid_0's binary_logloss: 0.513798
+[870]	valid_0's binary_logloss: 0.513736
+[871]	valid_0's binary_logloss: 0.513685
+[872]	valid_0's binary_logloss: 0.51362
+[873]	valid_0's binary_logloss: 0.513558
+[874]	valid_0's binary_logloss: 0.513508
+[875]	valid_0's binary_logloss: 0.513446
+[876]	valid_0's binary_logloss: 0.513396
+[877]	valid_0's binary_logloss: 0.513332
+[878]	valid_0's binary_logloss: 0.513282
+[879]	valid_0's binary_logloss: 0.513221
+[880]	valid_0's binary_logloss: 0.513173
+[881]	valid_0's binary_logloss: 0.51311
+[882]	valid_0's binary_logloss: 0.513063
+[883]	valid_0's binary_logloss: 0.512997
+[884]	valid_0's binary_logloss: 0.512937
+[885]	valid_0's binary_logloss: 0.51289
+[886]	valid_0's binary_logloss: 0.512824
+[887]	valid_0's binary_logloss: 0.512778
+[888]	valid_0's binary_logloss: 0.512715
+[889]	valid_0's binary_logloss: 0.512669
+[890]	valid_0's binary_logloss: 0.512607
+[891]	valid_0's binary_logloss: 0.51256
+[892]	valid_0's binary_logloss: 0.512498
+[893]	valid_0's binary_logloss: 0.51245
+[894]	valid_0's binary_logloss: 0.512391
+[895]	valid_0's binary_logloss: 0.512326
+[896]	valid_0's binary_logloss: 0.512281
+[897]	valid_0's binary_logloss: 0.512222
+[898]	valid_0's binary_logloss: 0.512174
+[899]	valid_0's binary_logloss: 0.512115
+[900]	valid_0's binary_logloss: 0.512068
+[901]	valid_0's binary_logloss: 0.512006
+[902]	valid_0's binary_logloss: 0.511959
+[903]	valid_0's binary_logloss: 0.511901
+[904]	valid_0's binary_logloss: 0.51184
+[905]	valid_0's binary_logloss: 0.511793
+[906]	valid_0's binary_logloss: 0.511735
+[907]	valid_0's binary_logloss: 0.511688
+[908]	valid_0's binary_logloss: 0.51163
+[909]	valid_0's binary_logloss: 0.511584
+[910]	valid_0's binary_logloss: 0.511523
+[911]	valid_0's binary_logloss: 0.511479
+[912]	valid_0's binary_logloss: 0.51142
+[913]	valid_0's binary_logloss: 0.511376
+[914]	valid_0's binary_logloss: 0.511314
+[915]	valid_0's binary_logloss: 0.511257
+[916]	valid_0's binary_logloss: 0.511213
+[917]	valid_0's binary_logloss: 0.511154
+[918]	valid_0's binary_logloss: 0.511111
+[919]	valid_0's binary_logloss: 0.51105
+[920]	valid_0's binary_logloss: 0.511007
+[921]	valid_0's binary_logloss: 0.510948
+[922]	valid_0's binary_logloss: 0.510905
+[923]	valid_0's binary_logloss: 0.510846
+[924]	valid_0's binary_logloss: 0.510801
+[925]	valid_0's binary_logloss: 0.510746
+[926]	valid_0's binary_logloss: 0.510687
+[927]	valid_0's binary_logloss: 0.510645
+[928]	valid_0's binary_logloss: 0.510587
+[929]	valid_0's binary_logloss: 0.510543
+[930]	valid_0's binary_logloss: 0.510487
+[931]	valid_0's binary_logloss: 0.510443
+[932]	valid_0's binary_logloss: 0.510388
+[933]	valid_0's binary_logloss: 0.510344
+[934]	valid_0's binary_logloss: 0.510286
+[935]	valid_0's binary_logloss: 0.510232
+[936]	valid_0's binary_logloss: 0.510188
+[937]	valid_0's binary_logloss: 0.510131
+[938]	valid_0's binary_logloss: 0.510087
+[939]	valid_0's binary_logloss: 0.510033
+[940]	valid_0's binary_logloss: 0.50999
+[941]	valid_0's binary_logloss: 0.509936
+[942]	valid_0's binary_logloss: 0.509895
+[943]	valid_0's binary_logloss: 0.509836
+[944]	valid_0's binary_logloss: 0.509795
+[945]	valid_0's binary_logloss: 0.509739
+[946]	valid_0's binary_logloss: 0.509683
+[947]	valid_0's binary_logloss: 0.509643
+[948]	valid_0's binary_logloss: 0.509587
+[949]	valid_0's binary_logloss: 0.509547
+[950]	valid_0's binary_logloss: 0.509492
+[951]	valid_0's binary_logloss: 0.509452
+[952]	valid_0's binary_logloss: 0.509394
+[953]	valid_0's binary_logloss: 0.509354
+[954]	valid_0's binary_logloss: 0.509302
+[955]	valid_0's binary_logloss: 0.50926
+[956]	valid_0's binary_logloss: 0.509205
+[957]	valid_0's binary_logloss: 0.50915
+[958]	valid_0's binary_logloss: 0.509111
+[959]	valid_0's binary_logloss: 0.509056
+[960]	valid_0's binary_logloss: 0.509017
+[961]	valid_0's binary_logloss: 0.508963
+[962]	valid_0's binary_logloss: 0.508922
+[963]	valid_0's binary_logloss: 0.50887
+[964]	valid_0's binary_logloss: 0.508829
+[965]	valid_0's binary_logloss: 0.508775
+[966]	valid_0's binary_logloss: 0.508723
+[967]	valid_0's binary_logloss: 0.508683
+[968]	valid_0's binary_logloss: 0.508631
+[969]	valid_0's binary_logloss: 0.508591
+[970]	valid_0's binary_logloss: 0.508537
+[971]	valid_0's binary_logloss: 0.508497
+[972]	valid_0's binary_logloss: 0.508446
+[973]	valid_0's binary_logloss: 0.508409
+[974]	valid_0's binary_logloss: 0.508353
+[975]	valid_0's binary_logloss: 0.508316
+[976]	valid_0's binary_logloss: 0.508263
+[977]	valid_0's binary_logloss: 0.508212
+[978]	valid_0's binary_logloss: 0.508173
+[979]	valid_0's binary_logloss: 0.50812
+[980]	valid_0's binary_logloss: 0.508083
+[981]	valid_0's binary_logloss: 0.508031
+[982]	valid_0's binary_logloss: 0.507994
+[983]	valid_0's binary_logloss: 0.507942
+[984]	valid_0's binary_logloss: 0.507906
+[985]	valid_0's binary_logloss: 0.507853
+[986]	valid_0's binary_logloss: 0.507801
+[987]	valid_0's binary_logloss: 0.507765
+[988]	valid_0's binary_logloss: 0.507711
+[989]	valid_0's binary_logloss: 0.507675
+[990]	valid_0's binary_logloss: 0.507623
+[991]	valid_0's binary_logloss: 0.507588
+[992]	valid_0's binary_logloss: 0.507539
+[993]	valid_0's binary_logloss: 0.507501
+[994]	valid_0's binary_logloss: 0.507449
+[995]	valid_0's binary_logloss: 0.507412
+[996]	valid_0's binary_logloss: 0.507363
+[997]	valid_0's binary_logloss: 0.507309
+[998]	valid_0's binary_logloss: 0.507274
+[999]	valid_0's binary_logloss: 0.507226
+[1000]	valid_0's binary_logloss: 0.507189
+[1001]	valid_0's binary_logloss: 0.507141
+[1002]	valid_0's binary_logloss: 0.507104
+[1003]	valid_0's binary_logloss: 0.507053
+[1004]	valid_0's binary_logloss: 0.507018
+[1005]	valid_0's binary_logloss: 0.506968
+[1006]	valid_0's binary_logloss: 0.506934
+[1007]	valid_0's binary_logloss: 0.506881
+[1008]	valid_0's binary_logloss: 0.506834
+[1009]	valid_0's binary_logloss: 0.506798
+[1010]	valid_0's binary_logloss: 0.50675
+[1011]	valid_0's binary_logloss: 0.506717
+[1012]	valid_0's binary_logloss: 0.506664
+[1013]	valid_0's binary_logloss: 0.506631
+[1014]	valid_0's binary_logloss: 0.506582
+[1015]	valid_0's binary_logloss: 0.506548
+[1016]	valid_0's binary_logloss: 0.506499
+[1017]	valid_0's binary_logloss: 0.50645
+[1018]	valid_0's binary_logloss: 0.506416
+[1019]	valid_0's binary_logloss: 0.506368
+[1020]	valid_0's binary_logloss: 0.506335
+[1021]	valid_0's binary_logloss: 0.506283
+[1022]	valid_0's binary_logloss: 0.506251
+[1023]	valid_0's binary_logloss: 0.506202
+[1024]	valid_0's binary_logloss: 0.50617
+[1025]	valid_0's binary_logloss: 0.506124
+[1026]	valid_0's binary_logloss: 0.506089
+[1027]	valid_0's binary_logloss: 0.50604
+[1028]	valid_0's binary_logloss: 0.505993
+[1029]	valid_0's binary_logloss: 0.50596
+[1030]	valid_0's binary_logloss: 0.505912
+[1031]	valid_0's binary_logloss: 0.505878
+[1032]	valid_0's binary_logloss: 0.505833
+[1033]	valid_0's binary_logloss: 0.505799
+[1034]	valid_0's binary_logloss: 0.505754
+[1035]	valid_0's binary_logloss: 0.50572
+[1036]	valid_0's binary_logloss: 0.505672
+[1037]	valid_0's binary_logloss: 0.505627
+[1038]	valid_0's binary_logloss: 0.505593
+[1039]	valid_0's binary_logloss: 0.505546
+[1040]	valid_0's binary_logloss: 0.505513
+[1041]	valid_0's binary_logloss: 0.505468
+[1042]	valid_0's binary_logloss: 0.505435
+[1043]	valid_0's binary_logloss: 0.505391
+[1044]	valid_0's binary_logloss: 0.50536
+[1045]	valid_0's binary_logloss: 0.505311
+[1046]	valid_0's binary_logloss: 0.50528
+[1047]	valid_0's binary_logloss: 0.505234
+[1048]	valid_0's binary_logloss: 0.505187
+[1049]	valid_0's binary_logloss: 0.505154
+[1050]	valid_0's binary_logloss: 0.505111
+[1051]	valid_0's binary_logloss: 0.505081
+[1052]	valid_0's binary_logloss: 0.505035
+[1053]	valid_0's binary_logloss: 0.505005
+[1054]	valid_0's binary_logloss: 0.504956
+[1055]	valid_0's binary_logloss: 0.504927
+[1056]	valid_0's binary_logloss: 0.504881
+[1057]	valid_0's binary_logloss: 0.504835
+[1058]	valid_0's binary_logloss: 0.504806
+[1059]	valid_0's binary_logloss: 0.50476
+[1060]	valid_0's binary_logloss: 0.504731
+[1061]	valid_0's binary_logloss: 0.504686
+[1062]	valid_0's binary_logloss: 0.504657
+[1063]	valid_0's binary_logloss: 0.504609
+[1064]	valid_0's binary_logloss: 0.50458
+[1065]	valid_0's binary_logloss: 0.504538
+[1066]	valid_0's binary_logloss: 0.504507
+[1067]	valid_0's binary_logloss: 0.504465
+[1068]	valid_0's binary_logloss: 0.504417
+[1069]	valid_0's binary_logloss: 0.504389
+[1070]	valid_0's binary_logloss: 0.504347
+[1071]	valid_0's binary_logloss: 0.504316
+[1072]	valid_0's binary_logloss: 0.504271
+[1073]	valid_0's binary_logloss: 0.504241
+[1074]	valid_0's binary_logloss: 0.504199
+[1075]	valid_0's binary_logloss: 0.504169
+[1076]	valid_0's binary_logloss: 0.504127
+[1077]	valid_0's binary_logloss: 0.504083
+[1078]	valid_0's binary_logloss: 0.504053
+[1079]	valid_0's binary_logloss: 0.504012
+[1080]	valid_0's binary_logloss: 0.503982
+[1081]	valid_0's binary_logloss: 0.503938
+[1082]	valid_0's binary_logloss: 0.503908
+[1083]	valid_0's binary_logloss: 0.503867
+[1084]	valid_0's binary_logloss: 0.50384
+[1085]	valid_0's binary_logloss: 0.503797
+[1086]	valid_0's binary_logloss: 0.50377
+[1087]	valid_0's binary_logloss: 0.503724
+[1088]	valid_0's binary_logloss: 0.503684
+[1089]	valid_0's binary_logloss: 0.503655
+[1090]	valid_0's binary_logloss: 0.503611
+[1091]	valid_0's binary_logloss: 0.503584
+[1092]	valid_0's binary_logloss: 0.503542
+[1093]	valid_0's binary_logloss: 0.503516
+[1094]	valid_0's binary_logloss: 0.503473
+[1095]	valid_0's binary_logloss: 0.503447
+[1096]	valid_0's binary_logloss: 0.503402
+[1097]	valid_0's binary_logloss: 0.503362
+[1098]	valid_0's binary_logloss: 0.503336
+[1099]	valid_0's binary_logloss: 0.503291
+[1100]	valid_0's binary_logloss: 0.503265
+[1101]	valid_0's binary_logloss: 0.503224
+[1102]	valid_0's binary_logloss: 0.503198
+[1103]	valid_0's binary_logloss: 0.503156
+[1104]	valid_0's binary_logloss: 0.503131
+[1105]	valid_0's binary_logloss: 0.503089
+[1106]	valid_0's binary_logloss: 0.503061
+[1107]	valid_0's binary_logloss: 0.503022
+[1108]	valid_0's binary_logloss: 0.502981
+[1109]	valid_0's binary_logloss: 0.502956
+[1110]	valid_0's binary_logloss: 0.502912
+[1111]	valid_0's binary_logloss: 0.502886
+[1112]	valid_0's binary_logloss: 0.502848
+[1113]	valid_0's binary_logloss: 0.502821
+[1114]	valid_0's binary_logloss: 0.502779
+[1115]	valid_0's binary_logloss: 0.502752
+[1116]	valid_0's binary_logloss: 0.502714
+[1117]	valid_0's binary_logloss: 0.502674
+[1118]	valid_0's binary_logloss: 0.502649
+[1119]	valid_0's binary_logloss: 0.502608
+[1120]	valid_0's binary_logloss: 0.502582
+[1121]	valid_0's binary_logloss: 0.502544
+[1122]	valid_0's binary_logloss: 0.502517
+[1123]	valid_0's binary_logloss: 0.502477
+[1124]	valid_0's binary_logloss: 0.50245
+[1125]	valid_0's binary_logloss: 0.502413
+[1126]	valid_0's binary_logloss: 0.502375
+[1127]	valid_0's binary_logloss: 0.502349
+[1128]	valid_0's binary_logloss: 0.502309
+[1129]	valid_0's binary_logloss: 0.502283
+[1130]	valid_0's binary_logloss: 0.502246
+[1131]	valid_0's binary_logloss: 0.50222
+[1132]	valid_0's binary_logloss: 0.50218
+[1133]	valid_0's binary_logloss: 0.502157
+[1134]	valid_0's binary_logloss: 0.502118
+[1135]	valid_0's binary_logloss: 0.502094
+[1136]	valid_0's binary_logloss: 0.502056
+[1137]	valid_0's binary_logloss: 0.502016
+[1138]	valid_0's binary_logloss: 0.501991
+[1139]	valid_0's binary_logloss: 0.501954
+[1140]	valid_0's binary_logloss: 0.501931
+[1141]	valid_0's binary_logloss: 0.501893
+[1142]	valid_0's binary_logloss: 0.50187
+[1143]	valid_0's binary_logloss: 0.501829
+[1144]	valid_0's binary_logloss: 0.501806
+[1145]	valid_0's binary_logloss: 0.501768
+[1146]	valid_0's binary_logloss: 0.501729
+[1147]	valid_0's binary_logloss: 0.501707
+[1148]	valid_0's binary_logloss: 0.501669
+[1149]	valid_0's binary_logloss: 0.501646
+[1150]	valid_0's binary_logloss: 0.501609
+[1151]	valid_0's binary_logloss: 0.501587
+[1152]	valid_0's binary_logloss: 0.501546
+[1153]	valid_0's binary_logloss: 0.501524
+[1154]	valid_0's binary_logloss: 0.501489
+[1155]	valid_0's binary_logloss: 0.501465
+[1156]	valid_0's binary_logloss: 0.501426
+[1157]	valid_0's binary_logloss: 0.501389
+[1158]	valid_0's binary_logloss: 0.501368
+[1159]	valid_0's binary_logloss: 0.50133
+[1160]	valid_0's binary_logloss: 0.501309
+[1161]	valid_0's binary_logloss: 0.501271
+[1162]	valid_0's binary_logloss: 0.501248
+[1163]	valid_0's binary_logloss: 0.501213
+[1164]	valid_0's binary_logloss: 0.50119
+[1165]	valid_0's binary_logloss: 0.501152
+[1166]	valid_0's binary_logloss: 0.501116
+[1167]	valid_0's binary_logloss: 0.501095
+[1168]	valid_0's binary_logloss: 0.50106
+[1169]	valid_0's binary_logloss: 0.501037
+[1170]	valid_0's binary_logloss: 0.501
+[1171]	valid_0's binary_logloss: 0.500977
+[1172]	valid_0's binary_logloss: 0.500943
+[1173]	valid_0's binary_logloss: 0.500921
+[1174]	valid_0's binary_logloss: 0.500889
+[1175]	valid_0's binary_logloss: 0.500858
+[1176]	valid_0's binary_logloss: 0.500824
+[1177]	valid_0's binary_logloss: 0.500792
+[1178]	valid_0's binary_logloss: 0.50077
+[1179]	valid_0's binary_logloss: 0.500739
+[1180]	valid_0's binary_logloss: 0.500706
+[1181]	valid_0's binary_logloss: 0.500674
+[1182]	valid_0's binary_logloss: 0.500655
+[1183]	valid_0's binary_logloss: 0.500622
+[1184]	valid_0's binary_logloss: 0.500591
+[1185]	valid_0's binary_logloss: 0.500558
+[1186]	valid_0's binary_logloss: 0.500527
+[1187]	valid_0's binary_logloss: 0.500505
+[1188]	valid_0's binary_logloss: 0.500475
+[1189]	valid_0's binary_logloss: 0.500444
+[1190]	valid_0's binary_logloss: 0.500412
+[1191]	valid_0's binary_logloss: 0.500381
+[1192]	valid_0's binary_logloss: 0.50036
+[1193]	valid_0's binary_logloss: 0.50033
+[1194]	valid_0's binary_logloss: 0.500298
+[1195]	valid_0's binary_logloss: 0.500268
+[1196]	valid_0's binary_logloss: 0.500249
+[1197]	valid_0's binary_logloss: 0.500217
+[1198]	valid_0's binary_logloss: 0.500187
+[1199]	valid_0's binary_logloss: 0.500155
+[1200]	valid_0's binary_logloss: 0.500125
+[1201]	valid_0's binary_logloss: 0.500105
+[1202]	valid_0's binary_logloss: 0.500075
+[1203]	valid_0's binary_logloss: 0.500046
+[1204]	valid_0's binary_logloss: 0.500014
+[1205]	valid_0's binary_logloss: 0.499985
+[1206]	valid_0's binary_logloss: 0.499965
+[1207]	valid_0's binary_logloss: 0.499935
+[1208]	valid_0's binary_logloss: 0.499904
+[1209]	valid_0's binary_logloss: 0.499875
+[1210]	valid_0's binary_logloss: 0.499855
+[1211]	valid_0's binary_logloss: 0.499826
+[1212]	valid_0's binary_logloss: 0.499797
+[1213]	valid_0's binary_logloss: 0.499767
+[1214]	valid_0's binary_logloss: 0.499738
+[1215]	valid_0's binary_logloss: 0.499718
+[1216]	valid_0's binary_logloss: 0.49969
+[1217]	valid_0's binary_logloss: 0.499659
+[1218]	valid_0's binary_logloss: 0.499631
+[1219]	valid_0's binary_logloss: 0.499602
+[1220]	valid_0's binary_logloss: 0.499583
+[1221]	valid_0's binary_logloss: 0.499555
+[1222]	valid_0's binary_logloss: 0.499525
+[1223]	valid_0's binary_logloss: 0.499497
+[1224]	valid_0's binary_logloss: 0.499478
+[1225]	valid_0's binary_logloss: 0.49945
+[1226]	valid_0's binary_logloss: 0.499422
+[1227]	valid_0's binary_logloss: 0.499392
+[1228]	valid_0's binary_logloss: 0.499364
+[1229]	valid_0's binary_logloss: 0.499346
+[1230]	valid_0's binary_logloss: 0.499318
+[1231]	valid_0's binary_logloss: 0.499289
+[1232]	valid_0's binary_logloss: 0.499261
+[1233]	valid_0's binary_logloss: 0.499226
+[1234]	valid_0's binary_logloss: 0.499197
+[1235]	valid_0's binary_logloss: 0.49917
+[1236]	valid_0's binary_logloss: 0.499133
+[1237]	valid_0's binary_logloss: 0.499106
+[1238]	valid_0's binary_logloss: 0.499077
+[1239]	valid_0's binary_logloss: 0.499042
+[1240]	valid_0's binary_logloss: 0.499013
+[1241]	valid_0's binary_logloss: 0.498986
+[1242]	valid_0's binary_logloss: 0.498952
+[1243]	valid_0's binary_logloss: 0.498923
+[1244]	valid_0's binary_logloss: 0.498896
+[1245]	valid_0's binary_logloss: 0.49886
+[1246]	valid_0's binary_logloss: 0.498834
+[1247]	valid_0's binary_logloss: 0.498797
+[1248]	valid_0's binary_logloss: 0.498771
+[1249]	valid_0's binary_logloss: 0.498745
+[1250]	valid_0's binary_logloss: 0.498709
+[1251]	valid_0's binary_logloss: 0.498683
+[1252]	valid_0's binary_logloss: 0.498655
+[1253]	valid_0's binary_logloss: 0.498621
+[1254]	valid_0's binary_logloss: 0.498593
+[1255]	valid_0's binary_logloss: 0.498567
+[1256]	valid_0's binary_logloss: 0.498533
+[1257]	valid_0's binary_logloss: 0.498506
+[1258]	valid_0's binary_logloss: 0.498472
+[1259]	valid_0's binary_logloss: 0.498445
+[1260]	valid_0's binary_logloss: 0.498419
+[1261]	valid_0's binary_logloss: 0.498384
+[1262]	valid_0's binary_logloss: 0.498359
+[1263]	valid_0's binary_logloss: 0.498331
+[1264]	valid_0's binary_logloss: 0.498298
+[1265]	valid_0's binary_logloss: 0.498273
+[1266]	valid_0's binary_logloss: 0.498246
+[1267]	valid_0's binary_logloss: 0.498213
+[1268]	valid_0's binary_logloss: 0.498186
+[1269]	valid_0's binary_logloss: 0.498161
+[1270]	valid_0's binary_logloss: 0.498126
+[1271]	valid_0's binary_logloss: 0.498102
+[1272]	valid_0's binary_logloss: 0.498069
+[1273]	valid_0's binary_logloss: 0.498042
+[1274]	valid_0's binary_logloss: 0.498018
+[1275]	valid_0's binary_logloss: 0.497983
+[1276]	valid_0's binary_logloss: 0.497959
+[1277]	valid_0's binary_logloss: 0.497933
+[1278]	valid_0's binary_logloss: 0.4979
+[1279]	valid_0's binary_logloss: 0.497876
+[1280]	valid_0's binary_logloss: 0.49785
+[1281]	valid_0's binary_logloss: 0.497818
+[1282]	valid_0's binary_logloss: 0.497792
+[1283]	valid_0's binary_logloss: 0.497768
+[1284]	valid_0's binary_logloss: 0.497734
+[1285]	valid_0's binary_logloss: 0.49771
+[1286]	valid_0's binary_logloss: 0.497677
+[1287]	valid_0's binary_logloss: 0.497653
+[1288]	valid_0's binary_logloss: 0.497629
+[1289]	valid_0's binary_logloss: 0.497596
+[1290]	valid_0's binary_logloss: 0.497572
+[1291]	valid_0's binary_logloss: 0.497547
+[1292]	valid_0's binary_logloss: 0.497515
+[1293]	valid_0's binary_logloss: 0.49749
+[1294]	valid_0's binary_logloss: 0.497467
+[1295]	valid_0's binary_logloss: 0.497436
+[1296]	valid_0's binary_logloss: 0.497411
+[1297]	valid_0's binary_logloss: 0.497388
+[1298]	valid_0's binary_logloss: 0.497355
+[1299]	valid_0's binary_logloss: 0.497332
+[1300]	valid_0's binary_logloss: 0.497299
+[1301]	valid_0's binary_logloss: 0.497276
+[1302]	valid_0's binary_logloss: 0.497251
+[1303]	valid_0's binary_logloss: 0.49722
+[1304]	valid_0's binary_logloss: 0.497198
+[1305]	valid_0's binary_logloss: 0.497173
+[1306]	valid_0's binary_logloss: 0.497143
+[1307]	valid_0's binary_logloss: 0.497118
+[1308]	valid_0's binary_logloss: 0.497096
+[1309]	valid_0's binary_logloss: 0.497064
+[1310]	valid_0's binary_logloss: 0.497041
+[1311]	valid_0's binary_logloss: 0.497019
+[1312]	valid_0's binary_logloss: 0.496987
+[1313]	valid_0's binary_logloss: 0.496965
+[1314]	valid_0's binary_logloss: 0.496933
+[1315]	valid_0's binary_logloss: 0.496911
+[1316]	valid_0's binary_logloss: 0.496887
+[1317]	valid_0's binary_logloss: 0.496857
+[1318]	valid_0's binary_logloss: 0.496834
+[1319]	valid_0's binary_logloss: 0.496812
+[1320]	valid_0's binary_logloss: 0.496794
+[1321]	valid_0's binary_logloss: 0.49677
+[1322]	valid_0's binary_logloss: 0.496749
+[1323]	valid_0's binary_logloss: 0.496729
+[1324]	valid_0's binary_logloss: 0.496707
+[1325]	valid_0's binary_logloss: 0.496684
+[1326]	valid_0's binary_logloss: 0.496655
+[1327]	valid_0's binary_logloss: 0.496632
+[1328]	valid_0's binary_logloss: 0.496614
+[1329]	valid_0's binary_logloss: 0.496593
+[1330]	valid_0's binary_logloss: 0.49657
+[1331]	valid_0's binary_logloss: 0.496552
+[1332]	valid_0's binary_logloss: 0.496529
+[1333]	valid_0's binary_logloss: 0.496508
+[1334]	valid_0's binary_logloss: 0.496477
+[1335]	valid_0's binary_logloss: 0.496457
+[1336]	valid_0's binary_logloss: 0.496436
+[1337]	valid_0's binary_logloss: 0.496417
+[1338]	valid_0's binary_logloss: 0.496396
+[1339]	valid_0's binary_logloss: 0.496374
+[1340]	valid_0's binary_logloss: 0.496357
+[1341]	valid_0's binary_logloss: 0.496334
+[1342]	valid_0's binary_logloss: 0.496306
+[1343]	valid_0's binary_logloss: 0.496284
+[1344]	valid_0's binary_logloss: 0.496263
+[1345]	valid_0's binary_logloss: 0.496246
+[1346]	valid_0's binary_logloss: 0.496224
+[1347]	valid_0's binary_logloss: 0.496205
+[1348]	valid_0's binary_logloss: 0.496186
+[1349]	valid_0's binary_logloss: 0.496166
+[1350]	valid_0's binary_logloss: 0.496144
+[1351]	valid_0's binary_logloss: 0.496116
+[1352]	valid_0's binary_logloss: 0.496094
+[1353]	valid_0's binary_logloss: 0.496075
+[1354]	valid_0's binary_logloss: 0.496058
+[1355]	valid_0's binary_logloss: 0.496037
+[1356]	valid_0's binary_logloss: 0.49602
+[1357]	valid_0's binary_logloss: 0.495999
+[1358]	valid_0's binary_logloss: 0.49598
+[1359]	valid_0's binary_logloss: 0.49595
+[1360]	valid_0's binary_logloss: 0.495931
+[1361]	valid_0's binary_logloss: 0.495912
+[1362]	valid_0's binary_logloss: 0.495893
+[1363]	valid_0's binary_logloss: 0.495874
+[1364]	valid_0's binary_logloss: 0.495853
+[1365]	valid_0's binary_logloss: 0.495837
+[1366]	valid_0's binary_logloss: 0.495817
+[1367]	valid_0's binary_logloss: 0.495798
+[1368]	valid_0's binary_logloss: 0.495768
+[1369]	valid_0's binary_logloss: 0.49575
+[1370]	valid_0's binary_logloss: 0.495734
+[1371]	valid_0's binary_logloss: 0.495713
+[1372]	valid_0's binary_logloss: 0.495695
+[1373]	valid_0's binary_logloss: 0.495677
+[1374]	valid_0's binary_logloss: 0.495659
+[1375]	valid_0's binary_logloss: 0.495639
+[1376]	valid_0's binary_logloss: 0.495612
+[1377]	valid_0's binary_logloss: 0.495592
+[1378]	valid_0's binary_logloss: 0.495573
+[1379]	valid_0's binary_logloss: 0.495558
+[1380]	valid_0's binary_logloss: 0.495538
+[1381]	valid_0's binary_logloss: 0.49552
+[1382]	valid_0's binary_logloss: 0.495503
+[1383]	valid_0's binary_logloss: 0.495485
+[1384]	valid_0's binary_logloss: 0.495465
+[1385]	valid_0's binary_logloss: 0.495439
+[1386]	valid_0's binary_logloss: 0.495419
+[1387]	valid_0's binary_logloss: 0.495404
+[1388]	valid_0's binary_logloss: 0.495386
+[1389]	valid_0's binary_logloss: 0.495367
+[1390]	valid_0's binary_logloss: 0.495352
+[1391]	valid_0's binary_logloss: 0.495332
+[1392]	valid_0's binary_logloss: 0.495315
+[1393]	valid_0's binary_logloss: 0.495287
+[1394]	valid_0's binary_logloss: 0.49527
+[1395]	valid_0's binary_logloss: 0.49525
+[1396]	valid_0's binary_logloss: 0.495236
+[1397]	valid_0's binary_logloss: 0.495219
+[1398]	valid_0's binary_logloss: 0.4952
+[1399]	valid_0's binary_logloss: 0.495185
+[1400]	valid_0's binary_logloss: 0.495166
+[1401]	valid_0's binary_logloss: 0.495141
+[1402]	valid_0's binary_logloss: 0.495122
+[1403]	valid_0's binary_logloss: 0.495105
+[1404]	valid_0's binary_logloss: 0.495089
+[1405]	valid_0's binary_logloss: 0.495072
+[1406]	valid_0's binary_logloss: 0.495055
+[1407]	valid_0's binary_logloss: 0.495039
+[1408]	valid_0's binary_logloss: 0.495024
+[1409]	valid_0's binary_logloss: 0.495007
+[1410]	valid_0's binary_logloss: 0.494993
+[1411]	valid_0's binary_logloss: 0.494977
+[1412]	valid_0's binary_logloss: 0.494962
+[1413]	valid_0's binary_logloss: 0.494946
+[1414]	valid_0's binary_logloss: 0.494932
+[1415]	valid_0's binary_logloss: 0.494918
+[1416]	valid_0's binary_logloss: 0.494902
+[1417]	valid_0's binary_logloss: 0.494888
+[1418]	valid_0's binary_logloss: 0.494872
+[1419]	valid_0's binary_logloss: 0.494866
+[1420]	valid_0's binary_logloss: 0.49485
+[1421]	valid_0's binary_logloss: 0.494836
+[1422]	valid_0's binary_logloss: 0.49482
+[1423]	valid_0's binary_logloss: 0.494807
+[1424]	valid_0's binary_logloss: 0.494793
+[1425]	valid_0's binary_logloss: 0.494785
+[1426]	valid_0's binary_logloss: 0.494771
+[1427]	valid_0's binary_logloss: 0.494756
+[1428]	valid_0's binary_logloss: 0.494742
+[1429]	valid_0's binary_logloss: 0.494727
+[1430]	valid_0's binary_logloss: 0.494714
+[1431]	valid_0's binary_logloss: 0.494699
+[1432]	valid_0's binary_logloss: 0.494686
+[1433]	valid_0's binary_logloss: 0.494672
+[1434]	valid_0's binary_logloss: 0.494665
+[1435]	valid_0's binary_logloss: 0.494652
+[1436]	valid_0's binary_logloss: 0.494637
+[1437]	valid_0's binary_logloss: 0.494624
+[1438]	valid_0's binary_logloss: 0.494609
+[1439]	valid_0's binary_logloss: 0.494597
+[1440]	valid_0's binary_logloss: 0.494582
+[1441]	valid_0's binary_logloss: 0.494569
+[1442]	valid_0's binary_logloss: 0.494564
+[1443]	valid_0's binary_logloss: 0.49455
+[1444]	valid_0's binary_logloss: 0.494537
+[1445]	valid_0's binary_logloss: 0.494523
+[1446]	valid_0's binary_logloss: 0.494511
+[1447]	valid_0's binary_logloss: 0.494496
+[1448]	valid_0's binary_logloss: 0.494484
+[1449]	valid_0's binary_logloss: 0.49447
+[1450]	valid_0's binary_logloss: 0.494465
+[1451]	valid_0's binary_logloss: 0.494453
+[1452]	valid_0's binary_logloss: 0.494439
+[1453]	valid_0's binary_logloss: 0.494427
+[1454]	valid_0's binary_logloss: 0.494414
+[1455]	valid_0's binary_logloss: 0.494402
+[1456]	valid_0's binary_logloss: 0.494388
+[1457]	valid_0's binary_logloss: 0.494377
+[1458]	valid_0's binary_logloss: 0.49437
+[1459]	valid_0's binary_logloss: 0.494359
+[1460]	valid_0's binary_logloss: 0.494347
+[1461]	valid_0's binary_logloss: 0.494334
+[1462]	valid_0's binary_logloss: 0.494323
+[1463]	valid_0's binary_logloss: 0.494309
+[1464]	valid_0's binary_logloss: 0.494298
+[1465]	valid_0's binary_logloss: 0.494285
+[1466]	valid_0's binary_logloss: 0.494274
+[1467]	valid_0's binary_logloss: 0.494268
+[1468]	valid_0's binary_logloss: 0.494257
+[1469]	valid_0's binary_logloss: 0.494244
+[1470]	valid_0's binary_logloss: 0.494233
+[1471]	valid_0's binary_logloss: 0.494223
+[1472]	valid_0's binary_logloss: 0.49421
+[1473]	valid_0's binary_logloss: 0.494199
+[1474]	valid_0's binary_logloss: 0.494187
+[1475]	valid_0's binary_logloss: 0.494183
+[1476]	valid_0's binary_logloss: 0.49417
+[1477]	valid_0's binary_logloss: 0.49416
+[1478]	valid_0's binary_logloss: 0.494148
+[1479]	valid_0's binary_logloss: 0.494137
+[1480]	valid_0's binary_logloss: 0.494127
+[1481]	valid_0's binary_logloss: 0.494115
+[1482]	valid_0's binary_logloss: 0.494105
+[1483]	valid_0's binary_logloss: 0.494099
+[1484]	valid_0's binary_logloss: 0.494089
+[1485]	valid_0's binary_logloss: 0.494077
+[1486]	valid_0's binary_logloss: 0.494068
+[1487]	valid_0's binary_logloss: 0.494056
+[1488]	valid_0's binary_logloss: 0.494046
+[1489]	valid_0's binary_logloss: 0.494036
+[1490]	valid_0's binary_logloss: 0.494025
+[1491]	valid_0's binary_logloss: 0.494021
+[1492]	valid_0's binary_logloss: 0.49401
+[1493]	valid_0's binary_logloss: 0.494
+[1494]	valid_0's binary_logloss: 0.493989
+[1495]	valid_0's binary_logloss: 0.49398
+[1496]	valid_0's binary_logloss: 0.493968
+[1497]	valid_0's binary_logloss: 0.493959
+[1498]	valid_0's binary_logloss: 0.493948
+[1499]	valid_0's binary_logloss: 0.493939
+[1500]	valid_0's binary_logloss: 0.493936
+[1501]	valid_0's binary_logloss: 0.493925
+[1502]	valid_0's binary_logloss: 0.493916
+[1503]	valid_0's binary_logloss: 0.493905
+[1504]	valid_0's binary_logloss: 0.493896
+[1505]	valid_0's binary_logloss: 0.493885
+[1506]	valid_0's binary_logloss: 0.493877
+[1507]	valid_0's binary_logloss: 0.493866
+[1508]	valid_0's binary_logloss: 0.493864
+[1509]	valid_0's binary_logloss: 0.493855
+[1510]	valid_0's binary_logloss: 0.493844
+[1511]	valid_0's binary_logloss: 0.493836
+[1512]	valid_0's binary_logloss: 0.493826
+[1513]	valid_0's binary_logloss: 0.493817
+[1514]	valid_0's binary_logloss: 0.493807
+[1515]	valid_0's binary_logloss: 0.493799
+[1516]	valid_0's binary_logloss: 0.493795
+[1517]	valid_0's binary_logloss: 0.493786
+[1518]	valid_0's binary_logloss: 0.493776
+[1519]	valid_0's binary_logloss: 0.493768
+[1520]	valid_0's binary_logloss: 0.49376
+[1521]	valid_0's binary_logloss: 0.49375
+[1522]	valid_0's binary_logloss: 0.493742
+[1523]	valid_0's binary_logloss: 0.493733
+[1524]	valid_0's binary_logloss: 0.493725
+[1525]	valid_0's binary_logloss: 0.493721
+[1526]	valid_0's binary_logloss: 0.493713
+[1527]	valid_0's binary_logloss: 0.493704
+[1528]	valid_0's binary_logloss: 0.493696
+[1529]	valid_0's binary_logloss: 0.493687
+[1530]	valid_0's binary_logloss: 0.493679
+[1531]	valid_0's binary_logloss: 0.493672
+[1532]	valid_0's binary_logloss: 0.493663
+[1533]	valid_0's binary_logloss: 0.493661
+[1534]	valid_0's binary_logloss: 0.493652
+[1535]	valid_0's binary_logloss: 0.493645
+[1536]	valid_0's binary_logloss: 0.493636
+[1537]	valid_0's binary_logloss: 0.493628
+[1538]	valid_0's binary_logloss: 0.493619
+[1539]	valid_0's binary_logloss: 0.493612
+[1540]	valid_0's binary_logloss: 0.493605
+[1541]	valid_0's binary_logloss: 0.493602
+[1542]	valid_0's binary_logloss: 0.493595
+[1543]	valid_0's binary_logloss: 0.493587
+[1544]	valid_0's binary_logloss: 0.49358
+[1545]	valid_0's binary_logloss: 0.493571
+[1546]	valid_0's binary_logloss: 0.493565
+[1547]	valid_0's binary_logloss: 0.493556
+[1548]	valid_0's binary_logloss: 0.49355
+[1549]	valid_0's binary_logloss: 0.493547
+[1550]	valid_0's binary_logloss: 0.49354
+[1551]	valid_0's binary_logloss: 0.493534
+[1552]	valid_0's binary_logloss: 0.493526
+[1553]	valid_0's binary_logloss: 0.493519
+[1554]	valid_0's binary_logloss: 0.493511
+[1555]	valid_0's binary_logloss: 0.493505
+[1556]	valid_0's binary_logloss: 0.493497
+[1557]	valid_0's binary_logloss: 0.493491
+[1558]	valid_0's binary_logloss: 0.493489
+[1559]	valid_0's binary_logloss: 0.493482
+[1560]	valid_0's binary_logloss: 0.493475
+[1561]	valid_0's binary_logloss: 0.493469
+[1562]	valid_0's binary_logloss: 0.493463
+[1563]	valid_0's binary_logloss: 0.493455
+[1564]	valid_0's binary_logloss: 0.493449
+[1565]	valid_0's binary_logloss: 0.493442
+[1566]	valid_0's binary_logloss: 0.493443
+[1567]	valid_0's binary_logloss: 0.493436
+[1568]	valid_0's binary_logloss: 0.49343
+[1569]	valid_0's binary_logloss: 0.493423
+[1570]	valid_0's binary_logloss: 0.493417
+[1571]	valid_0's binary_logloss: 0.49341
+[1572]	valid_0's binary_logloss: 0.493404
+[1573]	valid_0's binary_logloss: 0.493399
+[1574]	valid_0's binary_logloss: 0.493399
+[1575]	valid_0's binary_logloss: 0.493394
+[1576]	valid_0's binary_logloss: 0.493386
+[1577]	valid_0's binary_logloss: 0.493381
+[1578]	valid_0's binary_logloss: 0.493374
+[1579]	valid_0's binary_logloss: 0.493369
+[1580]	valid_0's binary_logloss: 0.493362
+[1581]	valid_0's binary_logloss: 0.493357
+[1582]	valid_0's binary_logloss: 0.493351
+[1583]	valid_0's binary_logloss: 0.493353
+[1584]	valid_0's binary_logloss: 0.493348
+[1585]	valid_0's binary_logloss: 0.493341
+[1586]	valid_0's binary_logloss: 0.493336
+[1587]	valid_0's binary_logloss: 0.49333
+[1588]	valid_0's binary_logloss: 0.493325
+[1589]	valid_0's binary_logloss: 0.493319
+[1590]	valid_0's binary_logloss: 0.493314
+[1591]	valid_0's binary_logloss: 0.493315
+[1592]	valid_0's binary_logloss: 0.49331
+[1593]	valid_0's binary_logloss: 0.493304
+[1594]	valid_0's binary_logloss: 0.4933
+[1595]	valid_0's binary_logloss: 0.493295
+[1596]	valid_0's binary_logloss: 0.493289
+[1597]	valid_0's binary_logloss: 0.493285
+[1598]	valid_0's binary_logloss: 0.493279
+[1599]	valid_0's binary_logloss: 0.493281
+[1600]	valid_0's binary_logloss: 0.493276
+[1601]	valid_0's binary_logloss: 0.493272
+[1602]	valid_0's binary_logloss: 0.493266
+[1603]	valid_0's binary_logloss: 0.493262
+[1604]	valid_0's binary_logloss: 0.493256
+[1605]	valid_0's binary_logloss: 0.493252
+[1606]	valid_0's binary_logloss: 0.493248
+[1607]	valid_0's binary_logloss: 0.493249
+[1608]	valid_0's binary_logloss: 0.493246
+[1609]	valid_0's binary_logloss: 0.49324
+[1610]	valid_0's binary_logloss: 0.493236
+[1611]	valid_0's binary_logloss: 0.493231
+[1612]	valid_0's binary_logloss: 0.493228
+[1613]	valid_0's binary_logloss: 0.493222
+[1614]	valid_0's binary_logloss: 0.493219
+[1615]	valid_0's binary_logloss: 0.49322
+[1616]	valid_0's binary_logloss: 0.493217
+[1617]	valid_0's binary_logloss: 0.493213
+[1618]	valid_0's binary_logloss: 0.493208
+[1619]	valid_0's binary_logloss: 0.493205
+[1620]	valid_0's binary_logloss: 0.4932
+[1621]	valid_0's binary_logloss: 0.493197
+[1622]	valid_0's binary_logloss: 0.493192
+[1623]	valid_0's binary_logloss: 0.493195
+[1624]	valid_0's binary_logloss: 0.49319
+[1625]	valid_0's binary_logloss: 0.493187
+[1626]	valid_0's binary_logloss: 0.493183
+[1627]	valid_0's binary_logloss: 0.49318
+[1628]	valid_0's binary_logloss: 0.493175
+[1629]	valid_0's binary_logloss: 0.493172
+[1630]	valid_0's binary_logloss: 0.49317
+[1631]	valid_0's binary_logloss: 0.493165
+[1632]	valid_0's binary_logloss: 0.493169
+[1633]	valid_0's binary_logloss: 0.493164
+[1634]	valid_0's binary_logloss: 0.493162
+[1635]	valid_0's binary_logloss: 0.493157
+[1636]	valid_0's binary_logloss: 0.493155
+[1637]	valid_0's binary_logloss: 0.493151
+[1638]	valid_0's binary_logloss: 0.493148
+[1639]	valid_0's binary_logloss: 0.493144
+[1640]	valid_0's binary_logloss: 0.493148
+[1641]	valid_0's binary_logloss: 0.493145
+[1642]	valid_0's binary_logloss: 0.493141
+[1643]	valid_0's binary_logloss: 0.493139
+[1644]	valid_0's binary_logloss: 0.493135
+[1645]	valid_0's binary_logloss: 0.493133
+[1646]	valid_0's binary_logloss: 0.493129
+[1647]	valid_0's binary_logloss: 0.493127
+[1648]	valid_0's binary_logloss: 0.49313
+[1649]	valid_0's binary_logloss: 0.493128
+[1650]	valid_0's binary_logloss: 0.493124
+[1651]	valid_0's binary_logloss: 0.493122
+[1652]	valid_0's binary_logloss: 0.493118
+[1653]	valid_0's binary_logloss: 0.493117
+[1654]	valid_0's binary_logloss: 0.493115
+[1655]	valid_0's binary_logloss: 0.493111
+[1656]	valid_0's binary_logloss: 0.493116
+[1657]	valid_0's binary_logloss: 0.493112
+[1658]	valid_0's binary_logloss: 0.493111
+[1659]	valid_0's binary_logloss: 0.493107
+[1660]	valid_0's binary_logloss: 0.493106
+[1661]	valid_0's binary_logloss: 0.493103
+[1662]	valid_0's binary_logloss: 0.493101
+[1663]	valid_0's binary_logloss: 0.493098
+[1664]	valid_0's binary_logloss: 0.493103
+[1665]	valid_0's binary_logloss: 0.493101
+[1666]	valid_0's binary_logloss: 0.493098
+[1667]	valid_0's binary_logloss: 0.493097
+[1668]	valid_0's binary_logloss: 0.493094
+[1669]	valid_0's binary_logloss: 0.493093
+[1670]	valid_0's binary_logloss: 0.49309
+[1671]	valid_0's binary_logloss: 0.493089
+[1672]	valid_0's binary_logloss: 0.493092
+[1673]	valid_0's binary_logloss: 0.493091
+[1674]	valid_0's binary_logloss: 0.493088
+[1675]	valid_0's binary_logloss: 0.493087
+[1676]	valid_0's binary_logloss: 0.493085
+[1677]	valid_0's binary_logloss: 0.493084
+[1678]	valid_0's binary_logloss: 0.493083
+[1679]	valid_0's binary_logloss: 0.493081
+[1680]	valid_0's binary_logloss: 0.493086
+[1681]	valid_0's binary_logloss: 0.493083
+[1682]	valid_0's binary_logloss: 0.493083
+[1683]	valid_0's binary_logloss: 0.49308
+[1684]	valid_0's binary_logloss: 0.49308
+[1685]	valid_0's binary_logloss: 0.493078
+[1686]	valid_0's binary_logloss: 0.493077
+[1687]	valid_0's binary_logloss: 0.493075
+[1688]	valid_0's binary_logloss: 0.49308
+[1689]	valid_0's binary_logloss: 0.493078
+[1690]	valid_0's binary_logloss: 0.493078
+[1691]	valid_0's binary_logloss: 0.493077
+[1692]	valid_0's binary_logloss: 0.493075
+Early stopping, best iteration is:
+[1687]	valid_0's binary_logloss: 0.493075
+  ('#### Metrics #################################################################',) 
+  ('Actual    : ', PassengerId
+716    0
+766    1
+283    0
+323    1
+4      1
+      ..
+597    1
+163    0
+573    1
+577    1
+216    1
+Name: Survived, Length: 891, dtype: int64) 
+  ('Prediction: ', PassengerId
+716    0
+766    1
+283    0
+323    1
+4      1
+      ..
+597    1
+163    0
+573    0
+577    1
+216    1
+Name: Survived_pred, Length: 891, dtype: int64) 
+  ({'metrics_test':                metric_name  metric_val  n_sample
+0           accuracy_score    0.815642       179
+1  average_precision_score    0.646640       179},) 
+  ('############ saving model, dfX, columns', 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model/') 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model//colsX.pkl',) 
+
+  ('D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model//coly.pkl',) 
+  ({'model_path': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model/', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'n_estimators': 3000, 'learning_rate': 0.001, 'boosting_type': 'gbdt', 'early_stopping_rounds': 5}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x000001D80AC01D08>, 'pre_process_pars': {'y_norm_fun': <function titanic_lightgbm.<locals>.pre_process_fun at 0x000001D80AC0C2F0>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/', 'dfnum_hot':              Pclass_bin_0  Pclass_bin_4  ...  Fare_bin_5  Fare_bin_9
+PassengerId                              ...                        
+1                       0             0  ...           0           0
+2                       1             0  ...           0           0
+3                       0             0  ...           0           0
+4                       1             0  ...           0           0
+5                       0             0  ...           0           0
+...                   ...           ...  ...         ...         ...
+887                     0             1  ...           0           0
+888                     1             0  ...           0           0
+889                     0             0  ...           0           0
+890                     1             0  ...           0           0
+891                     0             0  ...           0           0
+
+[891 rows x 34 columns], 'dfcat_hot':              Embarked_int_0  Embarked_int_1  Embarked_int_2
+PassengerId                                                
+1                         1               0               0
+2                         0               1               0
+3                         1               0               0
+4                         1               0               0
+5                         1               0               0
+...                     ...             ...             ...
+887                       1               0               0
+888                       1               0               0
+889                       1               0               0
+890                       0               1               0
+891                       0               0               1
+
+[891 rows x 3 columns], 'colid': 'PassengerId', 'colcross_single': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}, {'metric_list': ['accuracy_score', 'average_precision_score']}) 
+--------------
+D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model//model.pkl
+  ('############ check re-loaded', {'model_path': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//model/', 'model_class': 'LGBMClassifier', 'model_pars': {'objective': 'binary', 'n_estimators': 3000, 'learning_rate': 0.001, 'boosting_type': 'gbdt', 'early_stopping_rounds': 5}, 'post_process_fun': <function titanic_lightgbm.<locals>.post_process_fun at 0x000001D80C973730>, 'pre_process_pars': {'y_norm_fun': <function titanic_lightgbm.<locals>.pre_process_fun at 0x000001D80C9737B8>, 'pipe_list': [{'uri': 'source/preprocessors.py::pd_coly', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'coly', 'cols_out': 'coly', 'type': 'coly'}, {'uri': 'source/preprocessors.py::pd_colnum_bin', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colnum', 'cols_out': 'colnum_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colnum_binto_onehot', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colnum_bin', 'cols_out': 'colnum_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_bin', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colcat', 'cols_out': 'colcat_bin', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcat_to_onehot', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/'}, 'cols_family': 'colcat_bin', 'cols_out': 'colcat_onehot', 'type': ''}, {'uri': 'source/preprocessors.py::pd_colcross', 'pars': {'path_features_store': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//features_store/', 'path_pipeline_export': 'D:/_devs/Python01/gitdev/dsa2/data/output/titanic/titanic_lightgbm//pipeline/', 'dfnum_hot':              Pclass_bin_0  Pclass_bin_4  ...  Fare_bin_5  Fare_bin_9
+PassengerId                              ...                        
+1                       0             0  ...           0           0
+2                       1             0  ...           0           0
+3                       0             0  ...           0           0
+4                       1             0  ...           0           0
+5                       0             0  ...           0           0
+...                   ...           ...  ...         ...         ...
+887                     0             1  ...           0           0
+888                     1             0  ...           0           0
+889                     0             0  ...           0           0
+890                     1             0  ...           0           0
+891                     0             0  ...           0           0
+
+[891 rows x 34 columns], 'dfcat_hot':              Embarked_int_0  Embarked_int_1  Embarked_int_2
+PassengerId                                                
+1                         1               0               0
+2                         0               1               0
+3                         1               0               0
+4                         1               0               0
+5                         1               0               0
+...                     ...             ...             ...
+887                       1               0               0
+888                       1               0               0
+889                       1               0               0
+890                       0               1               0
+891                       0               0               1
+
+[891 rows x 3 columns], 'colid': 'PassengerId', 'colcross_single': ['Name', 'Sex', 'Ticket', 'Embarked', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']}, 'cols_family': 'colcross', 'cols_out': 'colcross_pair_onehot', 'type': 'cross'}]}}) 
+  ('######### export #################################',) 
+  ('######### finish #################################',) 
